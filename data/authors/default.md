@@ -14,7 +14,7 @@ oku: https://oku.club/user/cory
 
 Hi! I'm Cory 👋🏻
 
-I'm a software developer in Camarillo, California. I enjoy technology, automation, writing, reading, hanging out with my beautiful family and 4 rescue dogs.
+I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, [music](https://www.last.fm/user/cdme_), writing, [reading](https://oku.club/user/cory) and [tv and movies](https://trakt.tv/users/cdransf).
 
 I build, maintain and design web applications. I've been coding professionally since 2010 with a focus on frontend technologies.
 
