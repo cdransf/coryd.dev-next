@@ -23,6 +23,7 @@ const siteMetadata = {
     analytics: {
         plausibleDataDomain: 'coryd.dev',
         plausibleSrcUrl: '/script.67532e4133a4t4551aza.js',
+        plausibleApiUrl: '/api/58441z2164b5e7880yec',
     },
     newsletter: {
         // supports mailchimp, buttondown, convertkit, klaviyo
