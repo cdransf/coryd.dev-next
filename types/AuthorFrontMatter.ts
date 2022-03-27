@@ -5,7 +5,10 @@ export type AuthorFrontMatter = {
     occupation: string
     company: string
     email: string
-    twitter: string
-    linkedin: string
     github: string
+    twitter: string
+    lastfm: string
+    trakt: string
+    oku: string
+    pocket: string
 }
