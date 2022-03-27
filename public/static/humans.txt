@@ -1,0 +1,25 @@
+# coryd.dev
+
+## built by
+
+Cory Dransfeldt // cory.dransfeldt@gmail.com
+
+## built with
+
+VS Code
+code.visualstudio.com
+
+iTerm
+iterm2.com
+
+next.js
+nextjs.org
+
+Vercel
+vercel.com
+
+GitHub
+github.com
+
+git
+git-scm.com
