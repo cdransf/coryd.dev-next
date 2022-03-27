@@ -1,6 +1,6 @@
 ---
 title: A brief intro to git
-date: "2021-06-07"
+date: '2021-06-07'
 draft: false
 tags: ['git', 'development']
 summary: As a developer, a version control system is a critical part of your toolkit, no matter the size of the project or team you may find yourself working on.
@@ -8,7 +8,7 @@ summary: As a developer, a version control system is a critical part of your too
 
 As a developer, a version control system is a critical part of your toolkit, no matter the size of the project or team you may find yourself working on.
 
-I first started learning to use git by applying it to my own projects and maintaining local repositories to track those projects. From there I moved on to hosting and storing my git repositories at [Bitbucket](https://bitbucket.org) while still working independently. My first experience with working alongside other developers in git came at my first full time development job on a small team (think *really* small — two developers, myself included). I picked up the basics of branching, handling merges, developing different features in parallel and, ultimately, dealing with QA and production deployments that were sourced from various branches in our project repository.
+I first started learning to use git by applying it to my own projects and maintaining local repositories to track those projects. From there I moved on to hosting and storing my git repositories at [Bitbucket](https://bitbucket.org) while still working independently. My first experience with working alongside other developers in git came at my first full time development job on a small team (think _really_ small — two developers, myself included). I picked up the basics of branching, handling merges, developing different features in parallel and, ultimately, dealing with QA and production deployments that were sourced from various branches in our project repository.
 
 I've expanded on my knowledge git in the jobs I've held since that first position and have used [svn](https://subversion.apache.org) pretty heavily as well (I don't mind it, but I don't love it — I'd argue git is the better choice for a number of reasons, its decentralized nature and flexibility being chief among them).
 
@@ -98,9 +98,9 @@ git revert <git commit hash value>
 
 Each of these commands has numerous options associated with it and allows for broad control over the flow and history of your project. There are a number of other options I'd suggest for learning more about git:
 
-- [Github's git tutorial](https://try.github.io)
-- [Pro Git book](https://git-scm.com/book)
-- [Oh shit, git!](http://ohshitgit.com/)
-- [Github guides](https://guides.github.com)
-- [Git Real](https://courses.codeschool.com/courses/git-real)
-- [Git documentation](https://git-scm.com/documentation)
+-   [Github's git tutorial](https://try.github.io)
+-   [Pro Git book](https://git-scm.com/book)
+-   [Oh shit, git!](http://ohshitgit.com/)
+-   [Github guides](https://guides.github.com)
+-   [Git Real](https://courses.codeschool.com/courses/git-real)
+-   [Git documentation](https://git-scm.com/documentation)

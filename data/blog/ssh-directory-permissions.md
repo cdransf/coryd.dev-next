@@ -1,6 +1,6 @@
 ---
 title: .ssh directory permissions
-date: "2020-11-09"
+date: '2020-11-09'
 draft: false
 tags: ['ssh', 'development']
 summary: I was recently setting up a new, always-on machine that I do occasional dev work. This dev work typically consists of routine maintenance and, a requirement of that, is sshing into and running software updates on manually managed servers (yes, manually managed).
