@@ -18,6 +18,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
         email,
         github,
         twitter,
+        rss,
         lastfm,
         trakt,
         oku,
@@ -51,6 +52,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                             <SocialIcon kind="mail" href={`mailto:${email}`} />
                             <SocialIcon kind="github" href={github} />
                             <SocialIcon kind="twitter" href={twitter} />
+                            <SocialIcon kind="rss" href={rss} />
                             <SocialIcon kind="lastfm" href={lastfm} />
                             <SocialIcon kind="trakt" href={trakt} />
                             <SocialIcon kind="oku" href={oku} />

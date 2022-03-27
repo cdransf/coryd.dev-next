@@ -19,19 +19,21 @@ export default function Projects() {
                     <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Hardware
                     </h3>
-                    <ul className="list-disc pl-10">
-                        <li>Mac Mini (2018 - Intel)</li>
-                        <li>Dell Monitor (5ish years old and going strong)</li>
-                        <li>Apple Magic Keyboard</li>
-                        <li>Apple Magic Trackpad</li>
-                        <li>Homepod Mini for music</li>
-                        <li>Raspberry Pi for Homebridge</li>
+                    <ul className="list-inside list-disc pl-10">
+                        <li className="mt-1.5 mb-2">Mac Mini (2018 - Intel)</li>
+                        <li className="mt-1.5 mb-2">
+                            Dell Monitor (5ish years old and going strong)
+                        </li>
+                        <li className="mt-1.5 mb-2">Apple Magic Keyboard</li>
+                        <li className="mt-1.5 mb-2">Apple Magic Trackpad</li>
+                        <li className="mt-1.5 mb-2">Homepod Mini for music</li>
+                        <li className="mt-1.5 mb-2">Raspberry Pi for Homebridge</li>
                     </ul>
                     <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Software
                     </h3>
-                    <ul className="list-disc pl-10">
-                        <li>
+                    <ul className="list-inside list-disc pl-10">
+                        <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="http://code.visualstudio.com"
@@ -50,7 +52,7 @@ export default function Projects() {
                                 Dracula Pro
                             </a>
                         </li>
-                        <li>
+                        <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://iterm2.com"
@@ -60,7 +62,7 @@ export default function Projects() {
                                 iTerm2
                             </a>
                         </li>
-                        <li>
+                        <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://wavebox.io"
@@ -71,7 +73,7 @@ export default function Projects() {
                             </a>{' '}
                             (for everything most web apps)
                         </li>
-                        <li>
+                        <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://todoist.com"
@@ -81,7 +83,7 @@ export default function Projects() {
                                 Todoist
                             </a>
                         </li>
-                        <li>
+                        <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://obsidian.md"
@@ -91,7 +93,7 @@ export default function Projects() {
                                 Obsidian
                             </a>
                         </li>
-                        <li>
+                        <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="http://slack.com"
@@ -101,7 +103,7 @@ export default function Projects() {
                                 Slack
                             </a>
                         </li>
-                        <li>
+                        <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://brushedtype.co/doppler/"

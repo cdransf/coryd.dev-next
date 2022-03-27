@@ -7,6 +7,7 @@ export type AuthorFrontMatter = {
     email: string
     github: string
     twitter: string
+    rss: string
     lastfm: string
     trakt: string
     oku: string
