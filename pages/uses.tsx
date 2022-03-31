@@ -114,6 +114,18 @@ export default function Projects() {
                             </a>
                         </li>
                     </ul>
+                    <p className="mt-6">
+                        Check out{' '}
+                        <a
+                            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                            href="https://uses.tech"
+                            target="_blank"
+                            rel="noopener noreferrer me"
+                        >
+                            uses.tech
+                        </a>{' '}
+                        for more lists like this one.
+                    </p>
                 </div>
             </div>
         </>
