@@ -71,7 +71,7 @@ export default function Projects() {
                             >
                                 Wavebox
                             </a>{' '}
-                            (for everything most web apps)
+                            (for everything Google/Gmail related)
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -111,6 +111,35 @@ export default function Projects() {
                                 rel="noopener noreferrer me"
                             >
                                 Doppler Music Player
+                            </a>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://www.reederapp.com"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Reeder
+                            </a>{' '}
+                            +
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://feedbin.com"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Feedbin
+                            </a>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://overcast.fm"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Overcast
                             </a>
                         </li>
                     </ul>
