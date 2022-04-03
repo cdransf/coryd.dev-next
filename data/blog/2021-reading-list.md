@@ -30,4 +30,4 @@ I've been working on making reading a habit again for the past few years (my str
 -   [JavaScript for Impatient Programmers](https://exploringjs.com/impatient-js/), by Dr. Axel Rauschmayer
 -   [Deep JavaScript: Theory and Techniques](https://exploringjs.com/deep-js/), by Dr. Axel Rauschmayer
 -   [Don't Think of an Elephant!](https://georgelakoff.com/books/dont_think_of_an_elephant_know_your_values_and_frame_the_debatethe_essential_guide_for_progressives-119190455949080/), by George Lakoff
--   [The Assassination of Fred Hampton](The Assassination of Fred Hampton), by Jeffrey Haas
+-   [The Assassination of Fred Hampton](https://www.amazon.com/Assassination-Fred-Hampton-Chicago-Murdered/dp/1569767092), by Jeffrey Haas
