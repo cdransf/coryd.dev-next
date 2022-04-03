@@ -1,11 +1,8 @@
 const projectsData = [
     // {
-    //     title: 'A Search Engine',
-    //     description: `What if you could look up any information in the world? Webpages, images, videos
-    //     and more. Google has many features to help you find exactly what you're looking
-    //     for.`,
-    //     imgSrc: '/static/images/google.png',
-    //     href: 'https://www.google.com',
+    //     title: 'coryd.dev',
+    //     description: `This site was rewrittne using Next.js and hosted on Vercel. It's based on Timothy Lin's Tailwind Nextjs Starter Blog, which I highly recommend exploring.`,
+    //     href: 'https://github.com/cdransf/coryd.dev',
     // },
 ]
 
