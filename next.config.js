@@ -86,6 +86,11 @@ module.exports = withBundleAnalyzer({
                 destination: '/blog/a-brief-intro-to-git',
                 permanent: true,
             },
+            {
+                source: '/projects',
+                destination: '/404',
+                permanent: false,
+            },
         ]
     },
     webpack: (config, { dev, isServer }) => {
