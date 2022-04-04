@@ -49,6 +49,9 @@ const securityHeaders = [
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
 module.exports = withBundleAnalyzer({
+    env: {
+        LASTFM_KEY: process.env.API_KEY_LASTFM,
+    },
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {
@@ -75,6 +78,10 @@ module.exports = withBundleAnalyzer({
             {
                 source: '/books',
                 destination: 'https://oku.club/rss/collection/POaRa',
+            },
+            {
+                source: '/music',
+                destination: `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=cdme_&api_key=${process.env.LASTFM_KEY}&format=json`,
             },
         ]
     },
