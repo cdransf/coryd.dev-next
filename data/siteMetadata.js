@@ -3,7 +3,7 @@ const siteMetadata = {
     author: 'Cory Dransfeldt',
     headerTitle: 'Cory Dransfeldt',
     description:
-        "I'm a developer, technology enthusiast and avid music fan based in Camarillo, California. I'm endlessly fascinated by development, automation and technology.",
+        "I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, music, writing, reading and tv and movies.",
     language: 'en-us',
     theme: 'system', // system, dark or light
     siteUrl: 'https://coryd.dev',
