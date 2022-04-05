@@ -6,7 +6,6 @@ import CustomLink from './Link'
 import TOCInline from './TOCInline'
 import Pre from './Pre'
 import { BlogNewsletterForm } from './NewsletterForm'
-import { CurrentlyReading } from '@/components/rss/reading'
 
 const Wrapper: React.ComponentType<{ layout: string }> = ({ layout, ...rest }) => {
     const Layout = require(`../layouts/${layout}`).default
@@ -22,7 +21,6 @@ export const MDXComponents: ComponentMap = {
     wrapper: Wrapper,
     //@ts-ignore
     BlogNewsletterForm,
-    CurrentlyReading,
 }
 
 interface Props {

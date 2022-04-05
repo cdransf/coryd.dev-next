@@ -7,6 +7,8 @@ import formatDate from '@/lib/utils/formatDate'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import NewsletterForm from '@/components/NewsletterForm'
+import { CurrentlyReading } from '@/components/media/reading'
+import { CurrentlyListening } from '@/components/media/music'
 
 const MAX_DISPLAY = 5
 
@@ -28,6 +30,8 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                     <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
                         {siteMetadata.description}
                     </p>
+                    <CurrentlyReading />
+                    <CurrentlyListening />
                 </div>
                 <ul className="divide-y divide-gray-200 dark:divide-gray-700">
                     {!posts.length && 'No posts found.'}

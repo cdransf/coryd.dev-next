@@ -21,11 +21,11 @@ export const CurrentlyReading = () => {
             </a>
         )
 
-        const getLink = (index) => {
+        const getLink = (index: number) => {
             if (index !== response.length - 1 && index !== response.length - 2) {
                 return <>{link}, </>
             } else if (index === response.length - 1 && response.length > 1) {
-                return <> and {link}.</>
+                return <> and {link}</>
             } else {
                 return <>{link}</>
             }
@@ -33,5 +33,9 @@ export const CurrentlyReading = () => {
         return response.length && getLink(index)
     })
 
-    return response.length ? <>I'm currently reading: {booksList}</> : null
+    return response.length ? (
+        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+            I'm currently reading: {booksList}.
+        </p>
+    ) : null
 }
