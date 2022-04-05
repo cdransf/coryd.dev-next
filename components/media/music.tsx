@@ -24,7 +24,7 @@ export const CurrentlyListening = () => {
 
     return tracks?.length ? (
         <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            I'm currently listening to: {CurrentlyPlaying}.
+            I'm listening to: {CurrentlyPlaying}.
         </p>
     ) : null
 }
