@@ -1,18 +1,20 @@
 import { read } from 'feed-reader'
 import { useEffect, useState } from 'react'
+import useSWR from 'swr'
 
 export const useRss = () => {
     const [response, setResponse] = useState([])
     const [url, setUrl] = useState<string | undefined>()
 
+    const fetcher = (url: string) =>
+        read(url)
+            .then((res) => res.entries)
+            .catch()
+    const { data } = useSWR(url, fetcher)
+
     useEffect(() => {
-        if (url)
-            read(url)
-                .then((res) => {
-                    setResponse(res.entries)
-                })
-                .catch()
-    }, [setResponse, url])
+        setResponse(data)
+    }, [data, setResponse])
 
     return {
         response,

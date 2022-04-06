@@ -8,7 +8,7 @@ export const CurrentlyReading = () => {
         setUrl('/books')
     }, [setUrl])
 
-    const booksList = response.map((entry, index) => {
+    const booksList = response?.map((entry, index) => {
         const link = (
             <a
                 key={entry.title.toLowerCase()}
@@ -30,10 +30,10 @@ export const CurrentlyReading = () => {
                 return <>{link}</>
             }
         }
-        return response.length && getLink(index)
+        return response?.length && getLink(index)
     })
 
-    return response.length ? (
+    return response?.length ? (
         <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             I'm reading: {booksList}.
         </p>

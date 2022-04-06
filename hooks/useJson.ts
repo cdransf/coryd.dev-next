@@ -1,20 +1,19 @@
 import { useEffect, useState } from 'react'
+import useSWR from 'swr'
 
 export const useJson = () => {
     const [response, setResponse] = useState<any>({}) // eslint-disable-line @typescript-eslint/no-explicit-any
     const [url, setUrl] = useState<string | undefined>()
 
-    useEffect(() => {
-        if (url) {
-            const fetchData = async () => {
-                const resp = await fetch(url)
-                const json = await resp.json()
-                setResponse(json)
-            }
+    const fetcher = (url: string) =>
+        fetch(url)
+            .then((res) => res.json())
+            .catch()
+    const { data } = useSWR(url, fetcher)
 
-            fetchData()
-        }
-    }, [setResponse, url])
+    useEffect(() => {
+        setResponse(data)
+    }, [data, setResponse])
 
     return {
         response,
