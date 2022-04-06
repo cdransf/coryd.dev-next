@@ -2,11 +2,11 @@ import { useEffect } from 'react'
 import { useJson } from '@/hooks/useJson'
 
 export const CurrentlyListening = () => {
-    const { response, setRequest } = useJson()
+    const { response, setUrl } = useJson()
 
     useEffect(() => {
-        setRequest({ url: '/api/music', cacheDuration: 5 })
-    }, [setRequest])
+        setUrl('/api/music')
+    }, [setUrl])
 
     const tracks = response?.recenttracks?.track
     const track = tracks?.[0]

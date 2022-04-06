@@ -2,11 +2,11 @@ import { useEffect } from 'react'
 import { useRss } from '@/hooks/useRss'
 
 export const CurrentlyReading = () => {
-    const { response, setRequest } = useRss()
+    const { response, setUrl } = useRss()
 
     useEffect(() => {
-        setRequest({ url: '/books', cacheDuration: 60 })
-    }, [setRequest])
+        setUrl('/books')
+    }, [setUrl])
 
     const booksList = response.map((entry, index) => {
         const link = (
