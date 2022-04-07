@@ -106,5 +106,5 @@ function markArchivedAsRead() {
 I have given some thought to refactoring my cleanup scripts such that the batch delete consumes an array of the individual search queries, iterating over them much like it does the threads it's operating on but, at that point, I'd be looking at a loop over the argument and then over the threads in a child loop when separate script functions can run without that being a concern.
 
 [^1]: I am puzzled that Forums made the cut as a featured option.
-[^2]: Don't email via Feedbin. I'll miss it or it'll just be annoying.
+[^2]: Don't email me via Feedbin. I'll miss it or it'll just be annoying.
 [^3]: I care when something ships, I don't care to reference the tracking info months later.
