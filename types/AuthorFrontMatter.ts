@@ -11,5 +11,4 @@ export type AuthorFrontMatter = {
     lastfm: string
     trakt: string
     oku: string
-    pocket: string
 }

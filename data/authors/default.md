@@ -8,7 +8,6 @@ rss: /feed.xml
 github: https://github.com/cdransf
 lastfm: https://www.last.fm/user/cdme_
 trakt: https://trakt.tv/users/cdransf
-pocket: https://getpocket.com/@cdransf
 oku: https://oku.club/user/cory
 ---
 

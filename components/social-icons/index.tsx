@@ -3,7 +3,6 @@ import Github from './github.svg'
 import Twitter from './twitter.svg'
 import Rss from './rss.svg'
 import Lastfm from './lastfm.svg'
-import Pocket from './pocket.svg'
 import Trakt from './trakt.svg'
 import Oku from './oku.svg'
 
@@ -15,7 +14,6 @@ const components = {
     lastfm: Lastfm,
     trakt: Trakt,
     oku: Oku,
-    pocket: Pocket,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {

@@ -17,7 +17,6 @@ const siteMetadata = {
     rss: '/feed.xml',
     lastfm: 'https://www.last.fm/user/cdme_',
     trakt: 'https://trakt.tv/users/cdransf',
-    pocket: 'https://getpocket.com/@cdransf',
     oku: 'https://oku.club/user/cory',
     locale: 'en-US',
     analytics: {

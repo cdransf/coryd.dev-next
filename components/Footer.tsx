@@ -14,7 +14,6 @@ export default function Footer() {
                     <SocialIcon kind="lastfm" href={siteMetadata.lastfm} size={6} />
                     <SocialIcon kind="trakt" href={siteMetadata.trakt} size={6} />
                     <SocialIcon kind="oku" href={siteMetadata.oku} size={6} />
-                    <SocialIcon kind="pocket" href={siteMetadata.pocket} size={6} />
                 </div>
                 <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
                     <Link href="/">{siteMetadata.title}</Link>

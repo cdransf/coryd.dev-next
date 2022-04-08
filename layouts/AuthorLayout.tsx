@@ -10,20 +10,8 @@ interface Props {
 }
 
 export default function AuthorLayout({ children, frontMatter }: Props) {
-    const {
-        name,
-        avatar,
-        occupation,
-        company,
-        email,
-        github,
-        twitter,
-        rss,
-        lastfm,
-        trakt,
-        oku,
-        pocket,
-    } = frontMatter
+    const { name, avatar, occupation, company, email, github, twitter, rss, lastfm, trakt, oku } =
+        frontMatter
 
     return (
         <>
@@ -56,7 +44,6 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                             <SocialIcon kind="lastfm" href={lastfm} size={6} />
                             <SocialIcon kind="trakt" href={trakt} size={6} />
                             <SocialIcon kind="oku" href={oku} size={6} />
-                            <SocialIcon kind="pocket" href={pocket} size={6} />
                         </div>
                     </div>
                     <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
