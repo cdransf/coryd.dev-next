@@ -12,7 +12,7 @@ I make use of [Plausible](https://plausible.io) for analytics. You can opt out o
 
 **Built by:**
 
-Cory Dransfeldt • [cory.dransfeldt@gmail.com](mailto:cory.dransfeldt@gmail.com)
+Cory Dransfeldt • [hi@coryd.dev](mailto:hi@coryd.dev)
 
 **Built with:**
 

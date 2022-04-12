@@ -2,7 +2,7 @@
 name: Cory Dransfeldt
 avatar: /static/images/avatar.webp
 occupation: Husband, dad, developer, music nerd.
-email: cory.dransfeldt@gmail.com
+email: hi@coryd.dev
 twitter: https://twitter.com/cdransf
 rss: /feed.xml
 github: https://github.com/cdransf

@@ -11,7 +11,7 @@ const siteMetadata = {
     siteLogo: '/static/images/logo.webp',
     image: '/static/images/avatar.webp',
     socialBanner: '/static/images/twitter-card.png',
-    email: 'cory.dransfeldt@gmail.com',
+    email: 'hi@coryd.dev',
     github: 'https://github.com/cdransf',
     twitter: 'https://twitter.com/cdransf',
     rss: '/feed.xml',
