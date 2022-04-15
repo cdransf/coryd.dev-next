@@ -65,6 +65,16 @@ export default function Projects() {
                         <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://www.raycast.com"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Raycast
+                            </a>{' '}
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://ref.fm/u28147925"
                                 target="_blank"
                                 rel="noopener noreferrer me"
