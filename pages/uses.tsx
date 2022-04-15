@@ -26,7 +26,7 @@ export default function Projects() {
                         </li>
                         <li className="mt-1.5 mb-2">Apple Magic Keyboard</li>
                         <li className="mt-1.5 mb-2">Apple Magic Trackpad</li>
-                        <li className="mt-1.5 mb-2">Homepod Mini for music</li>
+                        <li className="mt-1.5 mb-2">Homepod Mini for audio</li>
                         <li className="mt-1.5 mb-2">Raspberry Pi for Homebridge</li>
                     </ul>
                     <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
