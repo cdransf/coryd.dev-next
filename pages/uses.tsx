@@ -65,22 +65,21 @@ export default function Projects() {
                         <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://wavebox.io"
+                                href="https://ref.fm/u28147925"
                                 target="_blank"
                                 rel="noopener noreferrer me"
                             >
-                                Wavebox
+                                Fastmail
                             </a>{' '}
-                            (for everything Google/Gmail related)
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://todoist.com"
+                                href="https://culturedcode.com/things/"
                                 target="_blank"
                                 rel="noopener noreferrer me"
                             >
-                                Todoist
+                                Things
                             </a>
                         </li>
                         <li className="mt-1.5 mb-2">
@@ -121,8 +120,8 @@ export default function Projects() {
                                 rel="noopener noreferrer me"
                             >
                                 Reeder
-                            </a>{' '}
-                            +
+                            </a>
+                            {' + '}
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://feedbin.com"
@@ -140,6 +139,16 @@ export default function Projects() {
                                 rel="noopener noreferrer me"
                             >
                                 Overcast
+                            </a>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://tapbots.com/tweetbot/"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Tweetbot
                             </a>
                         </li>
                     </ul>
