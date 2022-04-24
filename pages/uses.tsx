@@ -50,7 +50,9 @@ export default function Projects() {
                                 rel="noopener noreferrer me"
                             >
                                 Dracula Pro
-                            </a>
+                            </a>{' '}
+                            - VS Code has become the defacto standard editor and I enjoy using it.
+                            Dracula Pro has become my go-to syntax theme everywhere it's available.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -60,7 +62,9 @@ export default function Projects() {
                                 rel="noopener noreferrer me"
                             >
                                 iTerm2
-                            </a>
+                            </a>{' '}
+                            - I know VS Code has a built in terminal, but I've always preferred
+                            iTerm as a separate, native one.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -71,6 +75,8 @@ export default function Projects() {
                             >
                                 Raycast
                             </a>{' '}
+                            - My current Spotlight replacement. The flexibility, speed and wide
+                            array of plugins make it incredibly useful.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -81,6 +87,8 @@ export default function Projects() {
                             >
                                 Fastmail
                             </a>{' '}
+                            - My favorite email provider, bar none. It's fast, robust and
+                            standards-compliant.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -90,7 +98,9 @@ export default function Projects() {
                                 rel="noopener noreferrer me"
                             >
                                 Things
-                            </a>
+                            </a>{' '}
+                            - The best, native task manager for the Apple ecosystem. Simple,
+                            reliable and powerful.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -100,7 +110,9 @@ export default function Projects() {
                                 rel="noopener noreferrer me"
                             >
                                 Obsidian
-                            </a>
+                            </a>{' '}
+                            - the most flexible and powerful note-taking/knowledgebase/markdown app
+                            I've found so far. It's not native but it's so good it doesn't matter.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -110,17 +122,45 @@ export default function Projects() {
                                 rel="noopener noreferrer me"
                             >
                                 Slack
-                            </a>
+                            </a>{' '}
+                            - my family has a Slack channel that we use instead of group message
+                            threads and I participate in a number of other groups.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://brushedtype.co/doppler/"
+                                href="https://music.apple.com"
                                 target="_blank"
                                 rel="noopener noreferrer me"
                             >
-                                Doppler Music Player
-                            </a>
+                                Apple Music
+                            </a>{' '}
+                            - primarily as a way to sync music. I import my library and allow Apple
+                            to store it rather than leverging their cataologue.
+                            <ul className="list-inside list-disc pl-10">
+                                <li className="mt-1.5 mb-2">
+                                    <a
+                                        className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                        href="https://www.neptunesmac.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer me"
+                                    >
+                                        NepTunes
+                                    </a>{' '}
+                                    - to control iTunes and scrobble plays to Last.fm.
+                                </li>
+                                <li className="mt-1.5 mb-2">
+                                    <a
+                                        className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                        href="https://apps.apple.com/app/marvis-pro/id1447768809"
+                                        target="_blank"
+                                        rel="noopener noreferrer me"
+                                    >
+                                        Marvis Pro
+                                    </a>{' '}
+                                    - my preferred music player with scrobbling support on iOS.
+                                </li>
+                            </ul>
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -149,7 +189,17 @@ export default function Projects() {
                                 rel="noopener noreferrer me"
                             >
                                 Overcast
-                            </a>
+                            </a>{' '}
+                            - for podcasts and, ocassionally,{' '}
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://github.com/insidegui/PodcastMenu"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Podcast Menu
+                            </a>{' '}
+                            on macOS.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -159,7 +209,9 @@ export default function Projects() {
                                 rel="noopener noreferrer me"
                             >
                                 Tweetbot
-                            </a>
+                            </a>{' '}
+                            - for Twitter, I prefer the native experience and chronological timeline
+                            to Twitter's web and app exerience.
                         </li>
                     </ul>
                     <p className="mt-6">
