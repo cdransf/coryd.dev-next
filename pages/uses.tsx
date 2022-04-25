@@ -201,18 +201,6 @@ export default function Projects() {
                             </a>{' '}
                             on macOS.
                         </li>
-                        <li className="mt-1.5 mb-2">
-                            <a
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://tapbots.com/tweetbot/"
-                                target="_blank"
-                                rel="noopener noreferrer me"
-                            >
-                                Tweetbot
-                            </a>{' '}
-                            - for Twitter, I prefer the native experience and chronological timeline
-                            to Twitter's web and app exerience.
-                        </li>
                     </ul>
                     <p className="mt-6">
                         Check out{' '}

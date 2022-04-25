@@ -13,7 +13,6 @@ const siteMetadata = {
     socialBanner: '/static/images/twitter-card.png',
     email: 'hi@coryd.dev',
     github: 'https://github.com/cdransf',
-    twitter: 'https://twitter.com/cdransf',
     rss: '/feed.xml',
     lastfm: 'https://www.last.fm/user/cdme_',
     trakt: 'https://trakt.tv/users/cdransf',
