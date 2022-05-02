@@ -69,7 +69,7 @@ module.exports = withBundleAnalyzer({
         return [
             {
                 source: '/script.67532e4133a4t4551aza.js', // plausible script proxy
-                destination: 'https://plausible.io/js/script.js',
+                destination: 'https://plausible.io/js/script.outbound-links.js',
             },
             {
                 source: '/api/58441z2164b5e7880yec', // plausible api proxy
