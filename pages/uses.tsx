@@ -81,18 +81,6 @@ export default function Projects() {
                         <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://ref.fm/u28147925"
-                                target="_blank"
-                                rel="noopener noreferrer me"
-                            >
-                                Fastmail
-                            </a>{' '}
-                            - My favorite email provider, bar none. It's fast, robust and
-                            standards-compliant.
-                        </li>
-                        <li className="mt-1.5 mb-2">
-                            <a
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://culturedcode.com/things/"
                                 target="_blank"
                                 rel="noopener noreferrer me"
@@ -117,69 +105,46 @@ export default function Projects() {
                         <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="http://slack.com"
-                                target="_blank"
-                                rel="noopener noreferrer me"
-                            >
-                                Slack
-                            </a>{' '}
-                            - my family has a Slack channel that we use instead of group message
-                            threads and I participate in a number of other groups.
-                        </li>
-                        <li className="mt-1.5 mb-2">
-                            <a
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://music.apple.com"
-                                target="_blank"
-                                rel="noopener noreferrer me"
-                            >
-                                Apple Music
-                            </a>{' '}
-                            - primarily as a way to sync music. I import my library and allow Apple
-                            to store it rather than leverging their cataologue.
-                            <ul className="list-inside list-disc pl-10">
-                                <li className="mt-1.5 mb-2">
-                                    <a
-                                        className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                        href="https://www.neptunesmac.app"
-                                        target="_blank"
-                                        rel="noopener noreferrer me"
-                                    >
-                                        NepTunes
-                                    </a>{' '}
-                                    - to control iTunes and scrobble plays to Last.fm.
-                                </li>
-                                <li className="mt-1.5 mb-2">
-                                    <a
-                                        className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                        href="https://apps.apple.com/app/marvis-pro/id1447768809"
-                                        target="_blank"
-                                        rel="noopener noreferrer me"
-                                    >
-                                        Marvis Pro
-                                    </a>{' '}
-                                    - my preferred music player with scrobbling support on iOS.
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="mt-1.5 mb-2">
-                            <a
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://www.reederapp.com"
                                 target="_blank"
                                 rel="noopener noreferrer me"
                             >
                                 Reeder
-                            </a>
-                            {' + '}
+                            </a>{' '}
+                            - to browse my feeds synced via Feedbin.
+                        </li>
+                        <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://feedbin.com"
+                                href="https://goodlinks.app"
                                 target="_blank"
                                 rel="noopener noreferrer me"
                             >
-                                Feedbin
-                            </a>
+                                GoodLinks
+                            </a>{' '}
+                            - my bookmarking app of choice.
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://www.neptunesmac.app"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                NepTunes
+                            </a>{' '}
+                            - to control iTunes and scrobble plays to Last.fm.
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://apps.apple.com/app/marvis-pro/id1447768809"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Marvis Pro
+                            </a>{' '}
+                            - my preferred music player with scrobbling support on iOS.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -200,6 +165,124 @@ export default function Projects() {
                                 Podcast Menu
                             </a>{' '}
                             on macOS.
+                        </li>
+                    </ul>
+                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                        Services
+                    </h3>
+                    <ul className="list-inside list-disc pl-10">
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://ref.fm/u28147925"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Fastmail
+                            </a>{' '}
+                            - My favorite email provider, bar none. It's fast, robust and
+                            standards-compliant.
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://feedbin.com"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Feedbin
+                            </a>{' '}
+                            - far and away my favorite RSS sync service. I route newletters to it
+                            via an email alias and also use Feedbin{' '}
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://feedbin.com/blog/2013/11/06/actions-workflows-for-your-rss-feeds/"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                actions
+                            </a>{' '}
+                            to filter out a wide range of posts from the feeds I subscribe to.
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://music.apple.com"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Apple Music
+                            </a>{' '}
+                            - primarily as a way to sync music. I import my library and allow Apple
+                            to store it rather than leveraging their cataologue.
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="http://slack.com"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Slack
+                            </a>{' '}
+                            - my family has a Slack channel that we use instead of group message
+                            threads and I participate in a number of other groups.
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://plausible.io"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Plausible
+                            </a>{' '}
+                            - privacy respecting analytics for this site. Feel free to opt out{' '}
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://coryd.dev/static/analytics.html"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                here
+                            </a>
+                            .
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://last.fm"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Last.fm
+                            </a>{' '}
+                            - to track what music I'm listening to and discover new bands (I also
+                            use their API for the "I'm listening to display..." on the home page).
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://trakt.tv"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Trakt
+                            </a>{' '}
+                            - to keep track of what shows and movies I'm watching.
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://oku.club"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Oku
+                            </a>{' '}
+                            - to track the books I'm reading and discover new ones (the "I'm
+                            reading..." display on the home page is sourced from an RSS feed they
+                            provide).
                         </li>
                     </ul>
                     <p className="mt-6">
