@@ -93,6 +93,18 @@ export default function Projects() {
                         <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://1password.com"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                1Password
+                            </a>{' '}
+                            - The best password manager around. I've been using it for 11 years and
+                            counting.
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://obsidian.md"
                                 target="_blank"
                                 rel="noopener noreferrer me"
