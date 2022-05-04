@@ -180,8 +180,20 @@ export default function Projects() {
                             >
                                 Fastmail
                             </a>{' '}
-                            - My favorite email provider, bar none. It's fast, robust and
+                            - my favorite email provider, bar none. It's fast, robust and
                             standards-compliant.
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://savvycal.com/?r=coryd"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                SavvyCal
+                            </a>{' '}
+                            - my new, favorite scheduling tool. Powerful, flexible and works with
+                            Fastmail's calendar seamlessly.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -203,6 +215,20 @@ export default function Projects() {
                                 actions
                             </a>{' '}
                             to filter out a wide range of posts from the feeds I subscribe to.
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://nextdns.io/?from=m56mt3z6"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                NextDNS
+                            </a>{' '}
+                            - a privacy-focused DNS provider with myriad blocking, caching and
+                            security options. I have a baseline profile configured on my home
+                            network and a more aggressive one installed via a profile on my devices
+                            directly.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
