@@ -99,8 +99,8 @@ export default function Projects() {
                             >
                                 1Password
                             </a>{' '}
-                            - The best password manager around. I've been using it for 11 years and
-                            counting.
+                            - The best password manager around. I've been using it for{' '}
+                            {new Date().getFullYear() - 2011} years and counting.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -206,6 +206,17 @@ export default function Projects() {
                             </a>{' '}
                             - my new, favorite scheduling tool. Powerful, flexible and works with
                             Fastmail's calendar seamlessly.
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <a
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://whereby.com"
+                                target="_blank"
+                                rel="noopener noreferrer me"
+                            >
+                                Whereby
+                            </a>{' '}
+                            - a robust, easy to use and private video conferencing alternative.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
