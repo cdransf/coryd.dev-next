@@ -29,3 +29,7 @@ input:-webkit-autofill:focus {
     height: 12px;
     width: 48px;
 }
+
+.icon--dots__loading svg circle {
+    @apply fill-gray-500 dark:fill-gray-400;
+}
