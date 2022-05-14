@@ -23,3 +23,9 @@ input:-webkit-autofill,
 input:-webkit-autofill:focus {
     transition: background-color 600000s 0s, color 600000s 0s;
 }
+
+/* loading icon size override */
+.icon--dots__loading svg {
+    height: 12px;
+    width: 48px;
+}

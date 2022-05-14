@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useJson } from '@/hooks/useJson'
+import { ThreeDots } from 'react-loading-icons'
 
 export const CurrentlyListening = () => {
     const { response, setUrl } = useJson()
@@ -21,6 +22,13 @@ export const CurrentlyListening = () => {
             {track?.name} by {track?.artist['#text']}
         </a>
     )
+
+    if (!response)
+        return (
+            <div className="icon--dots__loading">
+                <ThreeDots />
+            </div>
+        )
 
     return tracks?.length ? (
         <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">

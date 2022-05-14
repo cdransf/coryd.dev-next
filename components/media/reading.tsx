@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useRss } from '@/hooks/useRss'
+import { ThreeDots } from 'react-loading-icons'
 
 export const CurrentlyReading = () => {
     const { response, setUrl } = useRss()
@@ -32,6 +33,13 @@ export const CurrentlyReading = () => {
         }
         return response?.length && getLink(index)
     })
+
+    if (!response)
+        return (
+            <div className="icon--dots__loading">
+                <ThreeDots />
+            </div>
+        )
 
     return response?.length ? (
         <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
