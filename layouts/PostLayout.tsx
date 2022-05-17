@@ -12,6 +12,10 @@ import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+const discussUrl = (slug) =>
+    `https://mobile.twitter.com/search?q=${encodeURIComponent(
+        `${siteMetadata.siteUrl}/blog/${slug}`
+    )}`
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
     weekday: 'long',
@@ -88,15 +92,15 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                                                 <dd className="text-gray-900 dark:text-gray-100">
                                                     {author.name}
                                                 </dd>
-                                                <dt className="sr-only">GitHub</dt>
+                                                <dt className="sr-only">Twitter</dt>
                                                 <dd>
-                                                    {author.github && (
+                                                    {author.twitter && (
                                                         <Link
-                                                            href={author.github}
+                                                            href={author.twitter}
                                                             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                                         >
-                                                            {author.github.replace(
-                                                                'https://github.com/',
+                                                            {author.twitter.replace(
+                                                                'https://twitter.com/',
                                                                 '@'
                                                             )}
                                                         </Link>
@@ -113,6 +117,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                                 {children}
                             </div>
                             <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
+                                <Link href={discussUrl(slug)} rel="nofollow">
+                                    {'Discuss on Twitter'}
+                                </Link>
+                                {` • `}
                                 <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
                             </div>
                             <Comments frontMatter={frontMatter} />

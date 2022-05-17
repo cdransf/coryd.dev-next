@@ -66,7 +66,7 @@ I would highly recommend creating rulesets to help filter messages that aren't c
 
 -   **Updates:** anything sent programmatically and pertinent but not critical (e.g. service or utility notifications and so forth).
 -   **Financial:** anything from financial institutions. I do this based on the TLD, e.g. `examplebank.com`.
--   **Social:** anything from social networks or services. I do this based on the TLD, e.g. `linkedin.com`.
+-   **Social:** anything from social networks or services. I do this based on the TLD, e.g. `twitter.com`.
 -   **Promotions:** anything from a merchant or similar mailing list. I subscribe to a handful but don't want them in my inbox. I use [Fastmail's advanced folder options](https://www.fastmail.help/hc/en-us/articles/1500000280301-Setting-up-and-using-folders) to auto-purge this folder every 60 days.
 
 I also use a few aliases to route mail elsewhere:

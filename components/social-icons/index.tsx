@@ -1,6 +1,7 @@
 import Mail from './mail.svg'
 import Calendar from './calendar.svg'
 import Github from './github.svg'
+import Twitter from './twitter.svg'
 import Rss from './rss.svg'
 import Lastfm from './lastfm.svg'
 import Trakt from './trakt.svg'
@@ -10,6 +11,7 @@ const components = {
     mail: Mail,
     calendar: Calendar,
     github: Github,
+    twitter: Twitter,
     rss: Rss,
     lastfm: Lastfm,
     trakt: Trakt,

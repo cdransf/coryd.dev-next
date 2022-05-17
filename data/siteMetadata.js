@@ -14,6 +14,7 @@ const siteMetadata = {
     email: 'hi@coryd.dev',
     calendar: 'https://savvycal.com/coryd/chat',
     github: 'https://github.com/cdransf',
+    twitter: 'https://twitter.com/cdransf',
     rss: '/feed.xml',
     lastfm: 'https://www.last.fm/user/cdme_',
     trakt: 'https://trakt.tv/users/cdransf',

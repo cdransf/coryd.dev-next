@@ -4,6 +4,7 @@ avatar: /static/images/avatar.webp
 occupation: Husband, dad, developer, music nerd.
 email: hi@coryd.dev
 calendar: https://savvycal.com/coryd/chat
+twitter: https://twitter.com/cdransf
 rss: /feed.xml
 github: https://github.com/cdransf
 lastfm: https://www.last.fm/user/cdme_
