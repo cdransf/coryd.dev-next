@@ -9,7 +9,7 @@ export const useJson = () => {
         fetch(url)
             .then((res) => res.json())
             .catch()
-    const { data } = useSWR(url, fetcher)
+    const { data, error } = useSWR(url, fetcher)
 
     useEffect(() => {
         setResponse(data)
@@ -17,6 +17,7 @@ export const useJson = () => {
 
     return {
         response,
+        error,
         setUrl,
     }
 }

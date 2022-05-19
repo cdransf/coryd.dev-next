@@ -10,7 +10,7 @@ export const useRss = () => {
         read(url)
             .then((res) => res.entries)
             .catch()
-    const { data } = useSWR(url, fetcher)
+    const { data, error } = useSWR(url, fetcher)
 
     useEffect(() => {
         setResponse(data)
@@ -18,6 +18,7 @@ export const useRss = () => {
 
     return {
         response,
+        error,
         setUrl,
     }
 }

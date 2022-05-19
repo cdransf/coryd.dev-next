@@ -3,7 +3,7 @@ import { useRss } from '@/hooks/useRss'
 import { ThreeDots } from 'react-loading-icons'
 
 export const CurrentlyReading = () => {
-    const { response, setUrl } = useRss()
+    const { response, error, setUrl } = useRss()
 
     useEffect(() => {
         setUrl('/books')
@@ -33,6 +33,8 @@ export const CurrentlyReading = () => {
         }
         return response?.length && getLink(index)
     })
+
+    if (error) return null
 
     if (!response)
         return (
