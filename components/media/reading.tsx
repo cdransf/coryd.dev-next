@@ -12,7 +12,6 @@ export const CurrentlyReading = () => {
     const booksList = response?.map((entry, index) => {
         const link = (
             <a
-                key={entry.title.toLowerCase()}
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                 href={entry.link}
                 target="_blank"
@@ -24,11 +23,11 @@ export const CurrentlyReading = () => {
 
         const getLink = (index: number) => {
             if (index !== response.length - 1 && index !== response.length - 2) {
-                return <>{link}, </>
+                return <span key={entry.link}>{link}, </span>
             } else if (index === response.length - 1 && response.length > 1) {
-                return <> and {link}</>
+                return <span key={entry.link}> and {link}</span>
             } else {
-                return <>{link}</>
+                return <span key={entry.link}>{link}</span>
             }
         }
         return response?.length && getLink(index)
