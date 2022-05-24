@@ -1,13 +1,8 @@
-import { useEffect } from 'react'
 import { useJson } from '@/hooks/useJson'
 import { ThreeDots } from 'react-loading-icons'
 
 export const CurrentlyListening = () => {
-    const { response, error, setUrl } = useJson()
-
-    useEffect(() => {
-        setUrl('/api/music')
-    }, [setUrl])
+    const { response, error } = useJson('/api/music')
 
     const tracks = response?.recenttracks?.track
     const track = tracks?.[0]

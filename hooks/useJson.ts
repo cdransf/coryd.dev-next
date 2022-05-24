@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
 import useSWR from 'swr'
 
-export const useJson = () => {
-    const [response, setResponse] = useState<any>({}) // eslint-disable-line @typescript-eslint/no-explicit-any
-    const [url, setUrl] = useState<string | undefined>()
+export const useJson = (url: string) => {
+    const [response, setResponse] = useState<any>({})
 
     const fetcher = (url: string) =>
         fetch(url)
@@ -18,6 +17,5 @@ export const useJson = () => {
     return {
         response,
         error,
-        setUrl,
     }
 }

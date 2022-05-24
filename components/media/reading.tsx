@@ -1,13 +1,8 @@
-import { useEffect } from 'react'
 import { useRss } from '@/hooks/useRss'
 import { ThreeDots } from 'react-loading-icons'
 
 export const CurrentlyReading = () => {
-    const { response, error, setUrl } = useRss()
-
-    useEffect(() => {
-        setUrl('/books')
-    }, [setUrl])
+    const { response, error } = useRss('/books')
 
     const booksList = response?.map((entry, index) => {
         const link = (
