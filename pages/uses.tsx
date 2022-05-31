@@ -105,14 +105,15 @@ export default function Projects() {
                         <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://obsidian.md"
+                                href="https://www.craft.do"
                                 target="_blank"
                                 rel="noopener noreferrer me"
                             >
-                                Obsidian
+                                Craft
                             </a>{' '}
-                            - the most flexible and powerful note-taking/knowledgebase/markdown app
-                            I've found so far. It's not native but it's so good it doesn't matter.
+                            - A flexible, powerful and delightfully native docs/note taking app. I
+                            use it for everything from quick notes to web clipping pages to
+                            reference later to writing posts for this site.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
