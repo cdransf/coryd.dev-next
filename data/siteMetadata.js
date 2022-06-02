@@ -12,7 +12,7 @@ const siteMetadata = {
     image: '/static/images/avatar.webp',
     socialBanner: '/static/images/twitter-card.png',
     email: 'hi@coryd.dev',
-    calendar: 'https://savvycal.com/coryd/chat',
+    calendar: 'https://coryd.dev/calendar',
     github: 'https://github.com/cdransf',
     twitter: 'https://twitter.com/cdransf',
     rss: '/feed.xml',

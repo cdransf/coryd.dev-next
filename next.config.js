@@ -98,6 +98,11 @@ module.exports = withBundleAnalyzer({
                 destination: '/404',
                 permanent: false,
             },
+            {
+                source: '/calendar',
+                destination: 'https://savvycal.com/coryd',
+                permanent: true,
+            },
         ]
     },
     webpack: (config, { dev, isServer }) => {
