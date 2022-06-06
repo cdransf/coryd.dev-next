@@ -26,10 +26,10 @@ class MyDocument extends Document {
                     <link
                         rel="mask-icon"
                         href="/static/favicons/safari-pinned-tab.svg"
-                        color="#5bbad5"
+                        color="#3da9fc"
                     />
-                    <meta name="msapplication-TileColor" content="#000000" />
-                    <meta name="theme-color" content="#000000" />
+                    <meta name="msapplication-TileColor" content="#3da9fc" />
+                    <meta name="theme-color" content="#3da9fc" />
                     <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
                 </Head>
                 <body className="bg-white text-black antialiased dark:bg-gray-900 dark:text-white">
