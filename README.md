@@ -16,9 +16,9 @@ Cory Dransfeldt • [hi@coryd.dev](mailto:hi@coryd.dev)
 
 **Built with:**
 
--   [VS Code](https://code.visualstudio.com)
+-   [Sublime Text](https://sublimetext.com)
 -   [iTerm](https://iterm2.com)
--   [Nextjs](https://nextjs.org)
+-   [Next.js](https://nextjs.org)
 -   [Vercel](https://vercel.com)
 -   [GitHub](https://github.com)
 -   [git](https://git-scm.com)

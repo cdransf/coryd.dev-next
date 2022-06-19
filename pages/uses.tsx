@@ -1,11 +1,11 @@
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
 
-export default function Projects() {
+export default function Uses() {
     return (
         <>
             <PageSEO
-                title={`Projects - ${siteMetadata.author}`}
+                title={`Uses - ${siteMetadata.author}`}
                 description={siteMetadata.description}
             />
             <div className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -36,11 +36,11 @@ export default function Projects() {
                         <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="http://code.visualstudio.com"
+                                href="https://sublimetext.com"
                                 target="_blank"
                                 rel="noopener noreferrer me"
                             >
-                                Visual Studio Code
+                                Sublime Text
                             </a>{' '}
                             +{' '}
                             <a
@@ -51,8 +51,9 @@ export default function Projects() {
                             >
                                 Dracula Pro
                             </a>{' '}
-                            - VS Code has become the defacto standard editor and I enjoy using it.
-                            Dracula Pro has become my go-to syntax theme everywhere it's available.
+                            - Lightweight, powerful and fast, I still enjoy using Sublime Text
+                            (along with a wide range of plugins). Dracula Pro has become my go-to
+                            syntax theme everywhere it's available.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -63,32 +64,31 @@ export default function Projects() {
                             >
                                 iTerm2
                             </a>{' '}
-                            - I know VS Code has a built in terminal, but I've always preferred
-                            iTerm as a separate, native one.
+                            - my preferred, native macoS terminal emulator.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://www.raycast.com"
+                                href="https://alfredapp.com"
                                 target="_blank"
                                 rel="noopener noreferrer me"
                             >
-                                Raycast
+                                Alfred
                             </a>{' '}
-                            - My current Spotlight replacement. The flexibility, speed and wide
-                            array of plugins make it incredibly useful.
+                            - My preferred Spotlight replacement. The flexibility, speed and wide
+                            array of workflows make it incredibly useful.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://culturedcode.com/things/"
+                                href="https://todoist.com"
                                 target="_blank"
                                 rel="noopener noreferrer me"
                             >
-                                Things
+                                Todoist
                             </a>{' '}
-                            - The best, native task manager for the Apple ecosystem. Simple,
-                            reliable and powerful.
+                            - My go to task manager — power flexible and reliable. It also makes
+                            entering tasks a breeze.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -109,10 +109,10 @@ export default function Projects() {
                                 target="_blank"
                                 rel="noopener noreferrer me"
                             >
-                                Craft
+                                Notion
                             </a>{' '}
-                            - A flexible, powerful and delightfully native docs/note taking app. I
-                            use it for everything from quick notes to web clipping pages to
+                            - A powerful and incredibly flexible documentation/note taking platform.
+                            I use it for everything from quick notes to web clipping pages to
                             reference later to writing posts for this site.
                         </li>
                         <li className="mt-1.5 mb-2">
@@ -159,38 +159,6 @@ export default function Projects() {
                             </a>{' '}
                             - my preferred music player with scrobbling support on iOS.
                         </li>
-                        <li className="mt-1.5 mb-2">
-                            <a
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://overcast.fm"
-                                target="_blank"
-                                rel="noopener noreferrer me"
-                            >
-                                Overcast
-                            </a>{' '}
-                            - for podcasts and, ocassionally,{' '}
-                            <a
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://github.com/insidegui/PodcastMenu"
-                                target="_blank"
-                                rel="noopener noreferrer me"
-                            >
-                                Podcast Menu
-                            </a>{' '}
-                            on macOS.
-                        </li>
-                        <li className="mt-1.5 mb-2">
-                            <a
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://tapbots.com/tweetbot/"
-                                target="_blank"
-                                rel="noopener noreferrer me"
-                            >
-                                Tweetbot
-                            </a>{' '}
-                            - for Twitter, I prefer the native experience and chronological timeline
-                            to Twitter's web and app exerience.
-                        </li>
                     </ul>
                     <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Services
@@ -199,14 +167,14 @@ export default function Projects() {
                         <li className="mt-1.5 mb-2">
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://ref.fm/u28147925"
+                                href="https://hey.com"
                                 target="_blank"
                                 rel="noopener noreferrer me"
                             >
-                                Fastmail
+                                HEY
                             </a>{' '}
-                            - my favorite email provider, bar none. It's fast, robust and
-                            standards-compliant.
+                            - my current choice for an email provider. I've found its features and
+                            approach to be the best at managing my "imbox".
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -218,7 +186,7 @@ export default function Projects() {
                                 SavvyCal
                             </a>{' '}
                             - my new, favorite scheduling tool. Powerful, flexible and works with
-                            Fastmail's calendar seamlessly.
+                            iCloud's calendar calendar seamlessly.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a

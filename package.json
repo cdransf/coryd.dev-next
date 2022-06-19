@@ -1,6 +1,6 @@
 {
     "name": "coryd.dev",
-    "version": "1.0",
+    "version": "1.0.0",
     "private": true,
     "scripts": {
         "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
@@ -69,7 +69,7 @@
         "react-loading-icons": "^1.0.8",
         "socket.io": "^4.4.0",
         "socket.io-client": "^4.4.0",
-        "typescript": "^4.6.1-rc"
+        "typescript": "^4.7.3"
     },
     "lint-staged": {
         "*.+(js|jsx|ts|tsx)": [

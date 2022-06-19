@@ -5,6 +5,7 @@ import Link from './Link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
+import BlogSearch from './BlogSearch'
 import ThemeSwitch from './ThemeSwitch'
 import { ReactNode } from 'react'
 
@@ -45,6 +46,7 @@ const LayoutWrapper = ({ children }: Props) => {
                                 </Link>
                             ))}
                         </div>
+                        <BlogSearch />
                         <ThemeSwitch />
                         <MobileNav />
                     </div>

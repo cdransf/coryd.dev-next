@@ -6,8 +6,8 @@ Cory Dransfeldt // hi@coryd.dev
 
 ## built with
 
-VS Code
-code.visualstudio.com
+Sublime Text
+sublimetext.com
 
 iTerm
 iterm2.com
