@@ -64,7 +64,7 @@ export default function Uses() {
                             >
                                 iTerm2
                             </a>{' '}
-                            - my preferred, native macoS terminal emulator.
+                            - my preferred macoS terminal emulator.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -75,7 +75,7 @@ export default function Uses() {
                             >
                                 Alfred
                             </a>{' '}
-                            - My preferred Spotlight replacement. The flexibility, speed and wide
+                            - My favorite Spotlight replacement. The flexibility, speed and wide
                             array of workflows make it incredibly useful.
                         </li>
                         <li className="mt-1.5 mb-2">
@@ -157,7 +157,7 @@ export default function Uses() {
                             >
                                 Marvis Pro
                             </a>{' '}
-                            - my preferred music player with scrobbling support on iOS.
+                            - the best music player with scrobbling support on iOS.
                         </li>
                     </ul>
                     <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
@@ -173,7 +173,7 @@ export default function Uses() {
                             >
                                 HEY
                             </a>{' '}
-                            - my current choice for an email provider. I've found its features and
+                            - my choice for an email provider. I've found its features and
                             approach to be the best at managing my "imbox".
                         </li>
                         <li className="mt-1.5 mb-2">
@@ -185,7 +185,7 @@ export default function Uses() {
                             >
                                 SavvyCal
                             </a>{' '}
-                            - my new, favorite scheduling tool. Powerful, flexible and works with
+                            - my favorite scheduling tool. Powerful, flexible and works with
                             iCloud's calendar calendar seamlessly.
                         </li>
                         <li className="mt-1.5 mb-2">
@@ -197,7 +197,7 @@ export default function Uses() {
                             >
                                 Whereby
                             </a>{' '}
-                            - a robust, easy to use and private video conferencing alternative.
+                            - a robust, easy to use and private video conferencing service.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <a
@@ -208,8 +208,7 @@ export default function Uses() {
                             >
                                 Feedbin
                             </a>{' '}
-                            - far and away my favorite RSS sync service. I route newletters to it
-                            via an email alias and also use Feedbin{' '}
+                            - far and away my favorite RSS sync service. I use {' '}
                             <a
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://feedbin.com/blog/2013/11/06/actions-workflows-for-your-rss-feeds/"
