@@ -7,7 +7,7 @@ export default function Uses() {
         <>
             <PageSEO
                 title={`Uses - ${siteMetadata.author}`}
-                description={siteMetadata.description}
+                description={siteMetadata.description.uses}
             />
             <div className="divide-y divide-gray-200 dark:divide-gray-700">
                 <div className="space-y-2 pt-6 pb-8 md:space-y-5">

@@ -31,7 +31,7 @@ export default function Blog({
         <>
             <PageSEO
                 title={`Blog - ${siteMetadata.author}`}
-                description={siteMetadata.description}
+                description={siteMetadata.description.default}
             />
             <ListLayout
                 posts={posts}

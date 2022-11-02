@@ -20,7 +20,7 @@ const generateRss = (posts: PostFrontMatter[], page = 'feed.xml') => `
         <channel>
             <title>${escape(siteMetadata.title)}</title>
             <link>${siteMetadata.siteUrl}/blog</link>
-            <description>${escape(siteMetadata.description)}</description>
+            <description>${escape(siteMetadata.description.default)}</description>
             <language>${siteMetadata.language}</language>
             <managingEditor>${siteMetadata.email} (${siteMetadata.author})</managingEditor>
             <webMaster>${siteMetadata.email} (${siteMetadata.author})</webMaster>
