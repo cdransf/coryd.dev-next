@@ -8,13 +8,19 @@ export const CurrentlyListening = () => {
     const track = tracks?.[0].attributes
     const CurrentlyPlaying = (
         <>
-            <Link
-                key={track?.id}
-                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                href={`https://song.link/${track?.url}`}
-            >
-                {track?.name} by {track?.artistName}
-            </Link>
+            {track?.url ? (
+                <Link
+                    key={track?.id}
+                    className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                    href={`https://song.link/${track?.url}`}
+                >
+                    {track?.name} by {track?.artistName}
+                </Link>
+            ) : (
+                <>
+                    {track?.name} by {track?.artistName}
+                </>
+            )}
             {track?.artistName.slice(-1) !== '.' ? '.' : ''}
         </>
     )
