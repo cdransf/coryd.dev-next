@@ -1,5 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
+import Link from '@/components/Link'
 
 export default function Uses() {
     return (
@@ -43,97 +44,82 @@ export default function Uses() {
                                 Sublime Text
                             </a>{' '}
                             +{' '}
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://draculatheme.com/pro"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 Dracula Pro
-                            </a>{' '}
-                            - The de facto standard for front end web development and working with
-                            Typescript. Dracula Pro has become my go-to syntax theme everywhere it's
+                            </Link>{' '}
+                            - I've gone back to using Sublime Text for it's responsiveness and
+                            lightweight approach to editing (while also relying on a number of
+                            plugins). Dracula Pro has become my go-to syntax theme everywhere it's
                             available.
                         </li>
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://iterm2.com"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 iTerm2
-                            </a>{' '}
+                            </Link>{' '}
                             - my preferred macoS terminal emulator.
                         </li>
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://alfredapp.com"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 Alfred
-                            </a>{' '}
+                            </Link>{' '}
                             - My favorite Spotlight replacement. The flexibility, speed and wide
                             array of workflows make it incredibly useful.
                         </li>
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://culturedcode.com/things"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 Things
-                            </a>{' '}
-                            - My go to task manager — power flexible and reliable.
+                            </Link>{' '}
+                            - My go to task manager — simple, well-designed and extremely reliable.
                         </li>
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://1password.com"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 1Password
-                            </a>{' '}
+                            </Link>{' '}
                             - The best password manager around. I've been using it for{' '}
                             {new Date().getFullYear() - 2011} years and counting.
                         </li>
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://craft.do"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 Craft
-                            </a>{' '}
+                            </Link>{' '}
                             - A powerful and incredibly flexible documentation/note taking platform.
                             I use it for everything from quick notes to web clipping pages to
                             reference later to writing posts for this site.
                         </li>
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://www.reederapp.com"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 Reeder
-                            </a>{' '}
+                            </Link>{' '}
                             - to browse my feeds synced via Feedbin.
                         </li>
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://getpocket.com"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 Pocket
-                            </a>{' '}
+                            </Link>{' '}
                             - my read it later app of choice.
                         </li>
                     </ul>
@@ -142,127 +128,98 @@ export default function Uses() {
                     </h3>
                     <ul className="list-inside list-disc pl-10">
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://fastmail.com"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 Fastmail
-                            </a>{' '}
+                            </Link>{' '}
                             - my choice for an email provider. I've found its features and approach
-                            to be the best at managing my email.
+                            to be the best at managing my email. The company embraces and advances
+                            open standards and supports just about any workflow you can imagine for
+                            handling email.
                         </li>
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://feedbin.com"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 Feedbin
-                            </a>{' '}
+                            </Link>{' '}
                             - far and away my favorite RSS sync service. I use{' '}
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://feedbin.com/blog/2013/11/06/actions-workflows-for-your-rss-feeds/"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 actions
-                            </a>{' '}
+                            </Link>{' '}
                             to filter out a wide range of posts from the feeds I subscribe to.
                         </li>
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://nextdns.io/?from=m56mt3z6"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 NextDNS
-                            </a>{' '}
+                            </Link>{' '}
                             - a privacy-focused DNS provider with myriad blocking, caching and
                             security options. I have a baseline profile configured on my home
                             network and a more aggressive one installed via a profile on my devices
                             directly.
                         </li>
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://music.apple.com"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 Apple Music
-                            </a>{' '}
+                            </Link>{' '}
                             - primarily as a way to sync music. I import my library and allow Apple
-                            to store it rather than leveraging their cataologue.
+                            to store it rather than leveraging their cataologue. It's MusicKit.js
+                            API also powers my
                         </li>
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="http://slack.com"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 Slack
-                            </a>{' '}
+                            </Link>{' '}
                             - my family has a Slack channel that we use instead of group message
                             threads and I participate in a number of other groups.
                         </li>
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://plausible.io"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 Plausible
-                            </a>{' '}
+                            </Link>{' '}
                             - privacy respecting analytics for this site. Feel free to opt out{' '}
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://coryd.dev/static/analytics.html"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 here
-                            </a>
+                            </Link>
                             .
                         </li>
                         <li className="mt-1.5 mb-2">
-                            <a
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://last.fm"
-                                target="_blank"
-                                rel="noopener noreferrer me"
-                            >
-                                Last.fm
-                            </a>{' '}
-                            - to track what music I'm listening to and discover new bands (I also
-                            use their API for the "I'm listening to display..." on the home page).
-                        </li>
-                        <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://trakt.tv"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 Trakt
-                            </a>{' '}
+                            </Link>{' '}
                             - to keep track of what shows and movies I'm watching.
                         </li>
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://oku.club"
-                                target="_blank"
-                                rel="noopener noreferrer me"
                             >
                                 Oku
-                            </a>{' '}
+                            </Link>{' '}
                             - to track the books I'm reading and discover new ones (the "I'm
                             reading..." display on the home page is sourced from an RSS feed they
                             provide).
@@ -270,14 +227,12 @@ export default function Uses() {
                     </ul>
                     <p className="mt-6">
                         Check out{' '}
-                        <a
+                        <Link
                             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                             href="https://uses.tech"
-                            target="_blank"
-                            rel="noopener noreferrer me"
                         >
                             uses.tech
-                        </a>{' '}
+                        </Link>{' '}
                         for more lists like this one.
                     </p>
                 </div>
