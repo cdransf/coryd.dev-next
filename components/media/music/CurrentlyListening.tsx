@@ -11,7 +11,7 @@ export const CurrentlyListening = () => {
             {track?.url ? (
                 <Link
                     className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                    href={`https://song.link/${track?.url}`}
+                    href={track?.url}
                     target="_blank"
                     rel="noopener noreferrer me"
                 >
