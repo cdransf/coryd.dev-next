@@ -1,5 +1,5 @@
-import Image from './Image'
-import Link from './Link'
+import Image from 'next/link'
+import Link from 'next/link'
 
 const Card = ({ title, description, imgSrc, href }) => (
     <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
@@ -10,7 +10,7 @@ const Card = ({ title, description, imgSrc, href }) => (
         >
             {imgSrc &&
                 (href ? (
-                    <Link href={href} aria-label={`Link to ${title}`}>
+                    <Link href={href} aria-label={`Link to ${title}`} passHref>
                         <Image
                             alt={title}
                             src={imgSrc}

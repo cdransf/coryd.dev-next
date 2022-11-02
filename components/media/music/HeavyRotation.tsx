@@ -1,11 +1,9 @@
 import { useJson } from '@/hooks/useJson'
 import { ThreeDots } from 'react-loading-icons'
 import { Album } from '@/components/media/music/visual/Album'
-import Link from '@/components/Link'
 
 export const HeavyRotation = () => {
     const { response, error } = useJson('/api/music/heavy-rotation')
-    console.log(response)
     const ALBUM_LIMIT = 6
     const albums = response?.data?.slice(0, ALBUM_LIMIT)
     const HeavyRotation = (
@@ -16,7 +14,7 @@ export const HeavyRotation = () => {
             <div className="grid grid-cols-[1fr_minmax(0px,1280px)_1fr] gap-y-8">
                 {albums
                     ? albums?.map((album) => (
-                          <div className="justify-self-center" key={album.attributes.id}>
+                          <div className="justify-self-center" key={album.id}>
                               <Album album={album} />
                           </div>
                       ))

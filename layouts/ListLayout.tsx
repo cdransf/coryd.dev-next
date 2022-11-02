@@ -1,4 +1,4 @@
-import Link from '@/components/Link'
+import Link from 'next/link'
 import Tag from '@/components/Tag'
 import { ComponentProps, useState } from 'react'
 import Pagination from '@/components/Pagination'

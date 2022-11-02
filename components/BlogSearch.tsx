@@ -1,8 +1,8 @@
-import Link from '@/components/Link'
+import Link from 'next/link'
 
 const BlogSearch = () => {
     return (
-        <Link href="/blog">
+        <Link href="/blog" passHref>
             <svg
                 className="ml-1 mr-1 h-7 w-7 p-1"
                 xmlns="http://www.w3.org/2000/svg"

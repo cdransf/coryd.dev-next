@@ -1,6 +1,6 @@
 import { useRss } from '@/hooks/useRss'
 import { ThreeDots } from 'react-loading-icons'
-import Link from '@/components/Link'
+import Link from 'next/link'
 
 export const CurrentlyReading = () => {
     const { response, error } = useRss('/books')
@@ -10,6 +10,8 @@ export const CurrentlyReading = () => {
             <Link
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                 href={entry.link}
+                target="_blank"
+                rel="noopener noreferrer me"
             >
                 {entry.title}
             </Link>

@@ -1,4 +1,4 @@
-import Image from '@/components/Image'
+import Image from 'next/image'
 import { BlankAlbumCover } from '@/components/media/music/visual/BlankAlbumCover'
 
 export const Track = (props) => {
@@ -11,9 +11,13 @@ export const Track = (props) => {
                 ) : (
                     <Image
                         alt={track.attributes.albumName}
-                        src={`/api/imageproxy?imageUrl=${track.attributes.artwork.url
-                            .replace('{w}', '48')
-                            .replace('{h}', '48')}`}
+                        src={
+                            track.attributes.artwork.url.includes('blobstore')
+                                ? track.attributes.artwork.url
+                                : track.attributes.artwork.url
+                                      .replace('{w}', '48')
+                                      .replace('{h}', '48')
+                        }
                         width={48}
                         height={48}
                     />

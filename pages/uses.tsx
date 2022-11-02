@@ -1,6 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
-import Link from '@/components/Link'
+import Link from 'next/link'
 
 export default function Uses() {
     return (
@@ -47,6 +47,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://draculatheme.com/pro"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Dracula Pro
                             </Link>{' '}
@@ -59,6 +61,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://iterm2.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 iTerm2
                             </Link>{' '}
@@ -68,6 +72,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://alfredapp.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Alfred
                             </Link>{' '}
@@ -78,6 +84,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://culturedcode.com/things"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Things
                             </Link>{' '}
@@ -87,6 +95,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://1password.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 1Password
                             </Link>{' '}
@@ -97,6 +107,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://craft.do"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Craft
                             </Link>{' '}
@@ -108,6 +120,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://www.reederapp.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Reeder
                             </Link>{' '}
@@ -117,6 +131,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://getpocket.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Pocket
                             </Link>{' '}
@@ -130,7 +146,9 @@ export default function Uses() {
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://fastmail.com"
+                                href="https://ref.fm/u28939392"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Fastmail
                             </Link>{' '}
@@ -143,6 +161,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://feedbin.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Feedbin
                             </Link>{' '}
@@ -150,6 +170,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://feedbin.com/blog/2013/11/06/actions-workflows-for-your-rss-feeds/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 actions
                             </Link>{' '}
@@ -159,6 +181,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://nextdns.io/?from=m56mt3z6"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 NextDNS
                             </Link>{' '}
@@ -171,6 +195,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://music.apple.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Apple Music
                             </Link>{' '}
@@ -182,6 +208,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="http://slack.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Slack
                             </Link>{' '}
@@ -192,6 +220,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://plausible.io"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Plausible
                             </Link>{' '}
@@ -208,6 +238,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://trakt.tv"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Trakt
                             </Link>{' '}
@@ -217,6 +249,8 @@ export default function Uses() {
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://oku.club"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Oku
                             </Link>{' '}
@@ -230,6 +264,8 @@ export default function Uses() {
                         <Link
                             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                             href="https://uses.tech"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             uses.tech
                         </Link>{' '}

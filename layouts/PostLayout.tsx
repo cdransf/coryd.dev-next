@@ -1,11 +1,10 @@
-import Link from '@/components/Link'
+import Link from 'next/link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
-import Image from '@/components/Image'
+import Image from 'next/image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
-import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
@@ -77,8 +76,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                                             {author.avatar && (
                                                 <Image
                                                     src={author.avatar}
-                                                    width="38px"
-                                                    height="38px"
+                                                    width="38"
+                                                    height="38"
                                                     alt="avatar"
                                                     className="h-10 w-10 rounded-full"
                                                 />
@@ -95,7 +94,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                             <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
                                 <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
                             </div>
-                            <Comments frontMatter={frontMatter} />
                         </div>
                         <footer>
                             <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">

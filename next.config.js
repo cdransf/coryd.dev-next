@@ -58,6 +58,18 @@ module.exports = withBundleAnalyzer({
     eslint: {
         dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
     },
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**.blobstore.apple.com',
+            },
+            {
+                protocol: 'https',
+                hostname: '**.mzstatic.com',
+            },
+        ],
+    },
     async headers() {
         return [
             {
