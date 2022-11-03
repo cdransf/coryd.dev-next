@@ -13,7 +13,7 @@ export const HeavyRotation = () => {
             </h3>
             <div className="grid grid-cols-[1fr_minmax(0px,1280px)_1fr] gap-y-8">
                 {albums
-                    ? albums?.map((album) => (
+                    ? albums?.map((album: AppleMusicApi.Album) => (
                           <div className="justify-self-center" key={album.id}>
                               <Album album={album} />
                           </div>

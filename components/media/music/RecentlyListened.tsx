@@ -13,7 +13,7 @@ export const RecentlyListened = () => {
             </h3>
             <div className="divide-y divide-gray-200 dark:divide-gray-700">
                 {tracks
-                    ? tracks?.map((track) => (
+                    ? tracks?.map((track: AppleMusicApi.Song) => (
                           <div className="space-b-4 py-2" key={track.id}>
                               {track.attributes.url ? (
                                   <Link
