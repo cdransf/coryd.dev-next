@@ -5,7 +5,7 @@ export const Album = (props) => {
     return album.attributes ? (
         <div className="relative h-24 w-24 overflow-hidden rounded-md after:absolute after:left-0 after:top-0 after:z-10 after:h-full after:w-full after:rounded-md after:bg-gradient-to-b after:from-transparent after:to-gray-600 md:h-48 md:w-48 lg:h-56 lg:w-56">
             <Image
-                className="h-24 w-24 rounded-md md:h-48 md:w-48 lg:h-56 lg:w-56"
+                className="h-24 w-24 rounded-md border border-gray-200 dark:border-gray-700 md:h-48 md:w-48 lg:h-56 lg:w-56"
                 alt={`${album.attributes.name} by ${album.attributes.artistName}`}
                 src={
                     album.attributes.artwork.url.includes('blobstore')

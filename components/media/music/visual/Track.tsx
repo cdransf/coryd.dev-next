@@ -10,6 +10,7 @@ export const Track = (props) => {
                     <BlankAlbumCover width="w-12" height="h-12" />
                 ) : (
                     <Image
+                        className="rounded-md border border-gray-200 dark:border-gray-700"
                         alt={track.attributes.albumName}
                         src={
                             track.attributes.artwork.url.includes('blobstore')
