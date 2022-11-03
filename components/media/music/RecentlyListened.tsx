@@ -17,7 +17,7 @@ export const RecentlyListened = () => {
                           <div className="space-b-4 py-2" key={track.id}>
                               {track.attributes.url ? (
                                   <Link
-                                      className="text-sm text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                      className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                       href={track.attributes.url}
                                       target="_blank"
                                       rel="noopener noreferrer"

@@ -4,7 +4,7 @@ import { BlankAlbumCover } from '@/components/media/music/visual/BlankAlbumCover
 export const Track = (props) => {
     const { track } = props
     return track.attributes ? (
-        <div className="grid grid-cols-3 items-center">
+        <div className="grid grid-cols-3 items-center text-sm">
             <div className="h-12 w-12 rounded-md">
                 {track.attributes.artwork.url.includes('blobstore') ? (
                     <BlankAlbumCover width="w-12" height="h-12" />
