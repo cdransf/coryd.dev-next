@@ -18,7 +18,7 @@ export const RecentlyListened = () => {
                               {track.attributes.url ? (
                                   <Link
                                       className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                      href={track.attributes.url}
+                                      href={`https://song.link/i/${track.id}`}
                                       target="_blank"
                                       rel="noopener noreferrer"
                                       passHref
