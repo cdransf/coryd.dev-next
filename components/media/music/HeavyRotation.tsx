@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useJson } from '@/hooks/useJson'
 import { ThreeDots } from 'react-loading-icons'
 import { Album } from '@/components/media/music/visual/Album'
@@ -14,7 +15,16 @@ export const HeavyRotation = () => {
                 {albums
                     ? albums?.map((album: AppleMusicApi.Album) => (
                           <div className="justify-self-center" key={album.id}>
-                              <Album album={album} />
+                              <Link
+                                  href={`https://ddg.gg?q=!rymrelease ${encodeURIComponent(
+                                      album.attributes.name
+                                  )}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  passHref
+                              >
+                                  <Album album={album} />
+                              </Link>
                           </div>
                       ))
                     : null}

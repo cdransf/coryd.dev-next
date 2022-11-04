@@ -14,7 +14,18 @@ export const CurrentlyListening = () => {
                 target="_blank"
                 rel="noopener noreferrer me"
             >
-                {track?.attributes.name} by {track?.attributes.artistName}
+                {track?.attributes.name}
+            </Link>
+            {` `}
+            by
+            {` `}
+            <Link
+                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                href={`https://ddg.gg?q=!rym ${encodeURIComponent(track.attributes.artistName)}`}
+                target="_blank"
+                rel="noopener noreferrer me"
+            >
+                {track?.attributes.artistName}
             </Link>
             {track?.attributes.artistName.slice(-1) !== '.' ? '.' : ''}
         </>

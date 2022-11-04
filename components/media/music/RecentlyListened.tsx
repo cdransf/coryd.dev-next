@@ -1,7 +1,6 @@
 import { useJson } from '@/hooks/useJson'
 import { ThreeDots } from 'react-loading-icons'
 import { Track } from '@/components/media/music/visual/Track'
-import Link from 'next/link'
 
 export const RecentlyListened = () => {
     const { response, error } = useJson('/api/music/recent')
@@ -15,15 +14,7 @@ export const RecentlyListened = () => {
                 {tracks
                     ? tracks?.map((track: AppleMusicApi.Song) => (
                           <div className="space-b-4 py-2" key={track.id}>
-                              <Link
-                                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                  href={`https://song.link/i/${track.id}`}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  passHref
-                              >
-                                  <Track track={track} />
-                              </Link>
+                              <Track track={track} />
                           </div>
                       ))
                     : null}
