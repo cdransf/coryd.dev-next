@@ -15,19 +15,15 @@ export const RecentlyListened = () => {
                 {tracks
                     ? tracks?.map((track: AppleMusicApi.Song) => (
                           <div className="space-b-4 py-2" key={track.id}>
-                              {track.attributes.url ? (
-                                  <Link
-                                      className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                      href={`https://song.link/i/${track.id}`}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      passHref
-                                  >
-                                      <Track track={track} />
-                                  </Link>
-                              ) : (
+                              <Link
+                                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                  href={`https://song.link/i/${track.id}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  passHref
+                              >
                                   <Track track={track} />
-                              )}
+                              </Link>
                           </div>
                       ))
                     : null}
