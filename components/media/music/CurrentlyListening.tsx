@@ -21,7 +21,7 @@ export const CurrentlyListening = () => {
             {` `}
             <Link
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                href={`https://ddg.gg?q=!rym ${encodeURIComponent(track.attributes.artistName)}`}
+                href={`https://ddg.gg?q=!rym ${encodeURIComponent(track?.attributes.artistName)}`}
                 target="_blank"
                 rel="noopener noreferrer me"
             >
