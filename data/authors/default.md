@@ -1,13 +1,6 @@
 ---
 name: Cory Dransfeldt
 avatar: /static/images/avatar.webp
-occupation: Husband, dad, developer, music nerd.
-email: fun.song5595@coryd.dev
-rss: /feed.xml
-github: https://github.com/cdransf
-applemusic: https://music.apple.com/profile/cdme
-trakt: https://trakt.tv/users/cdransf
-oku: https://oku.club/user/cory
 ---
 
 Hi! I'm Cory 👋🏻

@@ -21,6 +21,7 @@ const siteMetadata = {
     applemusic: 'https://music.apple.com/profile/cdme',
     trakt: 'https://trakt.tv/users/cdransf',
     oku: 'https://oku.club/user/cory',
+    pocket: 'https://getpocket.com/@cdransf',
     locale: 'en-US',
     analytics: {
         plausibleDataDomain: 'coryd.dev',
