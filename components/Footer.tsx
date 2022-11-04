@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="mt-16 flex flex-col items-center">
                 <div className="mb-3 flex space-x-4">
                     <SocialIcon
-                        className="fill-none"
+                        fill="fill-none"
                         kind="mail"
                         href={`mailto:${siteMetadata.email}`}
                         size={6}
@@ -16,7 +16,7 @@ export default function Footer() {
                     <SocialIcon kind="github" href={siteMetadata.github} size={6} />
                     <SocialIcon kind="rss" href={siteMetadata.rss} size={6} />
                     <SocialIcon kind="applemusic" href={siteMetadata.applemusic} size={6} />
-                    <SocialIcon className="fill-none" kind="oku" href={siteMetadata.oku} size={6} />
+                    <SocialIcon fill="fill-none" kind="oku" href={siteMetadata.oku} size={6} />
                     <SocialIcon kind="pocket" href={siteMetadata.pocket} size={6} />
                     <SocialIcon kind="trakt" href={siteMetadata.trakt} size={6} />
                 </div>
