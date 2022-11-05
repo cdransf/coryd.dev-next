@@ -36,15 +36,19 @@ export const Track = (props) => {
                 </Link>
             </div>
             <span className="px-2">
-                <Link
-                    className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                    href={`https://song.link/i/${track.id}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    passHref
-                >
+                {track.id.includes('.') ? (
                     <span className="font-bold">{track.attributes.name}</span>
-                </Link>
+                ) : (
+                    <Link
+                        className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                        href={`https://song.link/i/${track.id}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        passHref
+                    >
+                        <span className="font-bold">{track.attributes.name}</span>
+                    </Link>
+                )}
             </span>
             <span className="px-2">
                 <Link

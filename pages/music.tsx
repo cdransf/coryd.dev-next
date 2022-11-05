@@ -16,10 +16,9 @@ export default function Music() {
                     Music
                 </h1>
             </div>
-            <div className="py-8">
+            <div className="pt-8">
+                <FavoriteArtists />
                 <HeavyRotation />
-            </div>
-            <div className="py-8">
                 <RecentlyListened />
             </div>
         </>

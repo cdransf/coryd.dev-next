@@ -8,14 +8,18 @@ export const CurrentlyListening = () => {
     const track: AppleMusicApi.Song = tracks?.[0]
     const CurrentlyPlaying = (
         <>
-            <Link
-                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                href={`https://song.link/i/${track?.id}`}
-                target="_blank"
-                rel="noopener noreferrer me"
-            >
-                {track?.attributes.name}
-            </Link>
+            {track.id.includes('.') ? (
+                <>{track?.attributes.name}</>
+            ) : (
+                <Link
+                    className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                    href={`https://song.link/i/${track?.id}`}
+                    target="_blank"
+                    rel="noopener noreferrer me"
+                >
+                    {track?.attributes.name}
+                </Link>
+            )}
             {` `}
             by
             {` `}
