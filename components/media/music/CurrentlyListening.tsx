@@ -8,7 +8,7 @@ export const CurrentlyListening = () => {
     const track: AppleMusicApi.Song = tracks?.[0]
     const CurrentlyPlaying = (
         <>
-            {track.id.includes('.') ? (
+            {track?.id.includes('.') ? (
                 <>{track?.attributes.name}</>
             ) : (
                 <Link
