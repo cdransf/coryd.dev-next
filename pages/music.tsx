@@ -2,6 +2,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
 import { HeavyRotation } from '@/components/media/music/HeavyRotation'
 import { RecentlyListened } from '@/components/media/music/RecentlyListened'
+import { FavoriteArtists } from '@/components/media/music/FavoriteArtists'
 
 export default function Music() {
     return (
@@ -15,7 +16,7 @@ export default function Music() {
                     Music
                 </h1>
             </div>
-            <div className="pt-8">
+            <div className="py-8">
                 <HeavyRotation />
             </div>
             <div className="py-8">

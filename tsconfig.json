@@ -22,7 +22,8 @@
             "@/data/*": ["data/*"],
             "@/layouts/*": ["layouts/*"],
             "@/lib/*": ["lib/*"],
-            "@/css/*": ["css/*"]
+            "@/css/*": ["css/*"],
+            "@/utils/*": ["utils/*"]
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
