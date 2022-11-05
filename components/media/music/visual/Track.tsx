@@ -42,7 +42,7 @@ export const Track = (props) => {
                 rel="noopener noreferrer"
                 passHref
             >
-                <span className="px-2 font-bold">{track.attributes.name}</span>
+                <span className="font-bold">{track.attributes.name}</span>
             </Link>
             <Link
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
