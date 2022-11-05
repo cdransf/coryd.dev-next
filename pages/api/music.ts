@@ -12,6 +12,8 @@ export default async function handler(req, res) {
         favoriteArtists: 'https://api.music.apple.com/v1/me/recommendations/18-6NcH6SJmz5we',
     }
 
+    if (!type) return res.status(500).send({ success: false, message: 'Type is required. Thx.' })
+
     const data = await fetch(API_MAP[type], {
         headers: {
             Authorization: bearer,
