@@ -5,7 +5,7 @@ import { Artist } from '@/components/media/music/visual/Artist'
 import { shuffleArray } from '@/utils/arrays'
 
 export const FavoriteArtists = () => {
-    const { response, error } = useJson('/api/music/favorite-artists')
+    const { response, error } = useJson('/api/music?type=favoriteArtists')
     const ARTISTS_LIMIT = 4
     const artists = shuffleArray(response?.data?.[0].relationships?.contents?.data)?.splice(
         0,

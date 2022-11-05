@@ -3,7 +3,7 @@ import { ThreeDots } from 'react-loading-icons'
 import Link from 'next/link'
 
 export const CurrentlyListening = () => {
-    const { response, error } = useJson('/api/music/recent')
+    const { response, error } = useJson('/api/music?type=current')
     const tracks = response?.data
     const track: AppleMusicApi.Song = tracks?.[0]
     const CurrentlyPlaying = (

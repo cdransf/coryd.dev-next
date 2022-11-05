@@ -3,7 +3,7 @@ import { ThreeDots } from 'react-loading-icons'
 import { Track } from '@/components/media/music/visual/Track'
 
 export const RecentlyListened = () => {
-    const { response, error } = useJson('/api/music/recent')
+    const { response, error } = useJson('/api/music?type=recent')
     const tracks = response?.data
     const RecentlyListened = (
         <div className="pb-8">

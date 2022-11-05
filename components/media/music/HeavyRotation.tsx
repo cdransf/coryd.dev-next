@@ -4,7 +4,7 @@ import { ThreeDots } from 'react-loading-icons'
 import { Album } from '@/components/media/music/visual/Album'
 
 export const HeavyRotation = () => {
-    const { response, error } = useJson('/api/music/heavy-rotation')
+    const { response, error } = useJson('/api/music?type=heavyRotation')
     const albums = response?.data
     const HeavyRotation = (
         <div className="pb-8">
