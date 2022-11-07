@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function AuthorLayout({ children, frontMatter }: Props) {
-    const { name, avatar } = frontMatter
+    const { name, avatar, tagline } = frontMatter
 
     return (
         <>
@@ -29,6 +29,10 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                             height="192"
                             className="h-48 w-48 rounded-full"
                         />
+                        <h3 className="pt-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-3xl md:leading-14">
+                            <span>{tagline}</span>
+                            <span className="inline-block animate-waving-hand pl-2">👋🏻</span>
+                        </h3>
                     </div>
                     <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
                         {children}
