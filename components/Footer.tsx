@@ -15,6 +15,7 @@ export default function Footer() {
                     />
                     <SocialIcon kind="github" href={siteMetadata.github} size={6} />
                     <SocialIcon kind="rss" href={siteMetadata.rss} size={6} />
+                    <SocialIcon kind="mastodon" href={siteMetadata.mastodon} size={6} rel="me" />
                     <SocialIcon kind="applemusic" href={siteMetadata.applemusic} size={6} />
                     <SocialIcon fill="fill-none" kind="oku" href={siteMetadata.oku} size={6} />
                     <SocialIcon kind="pocket" href={siteMetadata.pocket} size={6} />

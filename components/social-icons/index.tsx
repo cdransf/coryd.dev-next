@@ -5,6 +5,7 @@ import AppleMusic from './applemusic.svg'
 import Trakt from './trakt.svg'
 import Oku from './oku.svg'
 import Pocket from './pocket.svg'
+import Mastodon from './mastodon.svg'
 
 import Link from 'next/link'
 
@@ -16,6 +17,7 @@ const components = {
     trakt: Trakt,
     oku: Oku,
     pocket: Pocket,
+    mastodon: Mastodon,
 }
 
 const SocialIcon = ({
@@ -23,11 +25,13 @@ const SocialIcon = ({
     href,
     size = 8,
     fill,
+    rel,
 }: {
     kind: string
     href: string
     size: number
     fill?: string
+    rel?: string
 }) => {
     if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
         return null
@@ -38,7 +42,7 @@ const SocialIcon = ({
         <Link
             className="text-sm text-gray-500 transition hover:text-gray-600"
             target="_blank"
-            rel="noopener noreferrer"
+            rel={`noopener noreferrer ${rel}`}
             href={href}
         >
             <span className="sr-only">{kind}</span>

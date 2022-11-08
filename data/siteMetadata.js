@@ -18,6 +18,7 @@ const siteMetadata = {
     email: 'fun.song5595@coryd.dev',
     github: 'https://github.com/cdransf',
     rss: '/feed.xml',
+    mastodon: 'https://hachyderm.io/@cdme',
     applemusic: 'https://music.apple.com/profile/cdme',
     trakt: 'https://trakt.tv/users/cdransf',
     oku: 'https://oku.club/user/cory',
