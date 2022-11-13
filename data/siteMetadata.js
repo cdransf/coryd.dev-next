@@ -5,7 +5,6 @@ const siteMetadata = {
     description: {
         default:
             "I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, music, writing, reading and tv and movies.",
-        music: "Music I'm currently listening to sourced from Apple's MusicKit.js API",
         uses: 'Software and services that I use for work and my own enjoyment.',
     },
     language: 'en-us',
