@@ -4,4 +4,5 @@ export type AuthorFrontMatter = {
     tagline: string
     avatar: string
     email: string
+    mastodon: string
 }

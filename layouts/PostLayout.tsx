@@ -77,15 +77,15 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                                             {author.avatar && (
                                                 <Image
                                                     src={author.avatar}
-                                                    width="38"
-                                                    height="38"
+                                                    width="56"
+                                                    height="56"
                                                     alt="avatar"
-                                                    className="h-10 w-10 rounded-full"
+                                                    className="h-14 w-14 rounded-full"
                                                 />
                                             )}
-                                            <dl className="whitespace-nowrap text-sm font-medium leading-5">
+                                            <dl className="whitespace-nowrap font-medium leading-5">
                                                 <dt className="sr-only">Name</dt>
-                                                <dd className="text-gray-900 dark:text-gray-100">
+                                                <dd className="text-md font-bold text-gray-900 dark:text-gray-100">
                                                     {author.name}
                                                 </dd>
                                                 <dt className="sr-only">Email</dt>
@@ -93,10 +93,21 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                                                     {author.email && (
                                                         <Link
                                                             href={author.email}
-                                                            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                                            className="text-sm text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                                         >
                                                             Email
                                                         </Link>
+                                                    )}
+                                                    {author.mastodon && (
+                                                        <>
+                                                            {` • `}
+                                                            <Link
+                                                                href={author.mastodon}
+                                                                className="text-sm text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                                            >
+                                                                Mastodon
+                                                            </Link>
+                                                        </>
                                                     )}
                                                 </dd>
                                             </dl>
