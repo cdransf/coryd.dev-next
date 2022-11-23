@@ -87,7 +87,7 @@ Did I miss anything? [Email me](mailto:fun.song5595@coryd.dev)[^7].
 [^1]: As an aside, [mailbox.org](https://mailbox.org) is also quite nice and offers some nice privacy features but isn't _quite_ as polished as Fastmail.
 [^2]: Which amounts to seamless syncing with iOS at the system level or via an app like [DAVx](https://play.google.com/store/apps/details?id=at.bitfire.davdroid&hl=en) on Android.
 [^3]: This is my referral link – you can skip that and go straight to [fastmail.com](https://fastmail.com).
-[^4]: This one's aimed at you free Google Workspace [forced migration](https://www.theverge.com/2022/1/19/22891509/g-suite-legacy-free-google-apps-workspace-upgrade).
+[^4]: This one's aimed at you, free Google Workspace [forced migration](https://www.theverge.com/2022/1/19/22891509/g-suite-legacy-free-google-apps-workspace-upgrade).
 [^5]: Think [1Password](https://1password.com) or [Authy](https://authy.com)
 [^6]: This site is hosted at Vercel, but I have that policy file in a [categorically uninteresting GitHub repository](https://github.com/cdransf/mta-sts) configured using GitHub pages.
 [^7]: At Fastmail, naturally.

@@ -92,7 +92,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                                                 <dd>
                                                     {author.email && (
                                                         <Link
-                                                            href={author.email}
+                                                            href={`mailto: ${author.email}`}
                                                             className="text-sm text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                                         >
                                                             Email
