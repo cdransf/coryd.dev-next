@@ -110,9 +110,9 @@ export default function Uses() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Craft
+                                Obsidian
                             </Link>{' '}
-                            - A powerful and incredibly flexible documentation/note taking platform.
+                            - A powerful and incredibly flexible documentation/note taking tool.
                             I use it for everything from quick notes to web clipping pages to
                             reference later to writing posts for this site.
                         </li>
