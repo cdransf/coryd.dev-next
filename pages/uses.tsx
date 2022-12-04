@@ -112,8 +112,8 @@ export default function Uses() {
                             >
                                 Obsidian
                             </Link>{' '}
-                            - A powerful and incredibly flexible documentation/note taking tool.
-                            I use it for everything from quick notes to web clipping pages to
+                            - A powerful and incredibly flexible documentation/note taking tool. I
+                            use it for everything from quick notes to web clipping pages to
                             reference later to writing posts for this site.
                         </li>
                         <li className="mt-1.5 mb-2">
@@ -130,11 +130,11 @@ export default function Uses() {
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://getpocket.com"
+                                href="https://instapaper.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Pocket
+                                Instapaper
                             </Link>{' '}
                             - my read it later app of choice.
                         </li>
