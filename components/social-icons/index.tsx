@@ -1,10 +1,7 @@
 import Mail from './mail.svg'
 import Github from './github.svg'
 import Rss from './rss.svg'
-import Lastfm from './lastfm.svg'
-import Trakt from './trakt.svg'
 import Oku from './oku.svg'
-import Pocket from './pocket.svg'
 import Mastodon from './mastodon.svg'
 
 import Link from 'next/link'
@@ -13,10 +10,7 @@ const components = {
     mail: Mail,
     github: Github,
     rss: Rss,
-    lastfm: Lastfm,
-    trakt: Trakt,
     oku: Oku,
-    pocket: Pocket,
     mastodon: Mastodon,
 }
 

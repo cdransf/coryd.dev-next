@@ -6,8 +6,6 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'
-import { CurrentlyReading } from '@/components/media/CurrentlyReading'
-import { CurrentlyListening } from '@/components/media/CurrentlyListening'
 
 const MAX_DISPLAY = 5
 
@@ -22,16 +20,6 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
         <>
             <PageSEO title={siteMetadata.title} description={siteMetadata.description.default} />
             <div className="divide-y divide-gray-200 dark:divide-gray-700">
-                <div className="space-y-6 pt-6 pb-8 md:space-y-5">
-                    <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-                        Latest
-                    </h1>
-                    <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-                        {siteMetadata.description.default}
-                    </p>
-                    <CurrentlyReading />
-                    <CurrentlyListening />
-                </div>
                 <ul className="divide-y divide-gray-200 dark:divide-gray-700">
                     {!posts.length && 'No posts found.'}
                     {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
