@@ -18,10 +18,8 @@ const siteMetadata = {
     github: 'https://github.com/cdransf',
     rss: '/feed.xml',
     mastodon: 'https://mastodon.social/@coryd',
-    lastfm: 'https://last.fm/user/cdme_',
-    trakt: 'https://trakt.tv/users/cdransf',
+    letterboxd: 'https://letterboxd.com/cdme/',
     oku: 'https://oku.club/user/cory',
-    pocket: 'https://getpocket.com/@cdransf',
     locale: 'en-US',
     analytics: {
         plausibleDataDomain: 'coryd.dev',
