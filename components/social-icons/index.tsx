@@ -3,6 +3,7 @@ import Github from './github.svg'
 import Rss from './rss.svg'
 import Lastfm from './lastfm.svg'
 import Letterboxd from './letterboxd.svg'
+import Simkl from './simkl.svg'
 import Oku from './oku.svg'
 import Mastodon from './mastodon.svg'
 
@@ -14,6 +15,7 @@ const components = {
     rss: Rss,
     lastfm: Lastfm,
     letterboxd: Letterboxd,
+    simkl: Simkl,
     oku: Oku,
     mastodon: Mastodon,
 }

@@ -19,7 +19,8 @@ const siteMetadata = {
     rss: '/feed.xml',
     mastodon: 'https://mastodon.social/@coryd',
     lastfm: 'https://last.fm/user/cdme_',
-    letterboxd: 'https://letterboxd.com/cdme/',
+    letterboxd: 'https://letterboxd.com/cdme',
+    simkl: 'https://simkl.com/5795262',
     oku: 'https://oku.club/user/cory',
     locale: 'en-US',
     analytics: {
