@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <footer>
             <div className="mt-16 flex flex-col items-center">
-                <div className="mb-6 flex space-x-4">
+                <div className="mb-3 flex space-x-4">
                     <SocialIcon
                         fill="fill-none"
                         kind="mail"
@@ -16,6 +16,7 @@ export default function Footer() {
                     <SocialIcon kind="github" href={siteMetadata.github} size={6} />
                     <SocialIcon kind="rss" href={siteMetadata.rss} size={6} />
                     <SocialIcon kind="mastodon" href={siteMetadata.mastodon} size={6} rel="me" />
+                    <SocialIcon kind="lastfm" href={siteMetadata.lastfm} size={6} />
                     <SocialIcon
                         kind="letterboxd"
                         href={siteMetadata.letterboxd}

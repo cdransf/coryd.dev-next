@@ -1,6 +1,7 @@
 import Mail from './mail.svg'
 import Github from './github.svg'
 import Rss from './rss.svg'
+import Lastfm from './lastfm.svg'
 import Letterboxd from './letterboxd.svg'
 import Oku from './oku.svg'
 import Mastodon from './mastodon.svg'
@@ -11,6 +12,7 @@ const components = {
     mail: Mail,
     github: Github,
     rss: Rss,
+    lastfm: Lastfm,
     letterboxd: Letterboxd,
     oku: Oku,
     mastodon: Mastodon,
