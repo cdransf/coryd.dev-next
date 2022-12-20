@@ -79,6 +79,10 @@ module.exports = withBundleAnalyzer({
                 source: '/books', // oku cors proxy
                 destination: 'https://oku.club/rss/collection/POaRa',
             },
+            {
+                source: '/.well-known/webfinger',
+                destination: '/api/webfinger'
+            }
         ]
     },
     async redirects() {

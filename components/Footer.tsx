@@ -23,7 +23,7 @@ export default function Footer() {
                         size={6}
                         rel="me"
                     />
-                    <SocialIcon fill="fill-none" kind="simkl" href={siteMetadata.simkl} size={6} />
+                    <SocialIcon kind="simkl" href={siteMetadata.simkl} size={6} />
                     <SocialIcon fill="fill-none" kind="oku" href={siteMetadata.oku} size={6} />
                 </div>
                 <div className="mb-8 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">

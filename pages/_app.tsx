@@ -4,7 +4,6 @@ import '@/css/custom.css'
 import 'katex/dist/katex.css'
 import '@fontsource/inter/variable-full.css'
 
-import Script from 'next/script'
 import { ThemeProvider } from 'next-themes'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
