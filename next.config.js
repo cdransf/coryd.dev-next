@@ -81,8 +81,8 @@ module.exports = withBundleAnalyzer({
             },
             {
                 source: '/.well-known/webfinger',
-                destination: '/api/webfinger'
-            }
+                destination: '/api/webfinger',
+            },
         ]
     },
     async redirects() {
