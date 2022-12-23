@@ -1,8 +1,22 @@
 export default function handler(req, res) {
     const MASTODON_META = {
         subject: 'acct:coryd@mastodon.social',
-        aliases: ['https://mastodon.social/@coryd', 'https://mastodon.social/users/coryd'],
+        aliases: [
+            'https://coryd.dev',
+            'https://mastodon.social/@coryd',
+            'https://mastodon.social/users/coryd',
+        ],
         links: [
+            {
+                rel: 'http://webfinger.net/rel/avatar',
+                type: 'image/webp',
+                href: 'https://coryd.dev/static/images/avatar.webp',
+            },
+            {
+                rel: 'http://webfinger.net/rel/profile-page',
+                type: 'text/html',
+                href: 'https://coryd.dev',
+            },
             {
                 rel: 'http://webfinger.net/rel/profile-page',
                 type: 'text/html',
