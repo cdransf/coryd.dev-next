@@ -52,9 +52,9 @@ export default function Uses() {
                             >
                                 Dracula Pro
                             </Link>{' '}
-                            - I've gone back to using Sublime Text for it's responsiveness and
-                            lightweight approach to editing (while also relying on a number of
-                            plugins). Dracula Pro has become my go-to syntax theme everywhere it's
+                            - I prefer Sublime Text for it's responsiveness and lightweight approach
+                            to editing (while also being extensible due to its a rich plugin
+                            ecosystem). Dracula Pro has become my go-to syntax theme everywhere it's
                             available.
                         </li>
                         <li className="mt-1.5 mb-2">
@@ -119,24 +119,14 @@ export default function Uses() {
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://www.reederapp.com"
+                                href="https://readwise.io/read"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Reeder
+                                Reader
                             </Link>{' '}
-                            - to browse my feeds synced via Feedbin.
-                        </li>
-                        <li className="mt-1.5 mb-2">
-                            <Link
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://instapaper.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Instapaper
-                            </Link>{' '}
-                            - my read it later app of choice.
+                            - I've moved to Readwise's Reader application for browsing my feeds,
+                            saving articles to read, highlight and reference as needed.
                         </li>
                     </ul>
                     <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
@@ -156,26 +146,6 @@ export default function Uses() {
                             to be the best at managing my email. The company embraces and advances
                             open standards and supports just about any workflow you can imagine for
                             handling email.
-                        </li>
-                        <li className="mt-1.5 mb-2">
-                            <Link
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://feedbin.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Feedbin
-                            </Link>{' '}
-                            - far and away my favorite RSS sync service. I use{' '}
-                            <Link
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://feedbin.com/blog/2013/11/06/actions-workflows-for-your-rss-feeds/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                actions
-                            </Link>{' '}
-                            to filter out a wide range of posts from the feeds I subscribe to.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <Link
@@ -236,13 +206,25 @@ export default function Uses() {
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://trakt.tv"
+                                href="https://simkl.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Trakt
+                                Simkl
                             </Link>{' '}
-                            - to keep track of what shows and movies I'm watching.
+                            - to keep track of what shows I'm watching.
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://simkl.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Letterboxd
+                            </Link>{' '}
+                            - to keep track of what movies I'm watching and seek out recommendations
+                            for ones I haven't seen.
                         </li>
                         <li className="mt-1.5 mb-2">
                             <Link
