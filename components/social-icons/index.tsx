@@ -1,4 +1,6 @@
+import Fastmail from './fastmail.svg'
 import Mail from './mail.svg'
+import SavvyCal from './savvycal.svg'
 import Github from './github.svg'
 import Rss from './rss.svg'
 import Lastfm from './lastfm.svg'
@@ -11,7 +13,9 @@ import BuyMeACoffee from './buymeacoffee.svg'
 import Link from 'next/link'
 
 const components = {
+    fastmail: Fastmail,
     mail: Mail,
+    savvycal: SavvyCal,
     github: Github,
     rss: Rss,
     lastfm: Lastfm,

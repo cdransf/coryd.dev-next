@@ -19,7 +19,7 @@ const siteMetadata = {
     image: '/static/images/avatar.webp',
     socialBanner: '/static/images/social-card.png',
     email: 'fun.song5595@coryd.dev',
-    calendar: 'https://savvycal.com/coryd',
+    savvycal: 'https://savvycal.com/coryd',
     github: 'https://github.com/cdransf',
     rss: '/feed.xml',
     mastodon: 'https://social.lol/@cory',

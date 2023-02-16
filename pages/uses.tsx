@@ -20,7 +20,7 @@ export default function Uses() {
                     <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
                         {siteMetadata.description.uses}
                     </p>
-                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-dracula-cyan-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Hardware
                     </h3>
                     <ul className="list-inside list-disc pl-10">
@@ -34,7 +34,7 @@ export default function Uses() {
                         <li className="mt-1.5 mb-2">Homepod Mini for audio</li>
                         <li className="mt-1.5 mb-2">Raspberry Pi for Homebridge</li>
                     </ul>
-                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-dracula-green-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         macOS + iOS
                     </h3>
                     <ul className="list-inside list-disc pl-10">
@@ -79,7 +79,7 @@ export default function Uses() {
                             </Link>
                         </li>
                     </ul>
-                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-dracula-red-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         iOS
                     </h3>
                     <ul className="list-inside list-disc pl-10">
@@ -124,7 +124,7 @@ export default function Uses() {
                             </Link>
                         </li>
                     </ul>
-                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-dracula-orange-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         macOS
                     </h3>
                     <ul className="list-inside list-disc pl-10">
@@ -288,7 +288,7 @@ export default function Uses() {
                             </Link>
                         </li>
                     </ul>
-                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-dracula-pink-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Services
                     </h3>
                     <ul className="list-inside list-disc pl-10">

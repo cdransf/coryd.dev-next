@@ -4,8 +4,9 @@ import Link from 'next/link'
 import * as Fathom from 'fathom-client'
 import MapPin from '@/components/icons/mappin.svg'
 import Code from '@/components/icons/code.svg'
-import NBA from '@/components/icons/nba.svg'
+import Megaphone from '@/components/icons/megaphone.svg'
 import Terminal from '@/components/icons/terminal.svg'
+import { Status } from '@/components/omg/status'
 
 export default function Now() {
     return (
@@ -25,6 +26,7 @@ export default function Now() {
                         Currently
                     </h3>
                     <div className="pl-4 md:pl-8">
+                        <Status />
                         <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">
                             <MapPin className="mr-1 inline h-6 w-6" />
                             Living in Camarillo, California with my beautiful family, 4 rescue dogs
@@ -43,7 +45,7 @@ export default function Now() {
                             </Link>
                         </p>
                         <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">
-                            <NBA className="mr-1 inline h-6 w-6" />
+                            <Megaphone className="mr-1 inline h-6 w-6" />
                             Rooting for the Lakers{` `}
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
