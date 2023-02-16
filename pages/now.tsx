@@ -3,7 +3,7 @@ import { PageSEO } from '@/components/SEO'
 import Link from 'next/link'
 import * as Fathom from 'fathom-client'
 import { MapPin, Code, Megaphone, Terminal } from '@/components/icons'
-import { Status } from '@/components/omg/status'
+import Status from '@/components/omg/status'
 
 export default function Now() {
     return (

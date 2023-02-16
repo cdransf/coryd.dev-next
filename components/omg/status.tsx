@@ -2,7 +2,7 @@ import { useJson } from '@/hooks/useJson'
 import Link from 'next/link'
 import { ThreeDots } from 'react-loading-icons'
 
-export const Status = () => {
+const Status = () => {
     const { response, error } = useJson('/api/omg/status?limit=1')
     const status = response?.[0]
 
@@ -30,3 +30,5 @@ export const Status = () => {
         </p>
     )
 }
+
+export default Status

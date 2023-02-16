@@ -24,7 +24,7 @@ In the event I've failed to tune a regular expression properly or an actual pers
 
 [I also have a rule containing regular expressions that also skips evaluations for login pin codes, meeting/appointment reminders and common security notices](https://pastes.coryd.dev/mail-regexes-alerts/markup).
 
-<iframe style={{width: '100%', height: '20em'}} frameBorder="0" src="https://pastes.coryd.dev/mail-regexes-inbox-notifications/markup/embed"></iframe>
+<Paste url="https://pastes.coryd.dev/mail-regexes-inbox-notifications/markup/embed" />
 
 ## Mapping categories as folders
 
@@ -32,21 +32,21 @@ I've tailored these rules to align with folders on a per topic basis. I have a b
 
 The top level `Financial` rule [looks like this](https://pastes.coryd.dev/mail-regexes-financial/markup).
 
-<iframe style={{width: '100%', height: '20em'}} frameBorder="0" src="https://pastes.coryd.dev/mail-regexes-financial/markup/embed"></iframe>
+<Paste url="https://pastes.coryd.dev/mail-regexes-financial/markup/embed" />
 
 `Deliveries` follow a similar pattern with rule sets intended to capture messages with package tracking information or other details. I kickstarted this rule by, naturally, referencing [this answer from StackOverflow](https://stackoverflow.com/a/5024011).
 
 All of the regular expressions contained in this answer are matched against the `Body` of inbound messages before being forwarded to [Parcel Email](https://parcelapp.net/help/parcel-email.html)[^3]. These rules are supplemented by a few edge case rules targeted at the `Subject` field:
 
-<iframe style={{width: '100%', height: '20em'}} frameBorder="0" src="https://pastes.coryd.dev/mail-regexes-deliveries-edge-cases/markup/embed"></iframe>
+<Paste url="https://pastes.coryd.dev/mail-regexes-deliveries-edge-cases/markup/embed" />
 
 Finally, I have a rule intended to catch anything that falls through the cracks[^4]:
 
-<iframe style={{width: '100%', height: '20em'}} frameBorder="0" src="https://pastes.coryd.dev/mail-regexes-deliveries-fail-safes/markup/embed"></iframe>
+<Paste url="https://pastes.coryd.dev/mail-regexes-deliveries-fail-safes/markup/embed" />
 
 My `medical` and `media` rules follow a basic pattern that could be approximated using a per-line sender TLD match[^5]:
 
-<iframe style={{width: '100%', height: '20em'}} frameBorder="0" src="https://pastes.coryd.dev/mail-regexes-media/markup/embed"></iframe>
+<Paste url="https://pastes.coryd.dev/mail-regexes-media/markup/embed" />
 
 I'd recommend paring this down to match whichever `media` and `medical` providers email you.
 
@@ -54,25 +54,25 @@ This pattern of filtering and filing continues for several additional categories
 
 **Financial/Tickets**
 
-<iframe style={{width: '100%', height: '20em'}} frameBorder="0" src="https://pastes.coryd.dev/mail-regexes-tickets/markup/embed"></iframe>
+<Paste url="https://pastes.coryd.dev/mail-regexes-tickets/markup/embed" />
 
 **Travel (non-forwarding)**
 
-<iframe style={{width: '100%', height: '20em'}} frameBorder="0" src="https://pastes.coryd.dev/mail-regexes-travel-non-forwarding/markup/embed"></iframe>
+<Paste url="https://pastes.coryd.dev/mail-regexes-travel-non-forwarding/markup/embed" />
 
 **Travel (forwarding)**
 
 These are designed to capture confirmations sent by Southwest and are sent off to [Flighty](https://www.flightyapp.com) before being sorted.
 
-<iframe style={{width: '100%', height: '20em'}} frameBorder="0" src="https://pastes.coryd.dev/mail-regexes-travel-forwarding/markup/embed"></iframe>
+<Paste url="https://pastes.coryd.dev/mail-regexes-travel-forwarding/markup/embed" />
 
 **Annoying customer support follow-ups**
 
-<iframe style={{width: '100%', height: '20em'}} frameBorder="0" src="https://pastes.coryd.dev/mail-regexes-customer-service/markup/embed"></iframe>
+<Paste url="https://pastes.coryd.dev/mail-regexes-customer-service/markup/embed" />
 
 **[Promotional messages (that you haven't unsubscribed from)](https://pastes.coryd.dev/mail-regexes-promotions/markup)**
 
-<iframe style={{width: '100%', height: '20em'}} frameBorder="0" src="https://pastes.coryd.dev/mail-regexes-promotions/markup/embed"></iframe>
+<Paste url="https://pastes.coryd.dev/mail-regexes-promotions/markup/embed" />
 
 **Social networking messages**
 
@@ -80,7 +80,7 @@ These I've left as a simple list wherein `any` included top level domain is file
 
 **DMARC notifications (depending on how you have your policy record configured)**
 
-<iframe style={{width: '100%', height: '20em'}} frameBorder="0" src="https://pastes.coryd.dev/mail-regexes-dmarc/markup/embed"></iframe>
+<Paste url="https://pastes.coryd.dev/mail-regexes-dmarc/markup/embed" />
 
 That covers _most_ of what I use to manage my mail (outside of anything particularly personal). I fully expect the regular expressions I'm using could stand to be refined and I plan on continuing to do just that. But, with that said, things have worked better than I expected so far and false positives/miscategorizations have been infrequent.
 

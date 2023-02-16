@@ -4,6 +4,7 @@ import { ComponentMap, getMDXComponent } from 'mdx-bundler/client'
 import Image from 'next/image'
 import TOCInline from './TOCInline'
 import Pre from './Pre'
+import Paste from '@/components/omg/Paste'
 
 const Wrapper: React.ComponentType<{ layout: string }> = ({ layout, ...rest }) => {
     const Layout = require(`../layouts/${layout}`).default
@@ -16,6 +17,7 @@ export const MDXComponents: ComponentMap = {
     TOCInline,
     pre: Pre,
     wrapper: Wrapper,
+    Paste,
     //@ts-ignore
 }
 

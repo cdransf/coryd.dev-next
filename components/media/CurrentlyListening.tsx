@@ -2,7 +2,7 @@ import { useJson } from '@/hooks/useJson'
 import { ThreeDots } from 'react-loading-icons'
 import Link from 'next/link'
 
-export const CurrentlyListening = () => {
+const CurrentlyListening = () => {
     const { response, error } = useJson('/api/music?limit=1')
     const tracks = response?.recenttracks?.track
     const track = tracks?.[0]
@@ -60,3 +60,5 @@ export const CurrentlyListening = () => {
         </p>
     ) : null
 }
+
+export default CurrentlyListening

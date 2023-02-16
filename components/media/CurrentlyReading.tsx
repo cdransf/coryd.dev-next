@@ -2,7 +2,7 @@ import { ThreeDots } from 'react-loading-icons'
 import Link from 'next/link'
 import { useJson } from '@/hooks/useJson'
 
-export const CurrentlyReading = () => {
+const CurrentlyReading = () => {
     const { response, error } = useJson('/api/books')
 
     const booksList = response?.entries?.map((entry, index) => {
@@ -58,3 +58,5 @@ export const CurrentlyReading = () => {
         </p>
     ) : null
 }
+
+export default CurrentlyReading

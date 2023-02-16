@@ -6,9 +6,9 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'
-import { CurrentlyReading } from '@/components/media/CurrentlyReading'
-import { CurrentlyListening } from '@/components/media/CurrentlyListening'
-import { Status } from '@/components/omg/status'
+import CurrentlyReading from '@/components/media/CurrentlyReading'
+import CurrentlyListening from '@/components/media/CurrentlyListening'
+import Status from '@/components/omg/status'
 
 const MAX_DISPLAY = 5
 
