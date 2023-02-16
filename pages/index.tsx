@@ -26,7 +26,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                 <div className="space-y-6 pt-6 pb-8 md:space-y-5">
                     <h1 className="text-2xl font-extrabold leading-3 tracking-tight text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 sm:text-3xl md:text-4xl">
                         <Link href="/now" passHref>
-                            /now
+                            Now
                         </Link>
                     </h1>
                     <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
