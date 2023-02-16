@@ -37,7 +37,6 @@ const siteMetadata = {
         favLg: '/static/favicons/favicon-32x32.png',
         favIco: '/static/favicons/favicon.ico',
         pinnedTab: '/static/favicons/safari-pinned-tab.svg',
-        manifest: '/static/favicons/site.webmanifest',
     },
 }
 

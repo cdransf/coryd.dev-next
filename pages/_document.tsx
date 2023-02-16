@@ -24,10 +24,6 @@ class MyDocument extends Document {
                         href={siteMetadata.siteUrl + siteMetadata.icons.favSm}
                     />
                     <link
-                        rel="manifest"
-                        href={siteMetadata.siteUrl + siteMetadata.icons.manifest}
-                    />
-                    <link
                         rel="mask-icon"
                         href={siteMetadata.siteUrl + siteMetadata.icons.pinnedTab}
                         color={siteMetadata.themeColor}
