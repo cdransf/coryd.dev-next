@@ -33,6 +33,7 @@ class MyDocument extends Document {
                     <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
                     <link rel="webmention" href="https://webmention.io/coryd.dev/webmention" />
                     <link rel="pingback" href="https://webmention.io/coryd.dev/xmlrpc" />
+                    <link href="https://social.lol/@cory" rel="me" />
                 </Head>
                 <body className="bg-white text-gray-900 antialiased dark:bg-gray-900 dark:text-white">
                     <Main />
