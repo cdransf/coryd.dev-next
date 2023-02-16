@@ -8,8 +8,6 @@ This is the code for my personal website and portfolio. Built using Next.js and 
 
 I've modified the theme to match the look of my previous sites core color schemes and imagery and made a number of other changes (which I imagine will continue).
 
-I make use of [Plausible](https://plausible.io) for analytics. You can opt out of that [here](https://coryd.dev/static/analytics.html).
-
 **Built by:**
 
 [Cory Dransfeldt](mailto:fun.song5595@coryd.dev)
