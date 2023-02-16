@@ -41,7 +41,7 @@ export const CurrentlyListening = () => {
         )
 
     return tracks?.length ? (
-        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+        <p className="!mt-1 text-lg leading-7 text-gray-500 dark:text-gray-400">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

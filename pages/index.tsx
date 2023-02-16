@@ -8,6 +8,7 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { CurrentlyReading } from '@/components/media/CurrentlyReading'
 import { CurrentlyListening } from '@/components/media/CurrentlyListening'
+import { Status } from '@/components/omg/status'
 
 const MAX_DISPLAY = 5
 
@@ -31,6 +32,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                     <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
                         {siteMetadata.description.default}
                     </p>
+                    <Status />
                     <CurrentlyListening />
                     <CurrentlyReading />
                 </div>

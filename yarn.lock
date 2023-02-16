@@ -1070,6 +1070,16 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@extractus/feed-extractor@^6.2.1":
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/@extractus/feed-extractor/-/feed-extractor-6.2.1.tgz#9f9295a4c997f7711a068afe7d7fdb7ef6bce863"
+  integrity sha512-zCIcvp4CDhgqdX17MJenBCXXm4NMVFJyKmvVMzl3LwOyFUEmpO4WGjtzXhxw1XN1Mjj5gvPclJNPgRBGlom2zA==
+  dependencies:
+    bellajs "^11.1.1"
+    cross-fetch "^3.1.5"
+    fast-xml-parser "^4.0.13"
+    html-entities "^2.3.3"
+
 "@fal-works/esbuild-plugin-global-externals@^2.1.2":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@fal-works/esbuild-plugin-global-externals/-/esbuild-plugin-global-externals-2.1.2.tgz#c05ed35ad82df8e6ac616c68b92c2282bd083ba4"
@@ -1903,14 +1913,6 @@ axe-core@^4.6.2:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.6.3.tgz#fc0db6fdb65cc7a80ccf85286d91d64ababa3ece"
   integrity sha512-/BQzOX780JhsxDnPpH4ZiyrJAzcd8AfzFPkv+89veFSr1rcMjuq2JDCwypKaPeB6ljHp9KjXhPpjgCvQlWYuqg==
 
-axios@^0.27.2:
-  version "0.27.2"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
-  integrity sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
-  dependencies:
-    follow-redirects "^1.14.9"
-    form-data "^4.0.0"
-
 axobject-query@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-3.1.1.tgz#3b6e5c6d4e43ca7ba51c5babf99d22a9c68485e1"
@@ -1984,7 +1986,7 @@ bcp-47@^2.0.0:
     is-alphanumerical "^2.0.0"
     is-decimal "^2.0.0"
 
-bellajs@^11.0.0rc3:
+bellajs@^11.1.1:
   version "11.1.1"
   resolved "https://registry.yarnpkg.com/bellajs/-/bellajs-11.1.1.tgz#1828dae65e396bf6c199fa8e0e402597b387ce29"
   integrity sha512-Fjsx2ZVarl3UWeTq3YJbbPoQPyh4dWtduw+DMnDYhKya9agbEg/8eXP7yHOvv88zUEHoVl9O/XmgrNTMcMTVSQ==
@@ -3432,7 +3434,7 @@ fast-safe-stringify@^2.1.1:
   resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-2.1.1.tgz#c406a83b6e70d9e35ce3b30a81141df30aeba884"
   integrity sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA==
 
-fast-xml-parser@^4.0.8:
+fast-xml-parser@^4.0.13:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-4.1.2.tgz#5a98c18238d28a57bbdfa9fe4cda01211fff8f4a"
   integrity sha512-CDYeykkle1LiA/uqQyNwYpFbyF6Axec6YapmpUP+/RHWIoR1zKjocdvNaTsxCxZzQ6v9MLXaSYm9Qq0thv0DHg==
@@ -3457,17 +3459,6 @@ fault@^2.0.0:
   integrity sha512-WtySTkS4OKev5JtpHXnib4Gxiurzh5NCGvWrFaZ34m6JehfTUhKZvn9njTfw48t6JumVQOmrKqpmGcdwxnhqBQ==
   dependencies:
     format "^0.2.0"
-
-feed-reader@^5.0.0-rc3:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/feed-reader/-/feed-reader-5.0.2.tgz#d3316a123094218c6ac878e9d95fe04ca6e63124"
-  integrity sha512-MARb6Wr14qnvuMM5n70nQ4M7R8xDeEWn2gm+NGCIWSJAhPIeX64k1pV4agQqdagiTXEOo1HEv2suQ0W425naHg==
-  dependencies:
-    axios "^0.27.2"
-    bellajs "^11.0.0rc3"
-    debug "^4.3.4"
-    fast-xml-parser "^4.0.8"
-    html-entities "^2.3.3"
 
 fetch-blob@^3.1.2, fetch-blob@^3.1.4:
   version "3.2.0"
@@ -3536,11 +3527,6 @@ flatted@^3.1.0:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
-
-follow-redirects@^1.14.9:
-  version "1.15.2"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
-  integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
 
 for-each@^0.3.3:
   version "0.3.3"

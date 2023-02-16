@@ -1,11 +1,11 @@
-import { useRss } from '@/hooks/useRss'
 import { ThreeDots } from 'react-loading-icons'
 import Link from 'next/link'
+import { useJson } from '@/hooks/useJson'
 
 export const CurrentlyReading = () => {
-    const { response, error } = useRss('/books')
+    const { response, error } = useJson('/api/books')
 
-    const booksList = response?.map((entry, index) => {
+    const booksList = response?.entries?.map((entry, index) => {
         const link = (
             <Link
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
@@ -18,15 +18,15 @@ export const CurrentlyReading = () => {
         )
 
         const getLink = (index: number) => {
-            if (index !== response.length - 1 && index !== response.length - 2) {
+            if (index !== response.entries.length - 1 && index !== response.entries.length - 2) {
                 return <span key={entry.link}>{link}, </span>
-            } else if (index === response.length - 1 && response.length > 1) {
+            } else if (index === response.entries.length - 1 && response.entries.length > 1) {
                 return <span key={entry.link}> and {link}</span>
             } else {
                 return <span key={entry.link}>{link}</span>
             }
         }
-        return response?.length && getLink(index)
+        return response?.entries?.length && getLink(index)
     })
 
     if (error) return null
@@ -38,8 +38,8 @@ export const CurrentlyReading = () => {
             </div>
         )
 
-    return response?.length ? (
-        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+    return response?.entries?.length ? (
+        <p className="!mt-1 text-lg leading-7 text-gray-500 dark:text-gray-400">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
