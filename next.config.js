@@ -5,7 +5,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline';
     style-src 'self' 'unsafe-inline';
     img-src * blob: data:;
     media-src 'none';
@@ -68,20 +68,48 @@ module.exports = withBundleAnalyzer({
     async rewrites() {
         return [
             {
-                source: '/script.67532e4133a4t4551aza.js', // plausible script proxy
-                destination: 'https://plausible.io/js/script.outbound-links.js',
-            },
-            {
-                source: '/api/58441z2164b5e7880yec', // plausible api proxy
-                destination: 'https://plausible.io/api/event',
-            },
-            {
-                source: '/books', // oku cors proxy
+                source: '/feeds/books',
                 destination: 'https://oku.club/rss/collection/POaRa',
+            },
+            {
+                source: '/feeds/movies',
+                destination: 'https://letterboxd.com/cdme/rss/',
+            },
+            {
+                source: '/feeds/tv',
+                destination: 'https://trakt.tv/users/cdransf/history.atom',
             },
             {
                 source: '/.well-known/webfinger',
                 destination: '/api/webfinger',
+            },
+            {
+                source: '/scripts/:path',
+                destination: '/static/scripts/:path',
+            },
+            {
+                source: '/styles/:path',
+                destination: '/static/styles/:path',
+            },
+            {
+                source: '/favicons/:path',
+                destination: '/static/favicons/:path',
+            },
+            {
+                source: '/images/:path',
+                destination: '/static/images/:path',
+            },
+            {
+                source: '/images/:path*',
+                destination: '/static/images/:path*',
+            },
+            {
+                source: '/media/:path*',
+                destination: '/static/images/media/:path*',
+            },
+            {
+                source: '/fonts/:path*',
+                destination: '/static/fonts/:path*',
             },
         ]
     },

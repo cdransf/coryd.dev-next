@@ -3,9 +3,10 @@ import Github from './github.svg'
 import Rss from './rss.svg'
 import Lastfm from './lastfm.svg'
 import Letterboxd from './letterboxd.svg'
-import Simkl from './simkl.svg'
+import Trakt from './trakt.svg'
 import Oku from './oku.svg'
 import Mastodon from './mastodon.svg'
+import BuyMeACoffee from './buymeacoffee.svg'
 
 import Link from 'next/link'
 
@@ -15,21 +16,24 @@ const components = {
     rss: Rss,
     lastfm: Lastfm,
     letterboxd: Letterboxd,
-    simkl: Simkl,
+    trakt: Trakt,
     oku: Oku,
     mastodon: Mastodon,
+    buymeacoffee: BuyMeACoffee,
 }
 
 const SocialIcon = ({
     kind,
     href,
     size = 8,
+    className,
     fill,
     rel,
 }: {
     kind: string
     href: string
     size: number
+    className?: string
     fill?: string
     rel?: string
 }) => {
@@ -40,7 +44,7 @@ const SocialIcon = ({
 
     return (
         <Link
-            className="text-sm text-gray-500 transition hover:text-gray-600"
+            className={`${className || ''} text-sm text-gray-500 transition hover:text-gray-600`}
             target="_blank"
             rel={`noopener noreferrer ${rel}`}
             href={href}
@@ -49,7 +53,7 @@ const SocialIcon = ({
             <SocialSvg
                 className={`${
                     fill ? fill : 'fill-current'
-                } text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400 h-${size} w-${size}`}
+                } text-gray-700 hover:text-purple-500 dark:text-gray-200 dark:hover:text-purple-400 h-${size} w-${size}`}
             />
         </Link>
     )

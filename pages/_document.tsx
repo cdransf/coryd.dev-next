@@ -1,3 +1,4 @@
+import siteMetadata from '@/data/siteMetadata'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
@@ -8,28 +9,31 @@ class MyDocument extends Document {
                     <link
                         rel="apple-touch-icon"
                         sizes="76x76"
-                        href="/static/favicons/apple-touch-icon.png"
+                        href={siteMetadata.siteUrl + siteMetadata.icons.apple}
                     />
                     <link
                         rel="icon"
                         type="image/png"
                         sizes="32x32"
-                        href="/static/favicons/favicon-32x32.png"
+                        href={siteMetadata.siteUrl + siteMetadata.icons.favLg}
                     />
                     <link
                         rel="icon"
                         type="image/png"
                         sizes="16x16"
-                        href="/static/favicons/favicon-16x16.png"
+                        href={siteMetadata.siteUrl + siteMetadata.icons.favSm}
                     />
-                    <link rel="manifest" href="/static/favicons/site.webmanifest" />
+                    <link
+                        rel="manifest"
+                        href={siteMetadata.siteUrl + siteMetadata.icons.manifest}
+                    />
                     <link
                         rel="mask-icon"
-                        href="/static/favicons/safari-pinned-tab.svg"
-                        color="#3da9fc"
+                        href={siteMetadata.siteUrl + siteMetadata.icons.pinnedTab}
+                        color={siteMetadata.themeColor}
                     />
-                    <meta name="msapplication-TileColor" content="#3da9fc" />
-                    <meta name="theme-color" content="#3da9fc" />
+                    <meta name="msapplication-TileColor" content={siteMetadata.themeColor} />
+                    <meta name="theme-color" content={siteMetadata.themeColor} />
                     <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
                 </Head>
                 <body className="bg-white text-black antialiased dark:bg-gray-900 dark:text-white">

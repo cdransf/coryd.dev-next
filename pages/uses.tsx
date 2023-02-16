@@ -1,6 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
 import Link from 'next/link'
+import * as Fathom from 'fathom-client'
 
 export default function Uses() {
     return (
@@ -16,14 +17,17 @@ export default function Uses() {
                     </h1>
                 </div>
                 <div className="container py-12">
-                    <p>Things and software that I use regularly.</p>
+                    <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+                        {siteMetadata.description.uses}
+                    </p>
                     <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Hardware
                     </h3>
                     <ul className="list-inside list-disc pl-10">
-                        <li className="mt-1.5 mb-2">Mac Mini (2018 - Intel)</li>
+                        <li className="mt-1.5 mb-2">Midnight MacBook Air (2022 - M2)</li>
                         <li className="mt-1.5 mb-2">
-                            Dell Monitor (5ish years old and going strong)
+                            27" Dell Monitor (courtesy of a previous employer that didn't want it
+                            back)
                         </li>
                         <li className="mt-1.5 mb-2">Apple Magic Keyboard</li>
                         <li className="mt-1.5 mb-2">Apple Magic Trackpad</li>
@@ -31,18 +35,108 @@ export default function Uses() {
                         <li className="mt-1.5 mb-2">Raspberry Pi for Homebridge</li>
                     </ul>
                     <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
-                        Software
+                        macOS + iOS
                     </h3>
                     <ul className="list-inside list-disc pl-10">
                         <li className="mt-1.5 mb-2">
-                            <a
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://culturedcode.com/things"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Things
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://obsidian.md"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Obsidian
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://www.flightyapp.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Flighty
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://parcelapp.net"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Parcel
+                            </Link>
+                        </li>
+                    </ul>
+                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                        iOS
+                    </h3>
+                    <ul className="list-inside list-disc pl-10">
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://apps.apple.com/app/marvis-pro/id1447768809"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Marvis Pro
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://tapbots.com/ivory"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Ivory
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://apps.apple.com/ca/app/status-log/id6444921793"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                status.log
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://www.stratospherix.com/products/filebrowserprofessional"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                FileBrowser Pro
+                            </Link>
+                        </li>
+                    </ul>
+                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                        macOS
+                    </h3>
+                    <ul className="list-inside list-disc pl-10">
+                        <li className="mt-1.5 mb-2">
+                            <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://www.sublimetext.com"
                                 target="_blank"
                                 rel="noopener noreferrer me"
                             >
                                 Sublime Text
-                            </a>{' '}
+                            </Link>{' '}
                             +{' '}
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
@@ -51,11 +145,7 @@ export default function Uses() {
                                 rel="noopener noreferrer"
                             >
                                 Dracula Pro
-                            </Link>{' '}
-                            - I prefer Sublime Text for it's responsiveness and lightweight approach
-                            to editing (while also being extensible due to its a rich plugin
-                            ecosystem). Dracula Pro has become my go-to syntax theme everywhere it's
-                            available.
+                            </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
                             <Link
@@ -65,8 +155,7 @@ export default function Uses() {
                                 rel="noopener noreferrer"
                             >
                                 iTerm2
-                            </Link>{' '}
-                            - my preferred macoS terminal emulator.
+                            </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
                             <Link
@@ -76,57 +165,127 @@ export default function Uses() {
                                 rel="noopener noreferrer"
                             >
                                 Alfred
-                            </Link>{' '}
-                            - My favorite Spotlight replacement. The flexibility, speed and wide
-                            array of workflows make it incredibly useful.
+                            </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://culturedcode.com/things"
+                                href="https://www.keyboardmaestro.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Things
-                            </Link>{' '}
-                            - My go to task manager — simple, well-designed and extremely reliable.
+                                Keyboard Maestro
+                            </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://1password.com"
+                                href="https://sindresorhus.com/dato"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                1Password
-                            </Link>{' '}
-                            - The best password manager around. I've been using it for{' '}
-                            {new Date().getFullYear() - 2011} years and counting.
+                                Dato
+                            </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://craft.do"
+                                href="https://www.arqbackup.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Obsidian
-                            </Link>{' '}
-                            - A powerful and incredibly flexible documentation/note taking tool. I
-                            use it for everything from quick notes to web clipping pages to
-                            reference later to writing posts for this site.
+                                Arq
+                            </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://readwise.io/read"
+                                href="https://www.gitify.io"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Reader
-                            </Link>{' '}
-                            - I've moved to Readwise's Reader application for browsing my feeds,
-                            saving articles to read, highlight and reference as needed.
+                                Gitify
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://replay.software/sleeve"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Sleeve
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://magnet.crowdcafe.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Magnet
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://www.noodlesoft.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Hazel
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://www.macbartender.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Bartender
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://v2.airbuddy.app"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                AirBuddy
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://www.peterborgapps.com/lingon"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Lingon
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://www.nightbirdsevolve.com/meta/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Meta
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://software.charliemonroe.net/permute/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Permute
+                            </Link>
                         </li>
                     </ul>
                     <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
@@ -139,13 +298,48 @@ export default function Uses() {
                                 href="https://ref.fm/u28939392"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                onClick={() => {
+                                    Fathom.trackGoal('RNUWLQ8O', 0)
+                                }}
                             >
                                 Fastmail
-                            </Link>{' '}
-                            - my choice for an email provider. I've found its features and approach
-                            to be the best at managing my email. The company embraces and advances
-                            open standards and supports just about any workflow you can imagine for
-                            handling email.
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://savvycal.com/?r=coryd"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => {
+                                    Fathom.trackGoal('UXTCQANC', 0)
+                                }}
+                            >
+                                SavvyCal
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://usefathom.com/ref/EGXCON"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => {
+                                    Fathom.trackGoal('RQEGF0WP', 0)
+                                }}
+                            >
+                                Fathom Analytics
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://whereby.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Whereby
+                            </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
                             <Link
@@ -153,13 +347,42 @@ export default function Uses() {
                                 href="https://nextdns.io/?from=m56mt3z6"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                onClick={() => {
+                                    Fathom.trackGoal('CG4FNTCN', 0)
+                                }}
                             >
                                 NextDNS
-                            </Link>{' '}
-                            - a privacy-focused DNS provider with myriad blocking, caching and
-                            security options. I have a baseline profile configured on my home
-                            network and a more aggressive one installed via a profile on my devices
-                            directly.
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://1password.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                1Password
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://www.ivpn.net"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                IVPN
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://jumpshare.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Jumpshare
+                            </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
                             <Link
@@ -169,9 +392,7 @@ export default function Uses() {
                                 rel="noopener noreferrer"
                             >
                                 Apple Music
-                            </Link>{' '}
-                            - primarily as a way to sync music. I import my library and allow Apple
-                            to store it rather than leveraging their cataologue.
+                            </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
                             <Link
@@ -181,50 +402,37 @@ export default function Uses() {
                                 rel="noopener noreferrer"
                             >
                                 Slack
-                            </Link>{' '}
-                            - my family has a Slack channel that we use instead of group message
-                            threads and I participate in a number of other groups.
-                        </li>
-                        <li className="mt-1.5 mb-2">
-                            <Link
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://plausible.io"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Plausible
-                            </Link>{' '}
-                            - privacy respecting analytics for this site. Feel free to opt out{' '}
-                            <Link
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://coryd.dev/static/analytics.html"
-                            >
-                                here
                             </Link>
-                            .
                         </li>
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://simkl.com"
+                                href="http://discord.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Simkl
-                            </Link>{' '}
-                            - to keep track of what shows I'm watching.
+                                Discord
+                            </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://simkl.com"
+                                href="https://trakt.tv"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Trakt
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://letterboxd.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 Letterboxd
-                            </Link>{' '}
-                            - to keep track of what movies I'm watching and seek out recommendations
-                            for ones I haven't seen.
+                            </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
                             <Link
@@ -234,10 +442,27 @@ export default function Uses() {
                                 rel="noopener noreferrer"
                             >
                                 Oku
-                            </Link>{' '}
-                            - to track the books I'm reading and discover new ones (the "I'm
-                            reading..." display on the home page is sourced from an RSS feed they
-                            provide).
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://glass.photo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Glass
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://readwise.io/read"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Reader
+                            </Link>
                         </li>
                     </ul>
                     <p className="mt-6">

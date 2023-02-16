@@ -1,4 +1,4 @@
-![Cory Dransfeldt](/public/static/images/twitter-card.png)
+![Cory Dransfeldt](/public/static/images/social-card.png)
 
 # coryd.dev
 

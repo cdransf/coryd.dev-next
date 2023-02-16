@@ -8,6 +8,7 @@ import MobileNav from './MobileNav'
 import BlogSearch from './BlogSearch'
 import ThemeSwitch from './ThemeSwitch'
 import { ReactNode } from 'react'
+import SocialIcon from './social-icons'
 
 interface Props {
     children: ReactNode
@@ -25,7 +26,7 @@ const LayoutWrapper = ({ children }: Props) => {
                                     <Logo />
                                 </div>
                                 {typeof siteMetadata.headerTitle === 'string' ? (
-                                    <div className="hidden h-6 text-base font-semibold sm:block md:text-2xl">
+                                    <div className="hidden h-6 text-base font-semibold !leading-none sm:block md:text-2xl">
                                         {siteMetadata.headerTitle}
                                     </div>
                                 ) : (
@@ -47,6 +48,12 @@ const LayoutWrapper = ({ children }: Props) => {
                             ))}
                         </div>
                         <BlogSearch />
+                        <SocialIcon
+                            className="ml-1 mr-1"
+                            kind="buymeacoffee"
+                            href={siteMetadata.buymeacoffee}
+                            size={6}
+                        />
                         <ThemeSwitch />
                         <MobileNav />
                     </div>

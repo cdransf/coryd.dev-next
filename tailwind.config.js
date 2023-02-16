@@ -3,12 +3,10 @@
 
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
+const dracula = require('tailwind-dracula/colors')
 
 /** @type {import("tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
-    experimental: {
-        optimizeUniversalDefaults: true,
-    },
     content: [
         './pages/**/*.tsx',
         './components/**/*.tsx',
@@ -32,22 +30,10 @@ module.exports = {
                 sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                primary: colors.blue,
+                ...dracula,
+                primary: dracula.purple,
                 //@ts-ignore
                 gray: colors.neutral, // TODO: Remove ts-ignore after tw types gets updated to v3
-                blue: {
-                    DEFAULT: '#3DA9FC',
-                    50: '#F2F9FF',
-                    100: '#DEF0FE',
-                    200: '#B6DEFE',
-                    300: '#8DCDFD',
-                    400: '#65BBFD',
-                    500: '#3DA9FC',
-                    600: '#0691FB',
-                    700: '#0371C6',
-                    800: '#02528E',
-                    900: '#013257',
-                },
             },
             keyframes: {
                 wave: {
@@ -93,7 +79,7 @@ module.exports = {
                             backgroundColor: theme('colors.gray.800'),
                         },
                         code: {
-                            color: theme('colors.pink.500'),
+                            color: theme('colors.purple.500'),
                             backgroundColor: theme('colors.gray.100'),
                             paddingLeft: '4px',
                             paddingRight: '4px',
@@ -197,5 +183,9 @@ module.exports = {
             },
         },
     },
-    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
+        require('tailwind-dracula')('dracula'),
+    ],
 }

@@ -24,12 +24,25 @@ input:-webkit-autofill:focus {
     transition: background-color 600000s 0s, color 600000s 0s;
 }
 
-/* loading icon size override */
-.icon--dots__loading svg {
-    height: 12px;
-    width: 48px;
+::-moz-selection {
+    color: theme(colors.gray.800);
+    background: theme(colors.purple.400);
 }
 
-.icon--dots__loading svg circle {
-    @apply fill-gray-500 dark:fill-gray-400;
+::selection {
+    color: theme(colors.gray.800);
+    background: theme(colors.purple.400);
+}
+
+/* loading icon size override */
+.icon-dots--loading svg {
+    width: 64px;
+}
+
+.icon-dots--loading svg circle {
+    fill: theme(colors.gray.900);
+}
+
+.dark .icon-dots--loading svg circle {
+    fill: theme(colors.gray.100);
 }
