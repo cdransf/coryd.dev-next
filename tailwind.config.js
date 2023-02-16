@@ -32,8 +32,18 @@ module.exports = {
             colors: {
                 ...dracula,
                 primary: dracula.purple,
-                //@ts-ignore
-                gray: colors.neutral, // TODO: Remove ts-ignore after tw types gets updated to v3
+                gray: dracula.darker,
+                blue: dracula.blue,
+                cyan: dracula.cyan,
+                green: dracula.green,
+                orange: dracula.orange,
+                pink: dracula.pink,
+                purple: dracula.purple,
+                red: dracula.red,
+                yellow: dracula.yellow,
+                dark: dracula.dark,
+                darker: dracula.darker,
+                light: dracula.light,
             },
             keyframes: {
                 wave: {

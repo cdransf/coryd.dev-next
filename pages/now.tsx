@@ -2,10 +2,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
 import Link from 'next/link'
 import * as Fathom from 'fathom-client'
-import MapPin from '@/components/icons/mappin.svg'
-import Code from '@/components/icons/code.svg'
-import Megaphone from '@/components/icons/megaphone.svg'
-import Terminal from '@/components/icons/terminal.svg'
+import { MapPin, Code, Megaphone, Terminal } from '@/components/icons'
 import { Status } from '@/components/omg/status'
 
 export default function Now() {
@@ -22,7 +19,7 @@ export default function Now() {
                     </h1>
                 </div>
                 <div className="container py-12">
-                    <h3 className="text-xl font-extrabold leading-9 tracking-tight text-dracula-orange-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="text-xl font-extrabold leading-9 tracking-tight text-orange-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Currently
                     </h3>
                     <div className="pl-4 md:pl-8">
@@ -58,7 +55,7 @@ export default function Now() {
                             , for better or worse.
                         </p>
                     </div>
-                    <h3 className="pt-4 text-xl font-extrabold leading-9 tracking-tight text-dracula-red-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="pt-4 text-xl font-extrabold leading-9 tracking-tight text-red-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Making
                     </h3>
                     <div className="pl-4 md:pl-8">
