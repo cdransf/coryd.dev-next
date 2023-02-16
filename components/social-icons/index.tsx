@@ -9,6 +9,7 @@ import Trakt from './trakt.svg'
 import Oku from './oku.svg'
 import Mastodon from './mastodon.svg'
 import BuyMeACoffee from './buymeacoffee.svg'
+import Camera from './camera.svg'
 
 import Link from 'next/link'
 
@@ -24,6 +25,7 @@ const components = {
     oku: Oku,
     mastodon: Mastodon,
     buymeacoffee: BuyMeACoffee,
+    camera: Camera,
 }
 
 const SocialIcon = ({

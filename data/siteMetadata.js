@@ -23,6 +23,7 @@ const siteMetadata = {
     github: 'https://github.com/cdransf',
     rss: '/feed.xml',
     mastodon: 'https://social.lol/@cory',
+    glass: 'https://glass.photo/coryd',
     lastfm: 'https://last.fm/user/cdme_',
     letterboxd: 'https://letterboxd.com/cdme',
     trakt: 'https://trakt.tv/users/cdransf',

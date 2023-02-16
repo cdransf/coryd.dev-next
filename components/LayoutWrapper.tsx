@@ -26,7 +26,7 @@ const LayoutWrapper = ({ children }: Props) => {
                                     <Logo />
                                 </div>
                                 {typeof siteMetadata.headerTitle === 'string' ? (
-                                    <div className="hidden h-6 text-2xl font-semibold !leading-none sm:block">
+                                    <div className="hidden h-6 whitespace-nowrap text-2xl font-semibold !leading-none sm:block">
                                         {siteMetadata.headerTitle}
                                     </div>
                                 ) : (
@@ -49,10 +49,16 @@ const LayoutWrapper = ({ children }: Props) => {
                         </div>
                         <BlogSearch />
                         <SocialIcon
-                            className="ml-1 mr-1"
+                            className="mx-2 md:mx-3"
                             kind="buymeacoffee"
                             href={siteMetadata.buymeacoffee}
-                            size={6}
+                            size={5}
+                        />
+                        <SocialIcon
+                            className="mx-2 md:mx-3"
+                            kind="rss"
+                            href={siteMetadata.rss}
+                            size={5}
                         />
                         <ThemeSwitch />
                         <MobileNav />

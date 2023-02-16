@@ -4,7 +4,7 @@ const BlogSearch = () => {
     return (
         <Link href="/blog" passHref>
             <svg
-                className="ml-1 mr-1 h-7 w-7 p-1"
+                className="mx-2 h-5 w-5 md:mx-3"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"

@@ -10,8 +10,8 @@ export default function Footer() {
                     <SocialIcon kind="fastmail" href={`mailto:${siteMetadata.email}`} size={6} />
                     <SocialIcon kind="savvycal" href={siteMetadata.savvycal} size={6} />
                     <SocialIcon kind="github" href={siteMetadata.github} size={6} />
-                    <SocialIcon kind="rss" href={siteMetadata.rss} size={6} />
                     <SocialIcon kind="mastodon" href={siteMetadata.mastodon} size={6} rel="me" />
+                    <SocialIcon kind="camera" fill="fill-none" href={siteMetadata.glass} size={6} />
                     <SocialIcon kind="lastfm" href={siteMetadata.lastfm} size={6} />
                     <SocialIcon
                         kind="letterboxd"
