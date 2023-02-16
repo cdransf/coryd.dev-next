@@ -17,13 +17,13 @@ export default function Uses() {
                     </h1>
                 </div>
                 <div className="container py-12">
-                    <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+                    <p className="text-lg leading-7 text-gray-500 dark:text-gray-100">
                         {siteMetadata.description.uses}
                     </p>
-                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-cyan-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Hardware
                     </h3>
-                    <ul className="list-inside list-disc pl-10">
+                    <ul className="list-inside list-disc pl-5 md:pl-10">
                         <li className="mt-1.5 mb-2">Midnight MacBook Air (2022 - M2)</li>
                         <li className="mt-1.5 mb-2">
                             27" Dell Monitor (courtesy of a previous employer that didn't want it
@@ -34,10 +34,10 @@ export default function Uses() {
                         <li className="mt-1.5 mb-2">Homepod Mini for audio</li>
                         <li className="mt-1.5 mb-2">Raspberry Pi for Homebridge</li>
                     </ul>
-                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-green-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         macOS + iOS
                     </h3>
-                    <ul className="list-inside list-disc pl-10">
+                    <ul className="list-inside list-disc pl-5 md:pl-10">
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
@@ -79,10 +79,10 @@ export default function Uses() {
                             </Link>
                         </li>
                     </ul>
-                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-red-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         iOS
                     </h3>
-                    <ul className="list-inside list-disc pl-10">
+                    <ul className="list-inside list-disc pl-5 md:pl-10">
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
@@ -124,10 +124,10 @@ export default function Uses() {
                             </Link>
                         </li>
                     </ul>
-                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-orange-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         macOS
                     </h3>
-                    <ul className="list-inside list-disc pl-10">
+                    <ul className="list-inside list-disc pl-5 md:pl-10">
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
@@ -288,10 +288,10 @@ export default function Uses() {
                             </Link>
                         </li>
                     </ul>
-                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-pink-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Services
                     </h3>
-                    <ul className="list-inside list-disc pl-10">
+                    <ul className="list-inside list-disc pl-5 md:pl-10">
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"

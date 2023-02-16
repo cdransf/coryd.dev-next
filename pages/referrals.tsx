@@ -17,10 +17,10 @@ export default function Referrals() {
                     </h1>
                 </div>
                 <div className="container py-12">
-                    <p className="mb-5 text-lg leading-7 text-gray-500 dark:text-gray-400">
+                    <p className="mb-5 text-lg leading-7 text-gray-500 dark:text-gray-100">
                         {siteMetadata.description.referrals}
                     </p>
-                    <ul className="list-inside list-disc pl-10">
+                    <ul className="list-inside list-disc pl-5 md:pl-10">
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"

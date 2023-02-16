@@ -4,6 +4,11 @@ import Link from 'next/link'
 import * as Fathom from 'fathom-client'
 import { MapPin, Code, Megaphone, Terminal } from '@/components/icons'
 import Status from '@/components/omg/status'
+import Albums from '@/components/media/Albums'
+import Artists from '@/components/media/Artists'
+import Reading from '@/components/media/Reading'
+import Movies from '@/components/media/Movies'
+import TV from '@/components/media/TV'
 
 export default function Now() {
     return (
@@ -19,17 +24,17 @@ export default function Now() {
                     </h1>
                 </div>
                 <div className="container py-12">
-                    <h3 className="text-xl font-extrabold leading-9 tracking-tight text-orange-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Currently
                     </h3>
-                    <div className="pl-4 md:pl-8">
+                    <div className="pl-5 md:pl-10">
                         <Status />
-                        <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">
+                        <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-100">
                             <MapPin className="mr-1 inline h-6 w-6" />
                             Living in Camarillo, California with my beautiful family, 4 rescue dogs
                             and a guinea pig.
                         </p>
-                        <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">
+                        <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-100">
                             <Code className="mr-1 inline h-6 w-6" />
                             Working at{' '}
                             <Link
@@ -41,7 +46,7 @@ export default function Now() {
                                 HashiCorp
                             </Link>
                         </p>
-                        <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">
+                        <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-100">
                             <Megaphone className="mr-1 inline h-6 w-6" />
                             Rooting for the Lakers{` `}
                             <Link
@@ -55,11 +60,11 @@ export default function Now() {
                             , for better or worse.
                         </p>
                     </div>
-                    <h3 className="pt-4 text-xl font-extrabold leading-9 tracking-tight text-red-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="pt-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Making
                     </h3>
-                    <div className="pl-4 md:pl-8">
-                        <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">
+                    <div className="pl-5 md:pl-10">
+                        <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-100">
                             <Terminal className="mr-1 inline h-6 w-6" />
                             Hacking away on random projects like this page, my{' '}
                             <Link
@@ -72,6 +77,11 @@ export default function Now() {
                             and whatever else I can find time for.
                         </p>
                     </div>
+                    <Artists />
+                    <Albums />
+                    <Reading />
+                    <Movies />
+                    <TV />
                 </div>
             </div>
         </>

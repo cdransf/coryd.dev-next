@@ -12,6 +12,7 @@ const ContentSecurityPolicy = `
     connect-src *;
     font-src 'self' data:;
     frame-src pastes.coryd.dev;
+    object-src 'self' data:;
 `
 
 const securityHeaders = [

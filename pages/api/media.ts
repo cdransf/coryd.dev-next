@@ -9,11 +9,14 @@ export default async function handler(req: any, res: any) {
     const MEDIA = ARTIST ? 'artists' : 'albums'
     const MEDIA_VAL = ARTIST ? ARTIST : ALBUM
 
-    const data = await fetch(`${host}/media/${MEDIA}/${MEDIA_VAL}.jpg`)
+    const data = await fetch(`${host}/media/${MEDIA}/${encodeURIComponent(MEDIA_VAL)}.jpg`)
         .then((response) => {
-            if (response.status === 200) return `${host}/media/${MEDIA}/${MEDIA_VAL}.jpg`
+            if (response.status === 200)
+                return `${host}/media/${MEDIA}/${encodeURIComponent(MEDIA_VAL)}.jpg`
             fetch(
-                `${host}/api/omg/paste-edit?paste=404-images&editType=append&content=${MEDIA_VAL}`
+                `${host}/api/omg/paste-edit?paste=404-images&editType=append&content=${encodeURIComponent(
+                    MEDIA_VAL
+                )}`
             ).then((response) => response.json())
             return `${host}/media/404.jpg`
         })

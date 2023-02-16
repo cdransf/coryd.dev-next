@@ -57,6 +57,10 @@ module.exports = {
                     '100%': { transform: 'rotate(0.0deg)' },
                 },
             },
+            backgroundImage: {
+                'cover-gradient':
+                    'linear-gradient(180deg,transparent 0,rgba(0,0,0,.15) 70%,rgba(0,0,0,.5))',
+            },
             typography: (theme) => ({
                 DEFAULT: {
                     css: {

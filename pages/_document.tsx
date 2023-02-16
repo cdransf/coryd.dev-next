@@ -31,6 +31,8 @@ class MyDocument extends Document {
                     <meta name="msapplication-TileColor" content={siteMetadata.themeColor} />
                     <meta name="theme-color" content={siteMetadata.themeColor} />
                     <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+                    <link rel="webmention" href="https://webmention.io/coryd.dev/webmention" />
+                    <link rel="pingback" href="https://webmention.io/coryd.dev/xmlrpc" />
                 </Head>
                 <body className="bg-white text-gray-900 antialiased dark:bg-gray-900 dark:text-white">
                     <Main />
