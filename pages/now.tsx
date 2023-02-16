@@ -24,7 +24,7 @@ export default function Now() {
                     <h3 className="text-xl font-extrabold leading-9 tracking-tight text-dracula-orange-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Currently
                     </h3>
-                    <div className="pl-4 md:pl-4">
+                    <div className="pl-4 md:pl-8">
                         <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">
                             <MapPin className="mr-1 inline h-6 w-6" />
                             Living in Camarillo, California with my beautiful family, 4 rescue dogs
@@ -59,7 +59,7 @@ export default function Now() {
                     <h3 className="pt-4 text-xl font-extrabold leading-9 tracking-tight text-dracula-red-500 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Making
                     </h3>
-                    <div className="pl-4 md:pl-4">
+                    <div className="pl-4 md:pl-8">
                         <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">
                             <Terminal className="mr-1 inline h-6 w-6" />
                             Hacking away on random projects like this page, my{' '}
