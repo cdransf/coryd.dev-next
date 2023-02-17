@@ -50,7 +50,7 @@ const SocialIcon = ({
 
     return (
         <Link
-            className={`${className || ''} text-sm text-gray-500 transition hover:text-gray-600`}
+            className={`${className || ''}`}
             target="_blank"
             rel={`noopener noreferrer ${rel}`}
             href={href}
