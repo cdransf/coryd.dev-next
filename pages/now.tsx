@@ -1,8 +1,9 @@
 import siteMetadata from '@/data/siteMetadata'
-import { PageSEO } from '@/components/SEO'
+import loadNowData from '@/lib/now'
 import { useJson } from '@/hooks/useJson'
-import { Spin } from '@/components/Loading'
 import Link from 'next/link'
+import { PageSEO } from '@/components/SEO'
+import { Spin } from '@/components/Loading'
 import { MapPin, Code, Megaphone, Terminal } from '@/components/icons'
 import Status from '@/components/Status'
 import Albums from '@/components/media/Albums'
@@ -15,14 +16,9 @@ const env = process.env.NODE_ENV
 let host = siteMetadata.siteUrl
 if (env === 'development') host = 'http://localhost:3000'
 
-async function getNowData() {
-    const data = await fetch(`${host}/api/now`).then((res) => res.json())
-    return data
-}
-
 export async function getStaticProps() {
     return {
-        props: await getNowData(),
+        props: await loadNowData(),
         revalidate: 1,
     }
 }

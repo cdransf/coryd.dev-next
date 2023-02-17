@@ -9,21 +9,13 @@ import { PostFrontMatter } from 'types/PostFrontMatter'
 import CurrentlyReading from '@/components/media/CurrentlyReading'
 import CurrentlyListening from '@/components/media/CurrentlyListening'
 import Status from '@/components/Status'
+import loadNowData from '@/lib/now'
 
 const MAX_DISPLAY = 5
 
-const env = process.env.NODE_ENV
-let host = siteMetadata.siteUrl
-if (env === 'development') host = 'http://localhost:3000'
-
-async function getNowData() {
-    const data = await fetch(`${host}/api/now`).then((res) => res.json())
-    return data
-}
-
 export const getStaticProps: GetStaticProps<{ posts: PostFrontMatter[]; now }> = async () => {
     const posts = await getAllFilesFrontMatter('blog')
-    const now = await getNowData()
+    const now = await loadNowData()
 
     return { props: { posts, now } }
 }
