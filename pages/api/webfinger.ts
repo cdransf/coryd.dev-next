@@ -29,7 +29,7 @@ export default function handler(req, res) {
             },
             {
                 rel: 'http://ostatus.org/schema/1.0/subscribe',
-                template: 'mastodon.social/authorize_interaction?uri={uri}',
+                template: 'social.lol/authorize_interaction?uri={uri}',
             },
         ],
     }
