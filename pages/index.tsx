@@ -8,9 +8,7 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import CurrentlyReading from '@/components/media/CurrentlyReading'
 import CurrentlyListening from '@/components/media/CurrentlyListening'
-
-//@ts-ignore
-import Status from '@/components/omg/Status'
+import Status from '@/components/Status'
 
 const MAX_DISPLAY = 5
 

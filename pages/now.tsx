@@ -2,9 +2,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
 import Link from 'next/link'
 import { MapPin, Code, Megaphone, Terminal } from '@/components/icons'
-
-// @ts-ignore
-import Status from '@/components/omg/Status'
+import Status from '@/components/Status'
 import Albums from '@/components/media/Albums'
 import Artists from '@/components/media/Artists'
 import Reading from '@/components/media/Reading'
