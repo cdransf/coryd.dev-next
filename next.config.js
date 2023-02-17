@@ -134,6 +134,21 @@ module.exports = withBundleAnalyzer({
                 destination: '/blog/a-brief-intro-to-git',
                 permanent: true,
             },
+            {
+                source: '/2022/05/fixing-safari-icloud-syncing',
+                destination: '/blog/fixing-safari-icloud-syncing',
+                permanent: true,
+            },
+            {
+                source: '/2023/02/adding-client-side-rendered-webmentions-to-my-blog',
+                destination: '/blog/adding-client-side-rendered-webmentions-to-my-blog',
+                permanent: true,
+            },
+            {
+                source: '/2023/02/automatingandprobablyoverengineeringmy-nowpage',
+                destination: 'https://coryd.dev/blog/automating-and-overengineering-my-now-page',
+                permanent: true,
+            },
         ]
     },
     webpack: (config, { dev, isServer }) => {
