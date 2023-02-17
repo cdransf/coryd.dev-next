@@ -23,7 +23,12 @@ const CurrentlyReading = (props) => {
             if (index !== books?.length - 1 && index !== books?.length - 2) {
                 return <span key={entry.link}>{link}, </span>
             } else if (index === books?.length - 1 && books?.length > 1) {
-                return <span key={entry.link}> and {link}</span>
+                return (
+                    <span key={entry.link}>
+                        <span className="mx-1">and</span>
+                        {link}
+                    </span>
+                )
             } else {
                 return <span key={entry.link}>{link}</span>
             }
@@ -32,7 +37,7 @@ const CurrentlyReading = (props) => {
     })
 
     return (
-        <p className="!mt-1 text-lg leading-7 text-gray-500 dark:text-gray-100">
+        <p className="!mt-1 flex flex-row items-center text-lg leading-7 text-gray-500 dark:text-gray-100">
             <span className="mr-1 inline-block h-5 w-5">
                 <Book />
             </span>

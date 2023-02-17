@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { formatDate } from '@/utils/formatters'
 
-const Webmentions = () => {
+const WebmentionsCore = () => {
     const { response, error } = useJson('/api/webmentions')
     const webmentions = response?.children
     const { asPath } = useRouter()
@@ -142,4 +142,4 @@ const Webmentions = () => {
     )
 }
 
-export default Webmentions
+export default WebmentionsCore
