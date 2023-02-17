@@ -11,20 +11,23 @@ const Webmentions = () => {
     const webmentions = response?.children
     const { asPath } = useRouter()
     const postPath = asPath.split('/blog').pop()
-    const hasMention =
-        webmentions?.filter((mention) => mention['wm-target'].includes(postPath)).length > 0 ||
-        webmentions?.filter((mention) => mention['wm-source'].includes(postPath)).length > 0 ||
-        webmentions?.filter((mention) => mention['wm-property'] === 'like-of').length > 0 ||
-        webmentions?.filter((mention) => mention['wm-property'] === 'in-reply-to').length > 0
     const hasLikes =
-        webmentions?.filter((mention) => mention['wm-property'] === 'like-of').length > 0
+        webmentions?.filter(
+            (mention) =>
+                mention['wm-property'] === 'like-of' && mention['wm-target'].includes(postPath)
+        ).length > 0
     const hasComments =
-        webmentions?.filter((mention) => mention['wm-property'] === 'in-reply-to').length > 0
+        webmentions?.filter(
+            (mention) =>
+                mention['wm-property'] === 'in-reply-to' && mention['wm-target'].includes(postPath)
+        ).length > 0
     const boostsCount = webmentions?.filter(
         (mention) =>
-            mention['wm-property'] === 'repost-of' || mention['wm-source'].includes(postPath)
+            mention['wm-property'] === 'repost-of' ||
+            (mention['wm-source'].includes(postPath) && mention['wm-target'].includes(postPath))
     ).length
     const hasBoosts = boostsCount > 0
+    const hasMention = hasLikes || hasComments || hasBoosts
 
     if (error) return null
 
