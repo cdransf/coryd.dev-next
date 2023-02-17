@@ -58,6 +58,14 @@ module.exports = withBundleAnalyzer({
     eslint: {
         dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
     },
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'webmention.io',
+            },
+        ],
+    },
     async headers() {
         return [
             {

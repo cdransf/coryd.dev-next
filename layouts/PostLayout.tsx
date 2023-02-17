@@ -10,8 +10,16 @@ import { CopyLink } from '@/components/CopyLink'
 import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
+import dynamic from 'next/dynamic'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+
+const WebmentionsComponent = dynamic(
+    () => {
+        return import('@/components/Webmentions')
+    },
+    { ssr: false }
+)
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
     weekday: 'long',
@@ -120,7 +128,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                             <div className="prose max-w-none pt-10 pb-8 text-gray-500 dark:prose-dark dark:text-gray-100">
                                 {children}
                             </div>
-                            <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
+                            <WebmentionsComponent />
+                            <div className="py-6 text-sm text-gray-700 dark:text-gray-300">
                                 <CopyLink
                                     className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                     origin={siteMetadata.siteUrl}

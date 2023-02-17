@@ -7,6 +7,7 @@ import formatDate from '@/lib/utils/formatDate'
 import ScrollTop from '@/components/ScrollTop'
 import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
+import dynamic from 'next/dynamic'
 
 interface Props {
     frontMatter: PostFrontMatter
@@ -14,6 +15,13 @@ interface Props {
     next?: { slug: string; title: string }
     prev?: { slug: string; title: string }
 }
+
+const WebmentionsComponent = dynamic(
+    () => {
+        return import('@/components/Webmentions')
+    },
+    { ssr: false }
+)
 
 export default function PostLayout({ frontMatter, next, prev, children }: Props) {
     const { slug, date, title } = frontMatter
@@ -47,6 +55,7 @@ export default function PostLayout({ frontMatter, next, prev, children }: Props)
                             <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">
                                 {children}
                             </div>
+                            <WebmentionsComponent />
                         </div>
                         <footer>
                             <div className="flex flex-col text-sm font-medium sm:flex-row sm:justify-between sm:text-base">

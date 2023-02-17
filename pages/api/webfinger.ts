@@ -1,10 +1,10 @@
 export default function handler(req, res) {
     const MASTODON_META = {
-        subject: 'acct:coryd@mastodon.social',
+        subject: 'acct:coryd@social.lol',
         aliases: [
             'https://coryd.dev',
-            'https://mastodon.social/@coryd',
-            'https://mastodon.social/users/coryd',
+            'https://social.lol/@coryd',
+            'https://social.lol/users/coryd',
         ],
         links: [
             {
@@ -20,12 +20,12 @@ export default function handler(req, res) {
             {
                 rel: 'http://webfinger.net/rel/profile-page',
                 type: 'text/html',
-                href: 'https://mastodon.social/@coryd',
+                href: 'https://social.lol/users/coryd',
             },
             {
                 rel: 'self',
                 type: 'application/activity+json',
-                href: 'https://mastodon.social/users/coryd',
+                href: 'https://social.lol/users/coryd',
             },
             {
                 rel: 'http://ostatus.org/schema/1.0/subscribe',

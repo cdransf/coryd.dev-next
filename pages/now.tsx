@@ -1,9 +1,8 @@
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
 import Link from 'next/link'
-import * as Fathom from 'fathom-client'
 import { MapPin, Code, Megaphone, Terminal } from '@/components/icons'
-import Status from '@/components/omg/status'
+import Status from '@/components/omg/Status'
 import Albums from '@/components/media/Albums'
 import Artists from '@/components/media/Artists'
 import Reading from '@/components/media/Reading'
@@ -82,6 +81,27 @@ export default function Now() {
                     <Reading />
                     <Movies />
                     <TV />
+                    <p className="pt-8 text-center text-xs text-gray-900 dark:text-gray-100">
+                        (This is a{' '}
+                        <Link
+                            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                            href="https://nownownow.com/about"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            now page
+                        </Link>
+                        , and if you have your own site,{' '}
+                        <Link
+                            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                            href="https://nownownow.com/about"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            you should make one, too
+                        </Link>
+                        .)
+                    </p>
                 </div>
             </div>
         </>
