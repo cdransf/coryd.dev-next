@@ -1,5 +1,7 @@
 ![Cory Dransfeldt](/public/static/images/social-card.png)
 
+[![FeedBot](https://github.com/cdransf/coryd.dev/actions/workflows/mastofeedbot.yml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/mastofeedbot.yml)
+
 # coryd.dev
 
 Hi! I'm Cory. 👋🏻
