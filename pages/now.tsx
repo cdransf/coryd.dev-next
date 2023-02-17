@@ -47,7 +47,7 @@ export default function Now() {
                         </p>
                         <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-100">
                             <Megaphone className="mr-1 inline h-6 w-6" />
-                            Rooting for the Lakers{` `}
+                            Rooting for the{` `}
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://lakers.com"
