@@ -17,7 +17,7 @@ const Artists = () => {
 
     return (
         <>
-            <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+            <h3 className="pt-4 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                 Listening: artists
             </h3>
             <div className="grid grid-cols-2 gap-2 md:grid-cols-4">

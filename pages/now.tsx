@@ -59,7 +59,7 @@ export default function Now() {
                             , for better or worse.
                         </p>
                     </div>
-                    <h3 className="pt-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+                    <h3 className="pt-6 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         Making
                     </h3>
                     <div className="pl-5 md:pl-10">
