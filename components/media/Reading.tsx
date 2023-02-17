@@ -1,19 +1,10 @@
-import { useJson } from '@/hooks/useJson'
 import Link from 'next/link'
-import { ThreeDots } from 'react-loading-icons'
+import { Spin } from '@/components/Loading'
 
-const Reading = () => {
-    const { response, error } = useJson('/api/books')
-    const books = response?.entries
+const Reading = (props) => {
+    const { books } = props
 
-    if (error) return null
-
-    if (!response)
-        return (
-            <div className="icon-dots--loading">
-                <ThreeDots />
-            </div>
-        )
+    if (!books) return <Spin className="my-12 flex justify-center" />
 
     return (
         <>

@@ -35,7 +35,7 @@ input:-webkit-autofill:focus {
 }
 
 /* loading icon size override */
-.icon-dots--loading svg {
+.icon-loading svg {
     width: 64px;
 }
 

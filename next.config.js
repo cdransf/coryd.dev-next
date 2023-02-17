@@ -64,6 +64,15 @@ module.exports = withBundleAnalyzer({
                 protocol: 'https',
                 hostname: 'webmention.io',
             },
+            {
+                protocol: 'https',
+                hostname: 'lastfm.freetls.fastly.net',
+            },
+            {
+                protocol: 'http',
+                hostname: 'localhost',
+                port: '3000',
+            },
         ],
     },
     async headers() {

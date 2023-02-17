@@ -1,19 +1,10 @@
-import { useJson } from '@/hooks/useJson'
-import { ThreeDots } from 'react-loading-icons'
 import Cover from '@/components/media/display/Cover'
+import { Spin } from '@/components/Loading'
 
-const Artists = () => {
-    const { response, error } = useJson('/api/music?type=artists&period=7day&limit=8')
-    const artists = response?.topartists?.artist
+const Artists = (props) => {
+    const { artists } = props
 
-    if (error) return null
-
-    if (!response)
-        return (
-            <div className="icon-dots--loading">
-                <ThreeDots />
-            </div>
-        )
+    if (!artists) return <Spin className="my-12 flex justify-center" />
 
     return (
         <>

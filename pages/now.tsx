@@ -1,5 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
+import { useJson } from '@/hooks/useJson'
+import { Spin } from '@/components/Loading'
 import Link from 'next/link'
 import { MapPin, Code, Megaphone, Terminal } from '@/components/icons'
 import Status from '@/components/Status'
@@ -9,7 +11,29 @@ import Reading from '@/components/media/Reading'
 import Movies from '@/components/media/Movies'
 import TV from '@/components/media/TV'
 
-export default function Now() {
+const env = process.env.NODE_ENV
+let host = siteMetadata.siteUrl
+if (env === 'development') host = 'http://localhost:3000'
+
+async function getNowData() {
+    const data = await fetch(`${host}/api/now`).then((res) => res.json())
+    return data
+}
+
+export async function getStaticProps() {
+    return {
+        props: await getNowData(),
+        revalidate: 1,
+    }
+}
+
+export default function Now(props) {
+    const { response, error } = useJson(`${host}/api/now`, props)
+    const { status, artists, albums, books, movies, tv } = response
+
+    if (error) return null
+    if (!response) return <Spin className="my-2 flex justify-center" />
+
     return (
         <>
             <PageSEO
@@ -27,7 +51,7 @@ export default function Now() {
                         Currently
                     </h3>
                     <div className="pl-5 md:pl-10">
-                        <Status />
+                        <Status status={status} />
                         <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-100">
                             <MapPin className="mr-1 inline h-6 w-6" />
                             Living in Camarillo, California with my beautiful family, 4 rescue dogs
@@ -76,11 +100,11 @@ export default function Now() {
                             and whatever else I can find time for.
                         </p>
                     </div>
-                    <Artists />
-                    <Albums />
-                    <Reading />
-                    <Movies />
-                    <TV />
+                    <Artists artists={artists} />
+                    <Albums albums={albums} />
+                    <Reading books={books} />
+                    <Movies movies={movies} />
+                    <TV tv={tv} />
                     <p className="pt-8 text-center text-xs text-gray-900 dark:text-gray-100">
                         (This is a{' '}
                         <Link

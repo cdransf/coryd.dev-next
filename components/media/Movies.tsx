@@ -1,19 +1,10 @@
-import { useJson } from '@/hooks/useJson'
 import Link from 'next/link'
-import { ThreeDots } from 'react-loading-icons'
+import { Spin } from '@/components/Loading'
 
-const Movies = () => {
-    const { response, error } = useJson('/api/movies?limit=5')
-    const movies = response?.entries
+const Movies = (props) => {
+    const { movies } = props
 
-    if (error) return null
-
-    if (!response)
-        return (
-            <div className="icon-dots--loading">
-                <ThreeDots />
-            </div>
-        )
+    if (!movies) return <Spin className="my-12 flex justify-center" />
 
     return (
         <>

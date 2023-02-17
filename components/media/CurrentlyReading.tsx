@@ -1,11 +1,13 @@
-import { ThreeDots } from 'react-loading-icons'
+import { Dots } from '@/components/Loading'
+import { Book } from '@/components/icons'
 import Link from 'next/link'
-import { useJson } from '@/hooks/useJson'
 
-const CurrentlyReading = () => {
-    const { response, error } = useJson('/api/books')
+const CurrentlyReading = (props) => {
+    const { books } = props
 
-    const booksList = response?.entries?.map((entry, index) => {
+    if (!books) return <Dots />
+
+    const booksList = books?.map((entry, index) => {
         const link = (
             <Link
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
@@ -18,45 +20,25 @@ const CurrentlyReading = () => {
         )
 
         const getLink = (index: number) => {
-            if (index !== response.entries.length - 1 && index !== response.entries.length - 2) {
+            if (index !== books?.length - 1 && index !== books?.length - 2) {
                 return <span key={entry.link}>{link}, </span>
-            } else if (index === response.entries.length - 1 && response.entries.length > 1) {
+            } else if (index === books?.length - 1 && books?.length > 1) {
                 return <span key={entry.link}> and {link}</span>
             } else {
                 return <span key={entry.link}>{link}</span>
             }
         }
-        return response?.entries?.length && getLink(index)
+        return books?.length && getLink(index)
     })
 
-    if (error) return null
-
-    if (!response)
-        return (
-            <div className="icon--dots__loading">
-                <ThreeDots />
-            </div>
-        )
-
-    return response?.entries?.length ? (
+    return (
         <p className="!mt-1 text-lg leading-7 text-gray-500 dark:text-gray-100">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="mr-1 inline h-5 w-5"
-            >
-                <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
-                />
-            </svg>
+            <span className="mr-1 inline-block h-5 w-5">
+                <Book />
+            </span>
             {booksList}.
         </p>
-    ) : null
+    )
 }
 
 export default CurrentlyReading

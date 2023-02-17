@@ -2,9 +2,13 @@ import Link from 'next/link'
 
 const BlogSearch = () => {
     return (
-        <Link href="/blog" passHref>
+        <Link
+            href="/blog"
+            passHref
+            className="mx-2 text-sm text-gray-500 transition hover:text-gray-600 md:mx-3"
+        >
             <svg
-                className="mx-2 h-5 w-5 md:mx-3"
+                className="h-5 w-5"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"

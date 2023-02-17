@@ -1,11 +1,12 @@
-import { useJson } from '@/hooks/useJson'
-import { ThreeDots } from 'react-loading-icons'
+import { Dots } from '@/components/Loading'
+import { Music } from '@/components/icons'
 import Link from 'next/link'
 
-const CurrentlyListening = () => {
-    const { response, error } = useJson('/api/music?limit=1')
-    const tracks = response?.recenttracks?.track
-    const track = tracks?.[0]
+const CurrentlyListening = (props) => {
+    const { track } = props
+
+    if (!track) return <Dots />
+
     const CurrentlyPlaying = (
         <>
             <Link
@@ -16,9 +17,7 @@ const CurrentlyListening = () => {
             >
                 {track?.name}
             </Link>
-            {` `}
-            by
-            {` `}
+            <span className="mx-1">by</span>
             <Link
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                 href={`https://ddg.gg?q=!rym ${encodeURIComponent(track?.artist?.['#text'])}`}
@@ -31,34 +30,14 @@ const CurrentlyListening = () => {
         </>
     )
 
-    if (error) return null
-
-    if (!response)
-        return (
-            <div className="icon-dots--loading">
-                <ThreeDots />
-            </div>
-        )
-
-    return tracks?.length ? (
-        <p className="!mt-1 text-lg leading-7 text-gray-500 dark:text-gray-100">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="mr-1 inline h-5 w-5"
-            >
-                <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z"
-                />
-            </svg>
+    return (
+        <p className="!mt-1 flex flex-row items-center text-lg leading-7 text-gray-500 dark:text-gray-100">
+            <span className="mr-1 inline-block h-5 w-5">
+                <Music />
+            </span>
             {CurrentlyPlaying}
         </p>
-    ) : null
+    )
 }
 
 export default CurrentlyListening

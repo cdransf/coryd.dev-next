@@ -1,5 +1,5 @@
 import { Heart, Rocket } from '@/components/icons'
-import { ThreeDots } from 'react-loading-icons'
+import { Spin } from '@/components/Loading'
 import { useRouter } from 'next/router'
 import { useJson } from '@/hooks/useJson'
 import Link from 'next/link'
@@ -30,13 +30,7 @@ const Webmentions = () => {
     const hasMention = hasLikes || hasComments || hasBoosts
 
     if (error) return null
-
-    if (!response)
-        return (
-            <div className="icon-dots--loading">
-                <ThreeDots />
-            </div>
-        )
+    if (!response) return <Spin className="my-2 flex justify-center" />
 
     const Boosts = () => {
         return (

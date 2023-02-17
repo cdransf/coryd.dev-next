@@ -1,24 +1,15 @@
-import { useJson } from '@/hooks/useJson'
 import Link from 'next/link'
-import { ThreeDots } from 'react-loading-icons'
+import { Dots } from '@/components/Loading'
 
-const Status = () => {
-    const { response, error } = useJson('/api/omg/status?limit=1')
-    const status = response?.[0]
+const Status = (props) => {
+    const { status } = props
 
-    if (error) return null
-
-    if (!response)
-        return (
-            <div className="icon-dots--loading">
-                <ThreeDots />
-            </div>
-        )
+    if (!status) return <Dots />
 
     return (
         <p className="!mt-1 text-lg leading-7">
             <Link
-                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                className="flex flex-row items-center text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                 href={`https://status.coryd.dev/${status?.id}`}
                 target="_blank"
                 rel="noopener noreferrer me"

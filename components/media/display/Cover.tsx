@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Media } from '@/types/api'
+import ImageWithFallback from '@/components/ImageWithFallback'
 import Link from 'next/link'
 import { ALBUM_DENYLIST } from '@/utils/constants'
 
@@ -10,9 +11,9 @@ const Cover = (props: { media: Media; type: 'artist' | 'album' }) => {
         if (type === 'album')
             img = !ALBUM_DENYLIST.includes(media.name.replace(/\s+/g, '-').toLowerCase())
                 ? media.image[media.image.length - 1]['#text']
-                : `/api/media?album=${media.name.replace(/\s+/g, '-').toLowerCase()}`
+                : `/media/artists/${media.name.replace(/\s+/g, '-').toLowerCase()}.jpg`
         if (type === 'artist')
-            img = `/api/media?artist=${media.name.replace(/\s+/g, '-').toLowerCase()}`
+            img = `/media/artists/${media.name.replace(/\s+/g, '-').toLowerCase()}.jpg`
         return img
     }
 
@@ -32,7 +33,13 @@ const Cover = (props: { media: Media; type: 'artist' | 'album' }) => {
                         {type === 'album' ? media.name : `${media.playcount} plays`}
                     </div>
                 </div>
-                <img src={image(media)} alt={media.name} className="rounded-lg" />
+                <ImageWithFallback
+                    src={image(media)}
+                    alt={media.name}
+                    className="rounded-lg"
+                    width="350"
+                    height="350"
+                />
             </div>
         </Link>
     )

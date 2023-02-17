@@ -12,13 +12,23 @@ import Status from '@/components/Status'
 
 const MAX_DISPLAY = 5
 
-export const getStaticProps: GetStaticProps<{ posts: PostFrontMatter[] }> = async () => {
-    const posts = await getAllFilesFrontMatter('blog')
+const env = process.env.NODE_ENV
+let host = siteMetadata.siteUrl
+if (env === 'development') host = 'http://localhost:3000'
 
-    return { props: { posts } }
+async function getNowData() {
+    const data = await fetch(`${host}/api/now`).then((res) => res.json())
+    return data
 }
 
-export default function Home({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
+export const getStaticProps: GetStaticProps<{ posts: PostFrontMatter[]; now }> = async () => {
+    const posts = await getAllFilesFrontMatter('blog')
+    const now = await getNowData()
+
+    return { props: { posts, now } }
+}
+
+export default function Home({ posts, now }: InferGetStaticPropsType<typeof getStaticProps>) {
     return (
         <>
             <PageSEO title={siteMetadata.title} description={siteMetadata.description.default} />
@@ -32,9 +42,9 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                     <p className="text-lg leading-7 text-gray-500 dark:text-gray-100">
                         {siteMetadata.description.default}
                     </p>
-                    <Status />
-                    <CurrentlyListening />
-                    <CurrentlyReading />
+                    <Status status={now.status} />
+                    <CurrentlyListening track={now.currentTrack} />
+                    <CurrentlyReading books={now.books} />
                 </div>
                 <ul className="divide-y divide-gray-200 dark:divide-gray-700">
                     {!posts.length && 'No posts found.'}

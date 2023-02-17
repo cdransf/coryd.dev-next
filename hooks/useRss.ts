@@ -9,7 +9,7 @@ export const useRss = (url: string) => {
         extract(url)
             .then((res) => res.entries)
             .catch()
-    const { data, error } = useSWR(url, fetcher)
+    const { data, error } = useSWR(url, fetcher, { refreshInterval: 30000 })
 
     useEffect(() => {
         setResponse(data)
