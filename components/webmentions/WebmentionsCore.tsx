@@ -23,8 +23,7 @@ const WebmentionsCore = () => {
         ).length > 0
     const boostsCount = webmentions?.filter(
         (mention) =>
-            mention['wm-property'] === 'repost-of' ||
-            (mention['wm-source'].includes(postPath) && mention['wm-target'].includes(postPath))
+            mention['wm-property'] === 'repost-of' && mention['wm-target'].includes(postPath)
     ).length
     const hasBoosts = boostsCount > 0
     const hasMention = hasLikes || hasComments || hasBoosts
