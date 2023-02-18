@@ -3,7 +3,7 @@ date: '2023-2-17'
 title: 'Workflows: handling inbound email on Fastmail with regular expressions (now featuring ChatGPT)'
 draft: false
 tags: ['email', 'fastmail', 'regular expressions', 'workflows', 'chatgpt']
-summary: 'I've been using Fastmail for years now and have explored a number of different approaches to handling mail.'
+summary: "I've been using Fastmail for years now and have explored a number of different approaches to handling mail."
 ---
 
 I've been using Fastmail for years now and have explored a number of different approaches to handling mail. I've approached it by creating rules targeting lists of top level domains, I've gone with no rules at all and a heavy-handed approach to unsubscribing from messages (operating under the idea that _everything_ warrants being seen and triaged) and I've even used HEY [^1].
@@ -302,7 +302,7 @@ That covers _most_ of what I use to manage my mail (outside of anything particul
 If you have any questions or suggestions I'm all ears. Feel free to [email me](mailto:fun.song5595@coryd.dev) or ping me on [Mastodon]().
 
 [^1]: Before, well, _all that_.
-[^2]: Fastmail has some helpful tips on regular expression rules here https://www.fastmail.help/hc/en-us/articles/360060591193-Rules-using-regular-expressions
+[^2]: Fastmail has some helpful tips on regular expression rules [here](https://www.fastmail.help/hc/en-us/articles/360060591193-Rules-using-regular-expressions)
 [^3]: Fun fact, this is, apparently, no longer being actively developed — presumably because email, as we all know, is an absolute pleasure to parse and deal with.
 [^4]: This rule doesn't forward over to Parcel as it typically captures secondary notices that either don't contain or duplicate the original tracking info.
 [^5]: I know, I called this inefficient earlier.
