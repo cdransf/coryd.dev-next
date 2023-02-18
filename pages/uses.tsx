@@ -16,7 +16,7 @@ export default function Uses() {
                         Uses
                     </h1>
                 </div>
-                <div className="container py-12">
+                <div className="py-12">
                     <p className="text-lg leading-7 text-gray-500 dark:text-gray-100">
                         {siteMetadata.description.uses}
                     </p>
