@@ -17,7 +17,7 @@ export const getStaticProps: GetStaticProps<{ posts: PostFrontMatter[]; now }> =
     const posts = await getAllFilesFrontMatter('blog')
     const now = await loadNowData()
 
-    return { props: { posts, now } }
+    return { props: { posts, now }, revalidate: 960 }
 }
 
 export default function Home({ posts, now }: InferGetStaticPropsType<typeof getStaticProps>) {

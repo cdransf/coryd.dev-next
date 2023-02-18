@@ -19,7 +19,7 @@ if (env === 'development') host = 'http://localhost:3000'
 export async function getStaticProps() {
     return {
         props: await loadNowData(),
-        revalidate: 1,
+        revalidate: 3600,
     }
 }
 
