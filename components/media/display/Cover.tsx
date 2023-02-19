@@ -30,7 +30,7 @@ const Cover = (props: { media: Media; type: 'artist' | 'album' }) => {
                 <div className="absolute left-1 bottom-2 drop-shadow-md">
                     <div className="px-1 text-xs font-bold text-white">{media.name}</div>
                     <div className="px-1 text-xs text-white">
-                        {type === 'album' ? media.name : `${media.playcount} plays`}
+                        {type === 'album' ? media.artist.name : `${media.playcount} plays`}
                     </div>
                 </div>
                 <ImageWithFallback
