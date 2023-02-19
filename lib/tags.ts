@@ -11,7 +11,6 @@ export async function getAllTags(type: 'blog' | 'authors') {
     const files = getFiles(type)
 
     const tagCount: Record<string, number> = {}
-    // Iterate through each post, putting all found tags into `tags`
     files.forEach((file) => {
         const source = fs.readFileSync(path.join(root, 'data', type, file), 'utf8')
         const matterFile = matter(source)
