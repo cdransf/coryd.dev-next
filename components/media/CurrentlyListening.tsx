@@ -11,22 +11,22 @@ const CurrentlyListening = (props) => {
         <>
             <Link
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                href={track?.url}
+                href={track.url}
                 target="_blank"
                 rel="noopener noreferrer me"
             >
-                {track?.name}
+                {track.name}
             </Link>
             <span className="mx-1">by</span>
             <Link
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                href={`https://ddg.gg?q=!rym ${encodeURIComponent(track?.artist?.['#text'])}`}
+                href={`https://ddg.gg?q=!rym ${encodeURIComponent(track.artist?.['#text'])}`}
                 target="_blank"
                 rel="noopener noreferrer me"
             >
-                {track?.artist?.['#text']}
+                {track.artist?.['#text']}
             </Link>
-            {track?.artist?.['#text'].slice(-1) !== '.' ? '.' : ''}
+            {track.artist?.['#text'].slice(-1) !== '.' ? '.' : ''}
         </>
     )
 
