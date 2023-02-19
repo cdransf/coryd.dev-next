@@ -1,6 +1,7 @@
 import loadNowData from '@/lib/now'
 
 export default async function handler(req, res) {
-    const response = await loadNowData()
+    const endpoints = req.query.endpoints
+    const response = await loadNowData(endpoints)
     res.json(response)
 }

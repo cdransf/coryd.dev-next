@@ -15,8 +15,7 @@ const MAX_DISPLAY = 5
 
 export const getStaticProps: GetStaticProps<{ posts: PostFrontMatter[]; now }> = async () => {
     const posts = await getAllFilesFrontMatter('blog')
-    const now = await loadNowData()
-
+    const now = await loadNowData('status,currentTrack,books')
     return { props: { posts, now }, revalidate: 960 }
 }
 
