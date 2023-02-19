@@ -12,7 +12,7 @@ import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 import Webmentions from '@/components/webmentions'
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/main/data/blog/${fileName}`
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
     weekday: 'long',
