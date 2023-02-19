@@ -1,3 +1,32 @@
+---
+title: 'Adding client side webmentions to my Next.js blog'
+date: 2023-2-18
+draft: false
+tags: ['next.js', 'react', 'web development', 'webmentions', 'indie web']
+summary: 'A quick rundown of the steps I took to add webmentions to my Next.js blog.'
+---
+
+The latest iteration of my website is built on [Next.js](https://nextjs.org), specifically [Timothy Lin](https://github.com/timlrx)'s wonderful [Tailwind/Next.js starter blog.](https://github.com/timlrx/tailwind-nextjs-starter-blog). I've modified it quite a bit, altering the color scheme, dropping components like analytics, comments and a few others while also building out some new pages (like my [now page](https://coryd.dev/now)). As part of this process I wanted to add support for webmentions to the template, integrating mentions from Mastodon, Medium.com and other available sources.
+
+To kick this off you'll need to log in and establish an account with [webmention.io](https://webmention.io) and [Bridgy](https://brid.gy). The former provides you with a pair of meta tags that collect webmentions, the latter connects your site to social media[^1]
+
+Once you've added the appropriate tags from webmention.io, connected your desired accounts to Bridgy and received some mentions on these sites, you should be able to access said mentions via their API. For my purposes (and yours should you choose to take the same approach), this looks like the following Next.js API route:
+
+```typescript
+import loadWebmentions from '@/lib/webmentions'
+
+export default async function handler(req, res) {
+    const target = req.query.target
+    const response = await loadWebmentions(target)
+    res.json(response)
+}
+```
+
+You can see my mentions at the live route [here](https://coryd.dev/api/webmentions).
+
+I've elected to render mentions of my posts (boosts, in Mastodon's parlance), likes and comments. For boosts, I'm rendering the count, for likes I render the avatar and for mentions I render the comment in full. The component that handles this looks like the following:
+
+```jsx
 import siteMetadata from '@/data/siteMetadata'
 import { Heart, Rocket } from '@/components/icons'
 import { Spin } from '@/components/Loading'
@@ -130,3 +159,53 @@ const WebmentionsCore = () => {
 }
 
 export default WebmentionsCore
+```
+
+We derive the post URL from the fixed site URL in my site metadata, the URI from Next.js' router, concatenate them and pass them as the API path to my `useJson` hook, which wraps `useSWR`[^2]:
+
+```typescript
+import { useEffect, useState } from 'react'
+import useSWR from 'swr'
+
+export const useJson = (url: string, props?: any) => {
+    const [response, setResponse] = useState<any>({})
+
+    const fetcher = (url: string) =>
+        fetch(url)
+            .then((res) => res.json())
+            .catch()
+    const { data, error } = useSWR(url, fetcher, { fallbackData: props, refreshInterval: 30000 })
+
+    useEffect(() => {
+        setResponse(data)
+    }, [data, setResponse])
+
+    return {
+        response,
+        error,
+    }
+}
+```
+
+The `target` param narrows the returned mentions to those pertinent to the current post. Once we've received the appropriate response from the service, we evaluate the data to determine what types of mentions we have, construct JSX components to display them and conditionally render them based on the presence of the appropriate mention data.
+
+The `WebmentionsCore` component is dynamically loaded into each post using the following parent component:
+
+```jsx
+import dynamic from 'next/dynamic'
+import { Spin } from '@/components/Loading'
+
+const Webmentions = dynamic(() => import('@/components/webmentions/WebmentionsCore'), {
+    ssr: false,
+    loading: () => <Spin className="my-2 flex justify-center" />,
+})
+
+export default Webmentions
+```
+
+The final display looks like this:
+
+<img src="https://files.coryd.dev/v/NG8lHj24OsJilx7QuxWO+" alt="Example webmentions" styles="width:100%;height:auto;margin:.5em 0" />
+
+[^1]: For my purposes, social media is GitHub, Mastodon and Medium. I've used the rest at various points and no longer have an interest in them for myriad reasons.
+[^2]: I've discussed this all a bit more in [this post](https://coryd.dev/blog/simple-api-fetch-hooks-with-swr).
