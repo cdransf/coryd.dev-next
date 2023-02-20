@@ -2,6 +2,8 @@ import { extract } from '@extractus/feed-extractor'
 import siteMetadata from '@/data/siteMetadata'
 
 export default async function handler(req: any, res: any) {
+    res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate')
+
     const limit = req.query.limit || 10
     const KEY = process.env.API_KEY_TRAKT
     const env = process.env.NODE_ENV

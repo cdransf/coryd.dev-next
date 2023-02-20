@@ -1,4 +1,6 @@
 export default function handler(req, res) {
+    res.setHeader('Cache-Control', 's-maxage=86400')
+
     const MASTODON_META = {
         subject: 'acct:coryd@social.lol',
         aliases: [
