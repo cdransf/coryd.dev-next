@@ -1,6 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 
-export default async function handler(req: any, res: any) {
+export default async function handler(req, res) {
     const env = process.env.NODE_ENV
     let host = siteMetadata.siteUrl
     if (env === 'development') host = 'http://localhost:3000'

@@ -1,8 +1,9 @@
 import { Dots } from '@/components/Loading'
-import { Book } from '@/components/icons'
+import { BookOpenIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
+import { TransformedRss } from '@/types/api'
 
-const CurrentlyReading = (props) => {
+const CurrentlyReading = (props: { books: TransformedRss['entries'] }) => {
     const { books } = props
 
     if (!books) return <Dots />
@@ -39,7 +40,7 @@ const CurrentlyReading = (props) => {
     return (
         <p className="!mt-1 flex flex-row items-center text-lg leading-7 text-gray-500 dark:text-gray-100">
             <span className="mr-1 inline-block h-5 w-5">
-                <Book />
+                <BookOpenIcon />
             </span>
             {booksList}.
         </p>

@@ -4,7 +4,12 @@ import { useJson } from '@/hooks/useJson'
 import Link from 'next/link'
 import { PageSEO } from '@/components/SEO'
 import { Spin } from '@/components/Loading'
-import { MapPin, Code, Megaphone, Terminal } from '@/components/icons'
+import {
+    MapPinIcon,
+    CodeBracketIcon,
+    MegaphoneIcon,
+    CommandLineIcon,
+} from '@heroicons/react/24/solid'
 import Status from '@/components/Status'
 import Albums from '@/components/media/Albums'
 import Artists from '@/components/media/Artists'
@@ -18,7 +23,7 @@ if (env === 'development') host = 'http://localhost:3000'
 
 export async function getStaticProps() {
     return {
-        props: await loadNowData(),
+        props: await loadNowData('status,artists,albums,books,movies,tv'),
         revalidate: 3600,
     }
 }
@@ -49,12 +54,12 @@ export default function Now(props) {
                     <div className="pl-5 md:pl-10">
                         <Status status={status} />
                         <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-100">
-                            <MapPin className="mr-1 inline h-6 w-6" />
+                            <MapPinIcon className="mr-1 inline h-6 w-6" />
                             Living in Camarillo, California with my beautiful family, 4 rescue dogs
                             and a guinea pig.
                         </p>
                         <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-100">
-                            <Code className="mr-1 inline h-6 w-6" />
+                            <CodeBracketIcon className="mr-1 inline h-6 w-6" />
                             Working at{' '}
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
@@ -66,7 +71,7 @@ export default function Now(props) {
                             </Link>
                         </p>
                         <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-100">
-                            <Megaphone className="mr-1 inline h-6 w-6" />
+                            <MegaphoneIcon className="mr-1 inline h-6 w-6" />
                             Rooting for the{` `}
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
@@ -84,7 +89,7 @@ export default function Now(props) {
                     </h3>
                     <div className="pl-5 md:pl-10">
                         <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-100">
-                            <Terminal className="mr-1 inline h-6 w-6" />
+                            <CommandLineIcon className="mr-1 inline h-6 w-6" />
                             Hacking away on random projects like this page, my{' '}
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"

@@ -129,6 +129,10 @@ module.exports = withBundleAnalyzer({
                 source: '/fonts/:path*',
                 destination: '/static/fonts/:path*',
             },
+            {
+                source: '/data/:path*',
+                destination: '/static/data/:path*',
+            },
         ]
     },
     async redirects() {

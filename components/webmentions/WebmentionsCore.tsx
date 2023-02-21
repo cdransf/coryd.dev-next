@@ -1,5 +1,5 @@
 import siteMetadata from '@/data/siteMetadata'
-import { Heart, Rocket } from '@/components/icons'
+import { HeartIcon, RocketLaunchIcon } from '@heroicons/react/24/solid'
 import { Spin } from '@/components/Loading'
 import { useRouter } from 'next/router'
 import { useJson } from '@/hooks/useJson'
@@ -29,7 +29,7 @@ const WebmentionsCore = () => {
         return (
             <div className="flex flex-row items-center">
                 <div className="mr-2 h-5 w-5">
-                    <Rocket />
+                    <RocketLaunchIcon />
                 </div>
                 {` `}
                 <span className="text-sm">{boostsCount}</span>
@@ -41,7 +41,7 @@ const WebmentionsCore = () => {
         <>
             <div className="flex flex-row items-center">
                 <div className="mr-2 h-5 w-5">
-                    <Heart />
+                    <HeartIcon />
                 </div>
                 <ul className="ml-2 flex flex-row">
                     {webmentions?.map((mention) => {

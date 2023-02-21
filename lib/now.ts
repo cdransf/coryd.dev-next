@@ -1,5 +1,7 @@
 import { extract } from '@extractus/feed-extractor'
 import siteMetadata from '@/data/siteMetadata'
+import { Albums, Artists, Status, TransformedRss } from '@/types/api'
+import { Tracks } from '@/types/api/tracks'
 
 export default async function loadNowData(endpoints?: string) {
     const selectedEndpoints = endpoints?.split(',') || null
@@ -90,7 +92,15 @@ export default async function loadNowData(endpoints?: string) {
             })
     }
 
-    const res: any = {}
+    const res: {
+        status?: Status
+        artists?: Artists
+        albums?: Albums
+        books?: TransformedRss
+        movies?: TransformedRss
+        tv?: TransformedRss
+        currentTrack?: Tracks
+    } = {}
     if (statusJson) res.status = statusJson.response.statuses.splice(0, 1)[0]
     if (artistsJson) res.artists = artistsJson?.topartists.artist
     if (albumsJson) res.albums = albumsJson?.topalbums.album

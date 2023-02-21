@@ -1,4 +1,4 @@
-export default async function handler(req: any, res: any) {
+export default async function handler(req, res) {
     const KEY = process.env.API_KEY_OMG
     const PASTE = req.query.paste
     const EDIT_TYPE = req.query.editType

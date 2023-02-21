@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { Spin } from '@/components/Loading'
+import { TransformedRss } from '@/types/api'
 
-const TV = (props) => {
+const TV = (props: { tv: TransformedRss['entries'] }) => {
     const { tv } = props
 
     if (!tv) return <Spin className="my-12 flex justify-center" />

@@ -1,7 +1,8 @@
 import Cover from '@/components/media/display/Cover'
 import { Spin } from '@/components/Loading'
+import { Artist } from '@/types/api'
 
-const Artists = (props) => {
+const Artists = (props: { artists: Artist[] }) => {
     const { artists } = props
 
     if (!artists) return <Spin className="my-12 flex justify-center" />

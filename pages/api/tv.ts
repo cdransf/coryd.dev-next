@@ -1,7 +1,7 @@
 import { extract } from '@extractus/feed-extractor'
 import siteMetadata from '@/data/siteMetadata'
 
-export default async function handler(req: any, res: any) {
+export default async function handler(req, res) {
     res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate')
 
     const limit = req.query.limit || 10

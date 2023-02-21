@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { Spin } from '@/components/Loading'
+import { TransformedRss } from '@/types/api'
 
-const Reading = (props) => {
+const Reading = (props: { books: TransformedRss['entries'] }) => {
     const { books } = props
 
     if (!books) return <Spin className="my-12 flex justify-center" />

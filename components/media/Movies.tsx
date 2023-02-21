@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { Spin } from '@/components/Loading'
+import { TransformedRss } from '@/types/api'
 
-const Movies = (props) => {
+const Movies = (props: { movies: TransformedRss['entries'] }) => {
     const { movies } = props
 
     if (!movies) return <Spin className="my-12 flex justify-center" />

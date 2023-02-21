@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { Dots } from '@/components/Loading'
+import { Status } from '@/types/api'
 
-const Status = (props) => {
+const Status = (props: { status: Status }) => {
     const { status } = props
 
     if (!status) return <Dots />

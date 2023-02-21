@@ -12,6 +12,7 @@ import BuyMeACoffee from './buymeacoffee.svg'
 import Camera from './camera.svg'
 
 import Link from 'next/link'
+import siteMetadata from '@/data/siteMetadata'
 
 const components = {
     fastmail: Fastmail,
@@ -34,27 +35,26 @@ const SocialIcon = ({
     size = 8,
     className,
     fill,
-    rel,
 }: {
     kind: string
     href: string
     size: number
     className?: string
     fill?: string
-    rel?: string
 }) => {
+    let target = '_blank'
+    let rel = 'noopener noreferrer me'
     if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
         return null
+    if (!href.includes('http') || href.includes(siteMetadata.siteUrl)) {
+        target = '_self'
+        rel = 'me'
+    }
 
     const SocialSvg = components[kind]
 
     return (
-        <Link
-            className={`${className || ''}`}
-            target="_blank"
-            rel={`noopener noreferrer ${rel}`}
-            href={href}
-        >
+        <Link className={`${className || ''}`} target={target} rel={rel} href={href}>
             <span className="sr-only">{kind}</span>
             <SocialSvg
                 className={`${

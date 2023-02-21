@@ -5,7 +5,8 @@ import Link from 'next/link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
-import BlogSearch from './BlogSearch'
+import Search from './blog/Search'
+import Tags from './blog/Tags'
 import ThemeSwitch from './ThemeSwitch'
 import { ReactNode } from 'react'
 import SocialIcon from './social-icons'
@@ -47,13 +48,14 @@ const LayoutWrapper = ({ children }: Props) => {
                                 </Link>
                             ))}
                         </div>
-                        <BlogSearch />
                         <SocialIcon
                             className="mx-2 md:mx-3"
                             kind="buymeacoffee"
                             href={siteMetadata.buymeacoffee}
                             size={5}
                         />
+                        <Search />
+                        <Tags />
                         <SocialIcon
                             className="mx-2 md:mx-3"
                             kind="rss"

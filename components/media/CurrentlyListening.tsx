@@ -1,8 +1,9 @@
 import { Dots } from '@/components/Loading'
-import { Music } from '@/components/icons'
+import { MusicalNoteIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
+import { Track } from '@/types/api'
 
-const CurrentlyListening = (props) => {
+const CurrentlyListening = (props: { track: Track }) => {
     const { track } = props
 
     if (!track) return <Dots />
@@ -33,7 +34,7 @@ const CurrentlyListening = (props) => {
     return (
         <p className="!mt-1 flex flex-row items-center text-lg leading-7 text-gray-500 dark:text-gray-100">
             <span className="mr-1 inline-block h-5 w-5">
-                <Music />
+                <MusicalNoteIcon />
             </span>
             {CurrentlyPlaying}
         </p>
