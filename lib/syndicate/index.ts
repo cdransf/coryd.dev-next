@@ -53,7 +53,6 @@ export default async function syndicate(init?: string) {
             const entries: (FeedEntry & { tags?: string })[] = data?.entries
             if (!existingContent[service].includes(entries[0].id)) {
                 let tags = ''
-                console.log(entries[0])
                 if (entries[0].tags) {
                     entries[0].tags
                         .split(',')
