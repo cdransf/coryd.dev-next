@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { Media } from '@/types/api'
 import ImageWithFallback from '@/components/ImageWithFallback'
 import Link from 'next/link'
