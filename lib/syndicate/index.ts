@@ -1,6 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
+import { toPascalCase } from '@/utils/formatters'
 import { extract, FeedEntry } from '@extractus/feed-extractor'
-import { SERVICES } from './config'
+import { SERVICES, TAGS } from './config'
 import createMastoPost from './createMastoPost'
 
 export default async function syndicate(init?: string) {
@@ -42,11 +43,31 @@ export default async function syndicate(init?: string) {
         const existingContent = JSON.parse(existingData?.response.paste.content)
 
         for (const service in SERVICES) {
-            const data = await extract(SERVICES[service])
-            const entries = data?.entries
+            const data = await extract(SERVICES[service], {
+                getExtraEntryFields: (feedEntry) => {
+                    return {
+                        tags: feedEntry['tags'],
+                    }
+                },
+            })
+            const entries: (FeedEntry & { tags?: string })[] = data?.entries
             if (!existingContent[service].includes(entries[0].id)) {
+                let tags = ''
+                console.log(entries[0])
+                if (entries[0].tags) {
+                    entries[0].tags
+                        .split(',')
+                        .forEach((a, index) =>
+                            index === 0
+                                ? (tags += `#${toPascalCase(a)}`)
+                                : (tags += ` #${toPascalCase(a)}`)
+                        )
+                    tags += ` ${TAGS[service]}`
+                } else {
+                    tags = TAGS[service]
+                }
                 existingContent[service].push(entries[0].id)
-                createMastoPost(`${entries[0].title} ${entries[0].link}`)
+                createMastoPost(`${entries[0].title} ${entries[0].link} ${tags}`)
                 await fetch(
                     `${host}/api/omg/paste-edit?paste=${CACHE_PASTE}&content=${JSON.stringify(
                         existingContent

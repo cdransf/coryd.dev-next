@@ -12,6 +12,7 @@ const generateRssItem = (post: PostFrontMatter) => `
         <pubDate>${new Date(post.date).toUTCString()}</pubDate>
         <author>${siteMetadata.email} (${siteMetadata.author})</author>
         ${post.tags && post.tags.map((t) => `<category>${t}</category>`).join('')}
+        <tags>${post.tags}</tags>
     </item>
 `
 

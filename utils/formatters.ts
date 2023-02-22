@@ -9,3 +9,8 @@ export const formatDate = (date: string) => {
 
     return [month, day, year].join('-')
 }
+
+export const toPascalCase = (str: string) =>
+    str
+        .replace(/\w\S*/g, (m) => m.charAt(0).toUpperCase() + m.substr(1).toLowerCase())
+        .replace(/\s/g, '')
