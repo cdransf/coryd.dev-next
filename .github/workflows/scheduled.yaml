@@ -9,4 +9,4 @@ jobs:
             - name: scheduled-cron-job
               run: |
                   curl -X POST 'https://coryd.dev/api/syndicate' \
-                  -H 'Authorization: Bearer ${{ secrets.ACTION_KEY }}'
+                  -H 'Authorization: Bearer ${{ secrets.VERCEL_SYNDICATE_KEY }}'
