@@ -35,7 +35,7 @@ export default async function syndicate(init?: string) {
     // rewrite the sync data if init is reset
     if (CONTENT === '' || init === 'true') hydrateCache()
 
-    if (CONTENT !== '' && !init) {
+    if (CONTENT && CONTENT !== '' && !init) {
         const existingData = await fetch(`${host}/api/omg/paste-get?paste=${CACHE_PASTE}`).then(
             (response) => response.json()
         )
