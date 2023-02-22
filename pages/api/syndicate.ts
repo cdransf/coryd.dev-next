@@ -13,7 +13,6 @@ export default async function handler(req, res) {
             res.status(401).json({ success: false })
         }
     } catch (err) {
-        console.log(err)
         res.status(500).json({ success: false })
     }
 }
