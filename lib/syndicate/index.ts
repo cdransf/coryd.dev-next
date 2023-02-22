@@ -46,12 +46,12 @@ export default async function syndicate(init?: string) {
             const entries = data?.entries
             if (!existingContent[service].includes(entries[0].id)) {
                 existingContent[service].push(entries[0].id)
+                if (!init) createMastoPost(`${entries[0].title} ${entries[0].link}`)
                 await fetch(
                     `${host}/api/omg/paste-edit?paste=${CACHE_PASTE}&content=${JSON.stringify(
                         existingContent
                     )}`
                 ).then((response) => response.json())
-                if (!init) createMastoPost(`${entries[0].title} ${entries[0].link}`)
             }
         }
     }
