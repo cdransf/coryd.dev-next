@@ -21,7 +21,7 @@ const CurrentlyListening = (props: { track: Track }) => {
             <span className="mx-1">by</span>
             <Link
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                href={`https://ddg.gg?q=!rym ${encodeURIComponent(track.artist?.['#text'])}`}
+                href={track.url}
                 target="_blank"
                 rel="noopener noreferrer me"
             >

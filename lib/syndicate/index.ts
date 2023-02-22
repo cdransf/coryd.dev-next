@@ -51,7 +51,7 @@ export default async function syndicate(init?: string) {
                         existingContent
                     )}`
                 ).then((response) => response.json())
-                createMastoPost(`${entries[0].title} ${entries[0].link}`)
+                if (!init) createMastoPost(`${entries[0].title} ${entries[0].link}`)
             }
         }
     }
