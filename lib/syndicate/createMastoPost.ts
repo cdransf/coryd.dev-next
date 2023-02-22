@@ -1,7 +1,7 @@
 import { MASTODON_INSTANCE } from './config'
 const KEY = process.env.API_KEY_MASTODON
 
-const createMastoPost = async (content) => {
+const createMastoPost = async (content: string) => {
     const formData = new FormData()
     formData.append('status', content)
 
