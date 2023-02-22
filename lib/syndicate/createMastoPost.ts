@@ -13,7 +13,6 @@ const createMastoPost = async (content) => {
         },
         body: formData,
     })
-
     return res.json()
 }
 

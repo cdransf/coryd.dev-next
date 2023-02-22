@@ -4,4 +4,3 @@ export const SERVICES = {
     glass: 'https://glass.photo/coryd/rss',
     letterboxd: 'https://letterboxd.com/cdme/rss/',
 }
-export const DATA_PATH = 'tmp/syndicate.json'
