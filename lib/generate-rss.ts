@@ -1,5 +1,4 @@
 import { escape } from '@/lib/utils/htmlEscaper'
-
 import siteMetadata from '@/data/siteMetadata'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 
