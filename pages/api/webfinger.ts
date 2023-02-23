@@ -1,4 +1,6 @@
-export default function handler(req, res) {
+import type { NextApiRequest, NextApiResponse } from 'next'
+
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     res.setHeader('Cache-Control', 's-maxage=86400')
 
     const MASTODON_META = {
