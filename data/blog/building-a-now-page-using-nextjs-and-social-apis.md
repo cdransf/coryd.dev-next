@@ -2,7 +2,7 @@
 title: 'Building a now page using Next.js and social APIs'
 date: 2023-2-20
 draft: false
-tags: ['next.js', 'web development', 'react', 'api']
+tags: ['nextjs', 'web development', 'react', 'api']
 summary: 'A rundown of how I developed my now page using next.js and a variety of social APIs.'
 ---
 

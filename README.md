@@ -1,6 +1,6 @@
 ![Cory Dransfeldt](/public/static/images/social-card.png)
 
-![Vercel](https://vercelbadge.vercel.app/api/cdransf/coryd.dev)
+[![scheduled-cron-job](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled.yaml) ![Vercel](https://vercelbadge.vercel.app/api/cdransf/coryd.dev)
 
 # coryd.dev
 

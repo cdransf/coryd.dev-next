@@ -2,7 +2,7 @@
 title: 'Adding client side webmentions to my Next.js blog'
 date: 2023-2-18
 draft: false
-tags: ['next.js', 'react', 'web development', 'webmentions', 'indie web']
+tags: ['nextjs', 'react', 'web development', 'webmentions', 'indie web']
 summary: 'A quick rundown of the steps I took to add webmentions to my Next.js blog.'
 ---
 

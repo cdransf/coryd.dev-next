@@ -7,7 +7,7 @@ export default function Referrals() {
     return (
         <>
             <PageSEO
-                title={`Uses - ${siteMetadata.author}`}
+                title={`Referrals - ${siteMetadata.author}`}
                 description={siteMetadata.description.referrals}
             />
             <div className="divide-y divide-gray-200 dark:divide-gray-700">

@@ -8,6 +8,7 @@ const siteMetadata = {
         referrals:
             'Referral links for services I use. I save some money and you do as well if you choose to use them.',
         uses: 'Software and services that I use for work and my own enjoyment.',
+        rss: "This is a supplemental RSS namespace to allow for additional custom tags in this site's feed.",
         now: "Here's what I'm doing and enjoying right now.",
         notFound: "Sorry we couldn't find this page.",
     },

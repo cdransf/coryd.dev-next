@@ -57,7 +57,7 @@ export default async function syndicate(init?: string) {
             const data = await extract(SERVICES[service], {
                 getExtraEntryFields: (feedEntry) => {
                     return {
-                        tags: feedEntry['tags'],
+                        tags: feedEntry['cd:tags'],
                     }
                 },
             })
