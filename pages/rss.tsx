@@ -16,7 +16,8 @@ export default function RSS() {
                 </div>
                 <div className="py-12">
                     <p className="mb-5 text-lg leading-7 text-gray-500 dark:text-gray-100">
-                        {siteMetadata.description.rss}
+                        <code>xmlns:cd</code> is a supplemental RSS namespace to allow for
+                        additional custom tags in this site's feed.
                     </p>
                 </div>
             </div>
