@@ -9,7 +9,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         albums: 'user.gettopalbums',
         artists: 'user.gettopartists',
     }
-    const TYPE = req.query.type.toString()
+    const TYPE = req.query.type?.toString()
     const METHOD = METHODS[TYPE] || METHODS['default']
     const data = await fetch(
         `http://ws.audioscrobbler.com/2.0/?method=${METHOD}&user=cdme_&api_key=${KEY}&limit=${
