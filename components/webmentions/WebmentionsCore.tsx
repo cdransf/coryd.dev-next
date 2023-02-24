@@ -23,7 +23,7 @@ const WebmentionsCore = () => {
     const hasMention = hasLikes || hasComments || hasBoosts
 
     if (error) return null
-    if (!response) return <Spin className="my-2 flex justify-center" />
+    if (!response) return <Spin className="flex justify-center py-4" />
 
     const Boosts = () => {
         return (
