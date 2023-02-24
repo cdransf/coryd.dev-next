@@ -2,7 +2,6 @@ import { bundleMDX } from 'mdx-bundler'
 import fs from 'fs'
 import matter from 'gray-matter'
 import path from 'path'
-import readingTime from 'reading-time'
 import getAllFilesRecursively from './utils/files'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
@@ -107,7 +106,6 @@ export async function getFileBySlug<T>(type: 'authors' | 'blog', slug: string | 
         mdxSource: code,
         toc,
         frontMatter: {
-            readingTime: readingTime(code),
             slug: slug || null,
             fileName: fs.existsSync(mdxPath) ? `${slug}.mdx` : `${slug}.md`,
             ...frontmatter,

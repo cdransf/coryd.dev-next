@@ -50,9 +50,6 @@ const securityHeaders = [
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
 module.exports = withBundleAnalyzer({
-    env: {
-        API_KEY_LASTFM: process.env.API_KEY_LASTFM,
-    },
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {
@@ -182,15 +179,6 @@ module.exports = withBundleAnalyzer({
             test: /\.svg$/,
             use: ['@svgr/webpack'],
         })
-
-        if (!dev && !isServer) {
-            Object.assign(config.resolve.alias, {
-                'react/jsx-runtime.js': 'preact/compat/jsx-runtime',
-                react: 'preact/compat',
-                'react-dom/test-utils': 'preact/test-utils',
-                'react-dom': 'preact/compat',
-            })
-        }
 
         return config
     },
