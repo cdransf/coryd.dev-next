@@ -10,7 +10,7 @@ const Status = (props: { status: Status }) => {
     return (
         <p className="!mt-1 text-lg leading-7">
             <Link
-                className="flex flex-row items-center text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                className="flex flex-row items-center text-gray-500 hover:text-primary-600 dark:text-gray-100 dark:hover:text-primary-400"
                 href={`https://status.coryd.dev/${status?.id}`}
                 target="_blank"
                 rel="noopener noreferrer me"

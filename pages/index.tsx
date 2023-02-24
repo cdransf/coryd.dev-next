@@ -15,7 +15,7 @@ const MAX_DISPLAY = 5
 
 export const getStaticProps: GetStaticProps<{ posts: PostFrontMatter[]; now }> = async () => {
     const posts = await getAllFilesFrontMatter('blog')
-    const now = await loadNowData('status,currentTrack,books')
+    const now = await loadNowData('status,currentTrack')
     return { props: { posts, now }, revalidate: 960 }
 }
 
@@ -35,7 +35,6 @@ export default function Home({ posts, now }: InferGetStaticPropsType<typeof getS
                     </p>
                     <Status status={now.status} />
                     <CurrentlyListening track={now.currentTrack} />
-                    <CurrentlyReading books={now.books} />
                 </div>
                 <ul className="divide-y divide-gray-200 dark:divide-gray-700">
                     {!posts.length && 'No posts found.'}

@@ -42,7 +42,7 @@ const CurrentlyReading = (props: { books: TransformedRss['entries'] }) => {
             <span className="mr-1 inline-block h-5 w-5">
                 <BookOpenIcon />
             </span>
-            {booksList}.
+            {booksList}
         </p>
     )
 }

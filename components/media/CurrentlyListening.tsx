@@ -11,23 +11,13 @@ const CurrentlyListening = (props: { track: Track }) => {
     const CurrentlyPlaying = (
         <>
             <Link
-                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                className="text-gray-500 hover:text-primary-600 dark:text-gray-100 dark:hover:text-primary-400"
                 href={track.url}
                 target="_blank"
                 rel="noopener noreferrer me"
             >
-                {track.name}
+                {track.name} by {track.artist?.['#text']}
             </Link>
-            <span className="mx-1">by</span>
-            <Link
-                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                href={track.url}
-                target="_blank"
-                rel="noopener noreferrer me"
-            >
-                {track.artist?.['#text']}
-            </Link>
-            {track.artist?.['#text'].slice(-1) !== '.' ? '.' : ''}
         </>
     )
 
