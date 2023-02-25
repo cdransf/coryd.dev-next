@@ -1,6 +1,5 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
 import Link from 'next/link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
@@ -9,6 +8,7 @@ import Search from './blog/Search'
 import Tags from './blog/Tags'
 import ThemeSwitch from './ThemeSwitch'
 import { ReactNode } from 'react'
+import Image from 'next/image'
 import SocialIcon from './social-icons'
 
 interface Props {
@@ -24,7 +24,12 @@ const LayoutWrapper = ({ children }: Props) => {
                         <Link href="/" aria-label={siteMetadata.headerTitle}>
                             <div className="flex items-center justify-between">
                                 <div className="mr-3">
-                                    <Logo />
+                                    <Image
+                                        src="/static/images/logo-small.webp"
+                                        alt={siteMetadata.title}
+                                        width="53"
+                                        height="53"
+                                    />
                                 </div>
                                 {typeof siteMetadata.headerTitle === 'string' ? (
                                     <div className="hidden h-6 whitespace-nowrap text-2xl font-semibold !leading-none sm:block">
