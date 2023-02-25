@@ -2,18 +2,20 @@ import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Link from 'next/link'
 import SectionContainer from './SectionContainer'
-import Footer from './Footer'
-import MobileNav from './MobileNav'
 import Search from './icons/blog/Search'
 import Tags from './icons/blog/Tags'
 import ThemeSwitch from './icons/blog/ThemeSwitch'
 import { ReactNode } from 'react'
 import Logo from '@/components/icons/static/Logo'
 import SocialIcon from '@/components/icons/social'
+import dynamic from 'next/dynamic'
 
 interface Props {
     children: ReactNode
 }
+
+const DynamicMobileNav = dynamic(() => import('./MobileNav'))
+const DynamicFooter = dynamic(() => import('./Footer'))
 
 const LayoutWrapper = ({ children }: Props) => {
     return (
@@ -63,11 +65,11 @@ const LayoutWrapper = ({ children }: Props) => {
                             size={5}
                         />
                         <ThemeSwitch />
-                        <MobileNav />
+                        <DynamicMobileNav />
                     </div>
                 </header>
                 <main className="mb-auto">{children}</main>
-                <Footer />
+                <DynamicFooter />
             </div>
         </SectionContainer>
     )
