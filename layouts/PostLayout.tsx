@@ -11,6 +11,7 @@ import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 import Webmentions from '@/components/webmentions'
+import { AVATAR_SMALL_BLUR } from '@/utils/constants'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/main/data/blog/${fileName}`
 
@@ -77,12 +78,13 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                                         >
                                             {author.avatar && (
                                                 <Image
-                                                    src={author.avatar}
-                                                    width="56"
-                                                    height="56"
-                                                    alt="avatar"
-                                                    className="h-14 w-14 rounded-full"
-                                                />
+src={author.avatar}
+placeholder="blur"
+blurDataURL={AVATAR_SMALL_BLUR}                                                    width="56"
+height="56"
+alt="avatar"
+className="h-14 w-14 rounded-full"
+/>
                                             )}
                                             <dl className="whitespace-nowrap font-medium leading-5">
                                                 <dt className="sr-only">Name</dt>
