@@ -2,7 +2,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { Media } from '@/types/api'
 import ImageWithFallback from '@/components/ImageWithFallback'
 import Link from 'next/link'
-import { ALBUM_DENYLIST } from '@/utils/constants'
+import { ALBUM_DENYLIST, COVER_BLUR } from '@/utils/constants'
 
 const Cover = (props: { media: Media; type: 'artist' | 'album' }) => {
     const { media, type } = props
@@ -42,7 +42,7 @@ const Cover = (props: { media: Media; type: 'artist' | 'album' }) => {
                 <ImageWithFallback
                     src={image(media)}
                     fallback={fallbackImage}
-                    placeholder={placeholderImage}
+                    placeholder={COVER_BLUR}
                     alt={media.name}
                     className="rounded-lg"
                     width="350"

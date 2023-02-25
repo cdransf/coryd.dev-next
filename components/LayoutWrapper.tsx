@@ -27,10 +27,12 @@ const LayoutWrapper = ({ children }: Props) => {
                                 <div className="mr-3">
                                     <Image
                                         src="/static/images/logo-small.webp"
+                                        placeholder="blur"
                                         blurDataURL={LOGO_SMALL_BLUR}
                                         alt={siteMetadata.title}
                                         width="53"
                                         height="53"
+                                        className="rounded-full"
                                     />
                                 </div>
                                 {typeof siteMetadata.headerTitle === 'string' ? (

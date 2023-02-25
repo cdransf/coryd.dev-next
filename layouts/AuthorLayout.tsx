@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function AuthorLayout({ children, frontMatter }: Props) {
-    const { name, avatar, avatarBlur, tagline } = frontMatter
+    const { name, avatar, tagline } = frontMatter
 
     return (
         <>
@@ -25,11 +25,12 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                     <div className="flex flex-col items-center space-x-2 pt-8">
                         <Image
                             src={avatar}
+                            placeholder="blur"
                             blurDataURL={AVATAR_SMALL_BLUR}
                             alt="avatar"
                             width="192"
                             height="192"
-                            className="h-48 w-48 rounded-full"
+                            className="avatar h-48 w-48 rounded-full"
                         />
                         <h3 className="pt-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-3xl md:leading-14">
                             <span>{tagline}</span>
