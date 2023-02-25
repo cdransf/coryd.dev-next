@@ -8,9 +8,8 @@ import Search from './blog/Search'
 import Tags from './blog/Tags'
 import ThemeSwitch from './ThemeSwitch'
 import { ReactNode } from 'react'
-import Image from 'next/image'
+import Logo from '@/components/static/Logo'
 import SocialIcon from './social-icons'
-import { LOGO_SMALL_BLUR } from '@/utils/constants'
 
 interface Props {
     children: ReactNode
@@ -25,15 +24,7 @@ const LayoutWrapper = ({ children }: Props) => {
                         <Link href="/" aria-label={siteMetadata.headerTitle}>
                             <div className="flex items-center justify-between">
                                 <div className="mr-3">
-                                    <Image
-                                        src="/static/images/logo-small.webp"
-                                        placeholder="blur"
-                                        blurDataURL={LOGO_SMALL_BLUR}
-                                        alt={siteMetadata.title}
-                                        width="53"
-                                        height="53"
-                                        className="rounded-full"
-                                    />
+                                    <Logo />
                                 </div>
                                 {typeof siteMetadata.headerTitle === 'string' ? (
                                     <div className="hidden h-6 whitespace-nowrap text-2xl font-semibold !leading-none sm:block">

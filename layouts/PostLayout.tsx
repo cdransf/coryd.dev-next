@@ -2,7 +2,6 @@ import Link from 'next/link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
-import Image from 'next/image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTop from '@/components/ScrollTop'
@@ -11,6 +10,7 @@ import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 import Webmentions from '@/components/webmentions'
+import AvatarSmall from '@/components/static/AvatarSmall'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/main/data/blog/${fileName}`
 
@@ -75,15 +75,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                                             className="flex items-center space-x-2"
                                             key={author.name}
                                         >
-                                            {author.avatar && (
-                                                <Image
-                                                    src={author.avatar}
-                                                    width="56"
-                                                    height="56"
-                                                    alt="avatar"
-                                                    className="h-14 w-14 rounded-full"
-                                                />
-                                            )}
+                                            <AvatarSmall />
                                             <dl className="whitespace-nowrap font-medium leading-5">
                                                 <dt className="sr-only">Name</dt>
                                                 <dd className="text-md font-bold text-gray-900 dark:text-gray-100">

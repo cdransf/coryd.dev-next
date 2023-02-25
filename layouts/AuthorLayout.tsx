@@ -1,8 +1,7 @@
-import Image from 'next/image'
 import { PageSEO } from '@/components/SEO'
 import { ReactNode } from 'react'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
-import { AVATAR_SMALL_BLUR } from '@/utils/constants'
+import Avatar from '@/components/static/Avatar'
 
 interface Props {
     children: ReactNode
@@ -23,15 +22,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                 </div>
                 <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
                     <div className="flex flex-col items-center space-x-2 pt-8">
-                        <Image
-                            src={avatar}
-                            placeholder="blur"
-                            blurDataURL={AVATAR_SMALL_BLUR}
-                            alt="avatar"
-                            width="192"
-                            height="192"
-                            className="avatar h-48 w-48 rounded-full"
-                        />
+                        <Avatar />
                         <h3 className="pt-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-3xl md:leading-14">
                             <span>{tagline}</span>
                             <span className="inline-block animate-waving-hand pl-2">👋🏻</span>
