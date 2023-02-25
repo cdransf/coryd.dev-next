@@ -18,10 +18,15 @@ export default function Footer() {
                     <SocialIcon kind="oku" href={siteMetadata.oku} size={6} />
                 </div>
                 <div className="mb-8 flex space-x-2 text-sm text-gray-500 dark:text-gray-100">
+                    <Link href="/uses">Uses</Link>
+                    <div>{` • `}</div>
+                    <Link href="/referrals">Referrals</Link>
+                    <div>{` • `}</div>
                     <Link href="/">{siteMetadata.title}</Link>
                     <div>{` • `}</div>
                     <div>{`© ${new Date().getFullYear()}`}</div>
                 </div>
+                <div className="mb-8 flex space-x-2 text-sm text-gray-500 dark:text-gray-100"></div>
             </div>
         </footer>
     )
