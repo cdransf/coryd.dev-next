@@ -6,13 +6,7 @@
 
 Hi! I'm Cory. 👋🏻
 
-This is the code for my personal website and portfolio. Built using Next.js and deployed on Vercel. It was scaffolded out with and modified from [Timothy Lin](https://github.com/timlrx)'s [tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) project (which I highly recommend checking out).
-
-I've modified the theme to match the look of my previous sites core color schemes and imagery and made a number of other changes (which I imagine will continue).
-
-**Built by:**
-
-[Cory Dransfeldt](mailto:fun.song5595@coryd.dev)
+This is the code for my personal website and portfolio. Built using Next.js and deployed on Vercel.
 
 **Built with:**
 
@@ -22,3 +16,35 @@ I've modified the theme to match the look of my previous sites core color scheme
 -   [Vercel](https://vercel.com)
 -   [GitHub](https://github.com)
 -   [git](https://git-scm.com)
+
+## Submodules
+
+Git submodules are used to split out different assets from the core application. `Media` is private and fetched at build time using [vercel-submodules](https://github.com/junhoyeo/vercel-submodules).
+
+-   Media: `public/static/images/media`
+
+---
+
+## APIs
+
+### [Books](pages/api/books.ts)
+
+| Request type | URI          | Params |
+| ------------ | ------------ | ------ |
+| `GET`        | `/api/books` | None   |
+
+This API returns the books I'm currently reading on [Oku](https://oku.club), transformed from the RSS feed available on the appropriate collection.
+
+### [Movies](pages/api/movies.ts)
+
+| Request type | URI           | Params |
+| ------------ | ------------- | ------ |
+| `GET`        | `/api/movies` | None   |
+
+This API returns the movies I've recently logged on [Letterboxd](https://letterboxd.com), transformed from the RSS feed available on my profile.
+
+### [TV](pages/api/tv.ts)
+
+| Request type | URI       | Params |
+| ------------ | --------- | ------ |
+| `GET`        | `/api/tv` | None   |
