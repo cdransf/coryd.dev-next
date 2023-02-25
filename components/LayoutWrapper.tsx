@@ -4,12 +4,12 @@ import Link from 'next/link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
-import Search from './blog/Search'
-import Tags from './blog/Tags'
-import ThemeSwitch from './ThemeSwitch'
+import Search from './icons/blog/Search'
+import Tags from './icons/blog/Tags'
+import ThemeSwitch from './icons/blog/ThemeSwitch'
 import { ReactNode } from 'react'
-import Logo from '@/components/static/Logo'
-import SocialIcon from './social-icons'
+import Logo from '@/components/icons/static/Logo'
+import SocialIcon from '@/components/icons/social'
 
 interface Props {
     children: ReactNode

@@ -10,7 +10,7 @@ import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 import Webmentions from '@/components/webmentions'
-import AvatarSmall from '@/components/static/AvatarSmall'
+import AvatarSmall from '@/components/icons/static/AvatarSmall'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/main/data/blog/${fileName}`
 

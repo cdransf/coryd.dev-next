@@ -1,7 +1,7 @@
 import { PageSEO } from '@/components/SEO'
 import { ReactNode } from 'react'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
-import Avatar from '@/components/static/Avatar'
+import Avatar from '@/components/icons/static/Avatar'
 
 interface Props {
     children: ReactNode
@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function AuthorLayout({ children, frontMatter }: Props) {
-    const { name, avatar, tagline } = frontMatter
+    const { name, tagline } = frontMatter
 
     return (
         <>
