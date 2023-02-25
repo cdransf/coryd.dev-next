@@ -78,13 +78,14 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                                         >
                                             {author.avatar && (
                                                 <Image
-src={author.avatar}
-placeholder="blur"
-blurDataURL={AVATAR_SMALL_BLUR}                                                    width="56"
-height="56"
-alt="avatar"
-className="h-14 w-14 rounded-full"
-/>
+                                                    src={author.avatar}
+                                                                                placeholder="blur"
+                            blurDataURL={AVATAR_SMALL_BLUR}
+                                                    width="56"
+                                                    height="56"
+                                                    alt="avatar"
+                                                    className="h-14 w-14 rounded-full"
+                                                />
                                             )}
                                             <dl className="whitespace-nowrap font-medium leading-5">
                                                 <dt className="sr-only">Name</dt>
