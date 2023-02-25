@@ -11,11 +11,7 @@ import {
     CommandLineIcon,
 } from '@heroicons/react/24/solid'
 import Status from '@/components/Status'
-import Albums from '@/components/media/Albums'
-import Artists from '@/components/media/Artists'
-import Reading from '@/components/media/Reading'
-import Movies from '@/components/media/Movies'
-import TV from '@/components/media/TV'
+import dynamic from 'next/dynamic'
 
 const env = process.env.NODE_ENV
 let host = siteMetadata.siteUrl
@@ -27,6 +23,12 @@ export async function getStaticProps() {
         revalidate: 3600,
     }
 }
+
+const DynamicAlbums = dynamic(() => import('@/components/media/Albums'))
+const DynamicArtists = dynamic(() => import('@/components/media/Artists'))
+const DynamicReading = dynamic(() => import('@/components/media/Reading'))
+const DynamicMovies = dynamic(() => import('@/components/media/Movies'))
+const DynamicTV = dynamic(() => import('@/components/media/TV'))
 
 export default function Now(props) {
     const { response, error } = useJson(`${host}/api/now`, props)
@@ -101,11 +103,11 @@ export default function Now(props) {
                             and whatever else I can find time for.
                         </p>
                     </div>
-                    <Artists artists={artists} />
-                    <Albums albums={albums} />
-                    <Reading books={books} />
-                    <Movies movies={movies} />
-                    <TV tv={tv} />
+                    <DynamicArtists artists={artists} />
+                    <DynamicAlbums albums={albums} />
+                    <DynamicReading books={books} />
+                    <DynamicMovies movies={movies} />
+                    <DynamicTV tv={tv} />
                     <p className="pt-8 text-center text-xs text-gray-900 dark:text-gray-100">
                         (This is a{' '}
                         <Link
