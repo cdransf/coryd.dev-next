@@ -1,3 +1,4 @@
+import siteMetadata from '@/data/siteMetadata'
 import { Media } from '@/types/api'
 import ImageWithFallback from '@/components/ImageWithFallback'
 import Link from 'next/link'
@@ -5,6 +6,12 @@ import { ALBUM_DENYLIST } from '@/utils/constants'
 
 const Cover = (props: { media: Media; type: 'artist' | 'album' }) => {
     const { media, type } = props
+    const env = process.env.NODE_ENV
+    let host = siteMetadata.siteUrl
+    if (env === 'development') host = 'http://localhost:3000'
+    const fallbackImage = `${host}/media/404.jpg`
+    const placeholderImage = `${host}/media/placeholder.jpg`
+
     const image = (media: Media) => {
         let img = ''
         if (type === 'album')
@@ -34,6 +41,8 @@ const Cover = (props: { media: Media; type: 'artist' | 'album' }) => {
                 </div>
                 <ImageWithFallback
                     src={image(media)}
+                    fallback={fallbackImage}
+                    placeholder={placeholderImage}
                     alt={media.name}
                     className="rounded-lg"
                     width="350"

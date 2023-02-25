@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { PageSEO } from '@/components/SEO'
 import { ReactNode } from 'react'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
+import { AVATAR_SMALL_BLUR } from '@/utils/constants'
 
 interface Props {
     children: ReactNode
@@ -9,7 +10,7 @@ interface Props {
 }
 
 export default function AuthorLayout({ children, frontMatter }: Props) {
-    const { name, avatar, tagline } = frontMatter
+    const { name, avatar, avatarBlur, tagline } = frontMatter
 
     return (
         <>
@@ -24,6 +25,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                     <div className="flex flex-col items-center space-x-2 pt-8">
                         <Image
                             src={avatar}
+                            blurDataURL={AVATAR_SMALL_BLUR}
                             alt="avatar"
                             width="192"
                             height="192"

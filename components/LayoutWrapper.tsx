@@ -10,6 +10,7 @@ import ThemeSwitch from './ThemeSwitch'
 import { ReactNode } from 'react'
 import Image from 'next/image'
 import SocialIcon from './social-icons'
+import { LOGO_SMALL_BLUR } from '@/utils/constants'
 
 interface Props {
     children: ReactNode
@@ -26,6 +27,7 @@ const LayoutWrapper = ({ children }: Props) => {
                                 <div className="mr-3">
                                     <Image
                                         src="/static/images/logo-small.webp"
+                                        blurDataURL={LOGO_SMALL_BLUR}
                                         alt={siteMetadata.title}
                                         width="53"
                                         height="53"

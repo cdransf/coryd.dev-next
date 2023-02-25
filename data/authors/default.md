@@ -1,6 +1,7 @@
 ---
 name: Cory Dransfeldt
 avatar: /static/images/avatar.webp
+avatarBlur: /static/images/avatar--blur.webp
 tagline: Hi! I'm Cory
 email: fun.song5595@coryd.dev
 mastodon: https://social.lol/@cory
