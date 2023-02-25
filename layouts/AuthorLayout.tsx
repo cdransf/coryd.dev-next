@@ -28,7 +28,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                             <span className="inline-block animate-waving-hand pl-2">👋🏻</span>
                         </h3>
                     </div>
-                    <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
+                    <div className="prose max-w-none pt-8 pb-8 text-gray-500 dark:prose-dark dark:text-gray-100 xl:col-span-2">
                         {children}
                     </div>
                 </div>
