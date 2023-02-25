@@ -35,10 +35,6 @@ input:-webkit-autofill:focus {
 }
 
 /* loading icon size override */
-.icon-loading svg {
-    width: 64px;
-}
-
 .icon-dots--loading svg circle {
     fill: theme(colors.gray.900);
 }

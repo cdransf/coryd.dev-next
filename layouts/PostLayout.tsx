@@ -4,15 +4,15 @@ import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
-import ScrollTop from '@/components/ScrollTop'
 import { CopyLink } from '@/components/CopyLink'
 import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 import Webmentions from '@/components/webmentions'
 import AvatarSmall from '@/components/icons/static/AvatarSmall'
+import dynamic from 'next/dynamic'
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/main/data/blog/${fileName}`
+const editUrl = (fileName: string) => `${siteMetadata.siteRepo}/blob/main/data/blog/${fileName}`
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
     weekday: 'long',
@@ -29,6 +29,8 @@ interface Props {
     children: ReactNode
 }
 
+const DynamicScrollTob = dynamic(() => import('@/components/ScrollTop'))
+
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }: Props) {
     const { slug, fileName, date, title, tags } = frontMatter
 
@@ -39,7 +41,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 authorDetails={authorDetails}
                 {...frontMatter}
             />
-            <ScrollTop />
+            <DynamicScrollTob />
             <article>
                 <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
                     <header className="pt-6 xl:pb-6">

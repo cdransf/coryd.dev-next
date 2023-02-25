@@ -4,10 +4,10 @@ import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
-import ScrollTop from '@/components/ScrollTop'
 import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import Webmentions from '@/components/webmentions'
+import dynamic from 'next/dynamic'
 
 interface Props {
     frontMatter: PostFrontMatter
@@ -16,13 +16,15 @@ interface Props {
     prev?: { slug: string; title: string }
 }
 
+const DynamicScrollTob = dynamic(() => import('@/components/ScrollTop'))
+
 export default function PostLayout({ frontMatter, next, prev, children }: Props) {
     const { slug, date, title } = frontMatter
 
     return (
         <SectionContainer>
             <BlogSEO url={`${siteMetadata.siteUrl}/blog/${slug}`} {...frontMatter} />
-            <ScrollTop />
+            <DynamicScrollTob />
             <article>
                 <div>
                     <header>
