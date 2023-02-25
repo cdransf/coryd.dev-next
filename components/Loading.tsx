@@ -1,4 +1,5 @@
-import { Oval, ThreeDots } from 'react-loading-icons'
+import Spinner from '@/components/icons/loading/Spinner'
+import ThreeDots from '@/components/icons/loading/ThreeDots'
 
 export const Dots = (props) => {
     const { className } = props
@@ -15,7 +16,7 @@ export const Spin = (props) => {
 
     return (
         <div className={`${className || ''} icon-loading`}>
-            <Oval />
+            <Spinner />
         </div>
     )
 }
