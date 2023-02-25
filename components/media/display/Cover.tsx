@@ -10,7 +10,6 @@ const Cover = (props: { media: Media; type: 'artist' | 'album' }) => {
     let host = siteMetadata.siteUrl
     if (env === 'development') host = 'http://localhost:3000'
     const fallbackImage = `${host}/media/404.jpg`
-    const placeholderImage = `${host}/media/placeholder.jpg`
 
     const image = (media: Media) => {
         let img = ''
