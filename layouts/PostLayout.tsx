@@ -79,8 +79,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                                             {author.avatar && (
                                                 <Image
                                                     src={author.avatar}
-                                                                                placeholder="blur"
-                                                                                blurDataURL={AVATAR_SMALL_BLUR}
+                                                    placeholder="blur"
+                                                    blurDataURL={AVATAR_SMALL_BLUR}
                                                     width="56"
                                                     height="56"
                                                     alt="avatar"
