@@ -200,16 +200,6 @@ export default function Uses() {
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://www.gitify.io"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Gitify
-                            </Link>
-                        </li>
-                        <li className="mt-1.5 mb-2">
-                            <Link
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://replay.software/sleeve"
                                 target="_blank"
                                 rel="noopener noreferrer"
