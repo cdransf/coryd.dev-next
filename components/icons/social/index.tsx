@@ -1,4 +1,5 @@
 import Fastmail from './Fastmail'
+import Gmail from './Gmail'
 import Mail from './Mail'
 import SavvyCal from './SavvyCal'
 import Github from './GitHub'
@@ -16,6 +17,7 @@ import siteMetadata from '@/data/siteMetadata'
 
 const components = {
     fastmail: Fastmail,
+    gmail: Gmail,
     mail: Mail,
     savvycal: SavvyCal,
     github: Github,

@@ -20,7 +20,7 @@ const siteMetadata = {
     siteLogo: '/static/images/logo.webp',
     image: '/static/images/avatar.webp',
     socialBanner: '/static/images/social-card.png',
-    email: 'fun.song5595@coryd.dev',
+    email: 'hi@coryd.dev',
     savvycal: 'https://savvycal.com/coryd',
     github: 'https://github.com/cdransf',
     rss: '/feed.xml',

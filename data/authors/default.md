@@ -3,7 +3,7 @@ name: Cory Dransfeldt
 avatar: /static/images/avatar.webp
 avatarBlur: /static/images/avatar--blur.webp
 tagline: Hi! I'm Cory
-email: fun.song5595@coryd.dev
+email: hi@coryd.dev
 mastodon: https://social.lol/@cory
 ---
 
@@ -17,5 +17,5 @@ I tend to write about whatever strikes me, with a focus on development, technolo
 
 ### Contact
 
--   [Email](mailto:fun.song5595@coryd.dev)
+-   [Email](mailto:hi@coryd.dev)
 -   [Calendar](https://savvycal.com/coryd)
