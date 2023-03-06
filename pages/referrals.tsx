@@ -24,14 +24,14 @@ export default function Referrals() {
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://ref.fm/u28939392"
+                                href="https://referworkspace.app.goo.gl/7BYo"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={() => {
-                                    Fathom.trackGoal('RNUWLQ8O', 0)
+                                    Fathom.trackGoal('EWREAPNX', 0)
                                 }}
                             >
-                                Fastmail
+                                Google Workspace
                             </Link>
                         </li>
                         <li className="mt-1.5 mb-2">

@@ -41,11 +41,11 @@ export default function Uses() {
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://culturedcode.com/things"
+                                href="https://todoist.com/things"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Things
+                                Todoist
                             </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
@@ -113,16 +113,6 @@ export default function Uses() {
                                 status.log
                             </Link>
                         </li>
-                        <li className="mt-1.5 mb-2">
-                            <Link
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://www.stratospherix.com/products/filebrowserprofessional"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                FileBrowser Pro
-                            </Link>
-                        </li>
                     </ul>
                     <h3 className="pt-3 pb-4 text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
                         macOS
@@ -170,6 +160,16 @@ export default function Uses() {
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://webcatalog.io"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Webcatalog
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://www.keyboardmaestro.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -180,11 +180,11 @@ export default function Uses() {
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://sindresorhus.com/dato"
+                                href="https://flexibits.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Dato
+                                Fantastical
                             </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
@@ -285,14 +285,14 @@ export default function Uses() {
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://ref.fm/u28939392"
+                                href="https://referworkspace.app.goo.gl/7BYo"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={() => {
-                                    Fathom.trackGoal('RNUWLQ8O', 0)
+                                    Fathom.trackGoal('EWREAPNX', 0)
                                 }}
                             >
-                                Fastmail
+                                Google Workspace
                             </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
@@ -319,16 +319,6 @@ export default function Uses() {
                                 }}
                             >
                                 Fathom Analytics
-                            </Link>
-                        </li>
-                        <li className="mt-1.5 mb-2">
-                            <Link
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                href="https://whereby.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Whereby
                             </Link>
                         </li>
                         <li className="mt-1.5 mb-2">
