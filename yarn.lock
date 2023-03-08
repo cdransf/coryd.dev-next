@@ -5552,10 +5552,10 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
 
-vercel-submodules@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/vercel-submodules/-/vercel-submodules-1.0.8.tgz#d16bf95b7c76651ecbf81773c0f7de44edee1e45"
-  integrity sha512-ZvFJHtOKH59/rMdFkPj+phzSO6WWgzgElFqQZDNaVK1GDURWYnyySJb3gaNm+cpIC6Jl2YtK3TXEA3zKt3KS2g==
+vercel-submodules@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/vercel-submodules/-/vercel-submodules-1.0.10.tgz#74e3bea1dd494c7cd1a8fd8d0a34e34e9faea4a6"
+  integrity sha512-LRqml4w58awcKeLKlBm1o7qkauzEyzmB+4tb/6Zq0icYWMFgaTXyzFWrTmtqqTOiAoZ5kvOLL39IGfikpGAaXQ==
   dependencies:
     git-url-parse "^13.0.0"
     zx "^7.0.8"
