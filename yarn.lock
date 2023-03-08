@@ -30,15 +30,15 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
-"@citation-js/core@^0.5.4":
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/@citation-js/core/-/core-0.5.7.tgz#6ea9def3b3f39ca73a5cfd5b9f5a42238528ca8f"
-  integrity sha512-ywKqOCQfLbm59VjiQCnM7vtx9wlLjDdxU2G27V9gQASKWCAVRIgTLrT8T2PFJMmur6plMZkrsaXR5Ajfpasfug==
+"@citation-js/core@^0.6.5":
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/@citation-js/core/-/core-0.6.5.tgz#4a8a16856bb33cc208af0128efa799da3b3fe135"
+  integrity sha512-YmfL3wby/oLgggs3hqRcllL0xYOUzTaABChTEEbcfXwrvIstgHzODG1tcPAVg/EVuVH151uMR9xttuzu+Lbxcg==
   dependencies:
     "@citation-js/date" "^0.5.0"
     "@citation-js/name" "^0.4.2"
-    isomorphic-fetch "^3.0.0"
-    sync-fetch "^0.3.0"
+    fetch-ponyfill "^7.1.0"
+    sync-fetch "^0.4.1"
 
 "@citation-js/date@^0.5.0", "@citation-js/date@^0.5.1":
   version "0.5.1"
@@ -50,27 +50,27 @@
   resolved "https://registry.yarnpkg.com/@citation-js/name/-/name-0.4.2.tgz#8dc834b7e6c06998fc8d3b63632658754c94a875"
   integrity sha512-brSPsjs2fOVzSnARLKu0qncn6suWjHVQtrqSUrnqyaRH95r/Ad4wPF5EsoWr+Dx8HzkCGb/ogmoAzfCsqlTwTQ==
 
-"@citation-js/plugin-bibjson@^0.5.4":
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/@citation-js/plugin-bibjson/-/plugin-bibjson-0.5.7.tgz#4b7e3405963128db8e13d2efa612a163b38637f7"
-  integrity sha512-aRPMZ5hLsb9rLH5JxWP374Q+KKAiPF5ejgY3e8ftyNvvhCCNXwBIvrJk8hdACpIF3x7SKWgZVkz/4i5vHJiavw==
+"@citation-js/plugin-bibjson@^0.6.5":
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/@citation-js/plugin-bibjson/-/plugin-bibjson-0.6.5.tgz#e93bcffd22a33cfd415a9b56fc0e84e373629ca8"
+  integrity sha512-SiWVgwWOs/up2FxAJlx56QPoWXDsjXMhVz0VUjzmS6bm+PXmqtzNDmqTCwf/CVgYWKl7UJStmsuB4WgnTlGBBA==
   dependencies:
     "@citation-js/date" "^0.5.0"
     "@citation-js/name" "^0.4.2"
 
-"@citation-js/plugin-bibtex@^0.5.5":
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/@citation-js/plugin-bibtex/-/plugin-bibtex-0.5.7.tgz#9342340e30ef5b859f24b9082f1cb11ae42c4d4b"
-  integrity sha512-g/4hA0N+/uYFDb7SUWEaIZm1hLK5AYNdmR+mB8T5kCoQ0vZS63Z0NaZMrZY8btPvX2cCHpPv8r2rmhOjnZKuvA==
+"@citation-js/plugin-bibtex@^0.6.5":
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/@citation-js/plugin-bibtex/-/plugin-bibtex-0.6.6.tgz#4cbdbd529604ae64586a4d788f16485be2595322"
+  integrity sha512-hDcMK+e+WaA8f3b+SkIVB+41w39Yf3AVGQ6Ee1amC4KCF5kS6IoiAC5dUquCZoaJCrh5PEg1fyX2tuii6WkOhA==
   dependencies:
     "@citation-js/date" "^0.5.0"
     "@citation-js/name" "^0.4.2"
     moo "^0.5.1"
 
-"@citation-js/plugin-csl@^0.5.5":
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/@citation-js/plugin-csl/-/plugin-csl-0.5.7.tgz#6d55e37e654d17f576985c1a6d0b8ff17a311975"
-  integrity sha512-RuFIBi9KhmNmzOJZs24UBM5olvY71hJZ+qNnY89YIfszoMJHdotYc/NRmHlM/dSMy9A3BbnDC6WzDIpYZGuU6w==
+"@citation-js/plugin-csl@^0.6.5":
+  version "0.6.7"
+  resolved "https://registry.yarnpkg.com/@citation-js/plugin-csl/-/plugin-csl-0.6.7.tgz#0682ae2fa8d7d8226dc8176fe6323589531a4795"
+  integrity sha512-cgMCaujDaSnYPHmmyk5vp7UTVmEEkToqh1gFH5OGUOlLOaFmRTQn8kssMrVQR/mBZlQmMeoh5NYVktNeo5eDCg==
   dependencies:
     "@citation-js/date" "^0.5.0"
     citeproc "^2.4.6"
@@ -846,7 +846,7 @@ braces@^3.0.2, braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-buffer@^5.5.0, buffer@^5.7.0:
+buffer@^5.5.0, buffer@^5.7.1:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.7.1.tgz#ba62e7c13133053582197160851a8f648e99eed0"
   integrity sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==
@@ -1912,6 +1912,13 @@ fetch-blob@^3.1.2, fetch-blob@^3.1.4:
     node-domexception "^1.0.0"
     web-streams-polyfill "^3.0.3"
 
+fetch-ponyfill@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/fetch-ponyfill/-/fetch-ponyfill-7.1.0.tgz#4266ed48b4e64663a50ab7f7fcb8e76f990526d0"
+  integrity sha512-FhbbL55dj/qdVO3YNK7ZEkshvj3eQ7EuIGV2I6ic/2YiocvyWv+7jg2s4AyS0wdRU75s3tA8ZxI/xPigb0v5Aw==
+  dependencies:
+    node-fetch "~2.6.1"
+
 file-entry-cache@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/file-entry-cache/-/file-entry-cache-6.0.1.tgz#211b2dd9659cb0394b073e7323ac3c933d522027"
@@ -2758,14 +2765,6 @@ isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
-
-isomorphic-fetch@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-3.0.0.tgz#0267b005049046d2421207215d45d6a262b8b8b4"
-  integrity sha512-qvUtwJ3j6qwsF3jLxkZ72qCgjMysPzDfeV240JHiGZsANBYd+EEuu35v7dfrJ9Up0Ak07D7GGSkGhCHTqg/5wA==
-  dependencies:
-    node-fetch "^2.6.1"
-    whatwg-fetch "^3.4.1"
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
@@ -3771,7 +3770,7 @@ node-fetch@3.2.10:
     fetch-blob "^3.1.4"
     formdata-polyfill "^4.0.10"
 
-node-fetch@^2.6.1:
+node-fetch@^2.6.1, node-fetch@~2.6.1:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.9.tgz#7c7f744b5cc6eb5fd404e0c7a9fec630a55657e6"
   integrity sha512-DJm/CJkZkRjKKj4Zi4BsKVZh3ValV5IR5s7LVZnW+6YMh0W1BfNA8XSs6DLMGYlId5F3KnA70uu2qepcR08Qqg==
@@ -4310,23 +4309,22 @@ rehype-autolink-headings@^6.1.0:
     unified "^10.0.0"
     unist-util-visit "^4.0.0"
 
-rehype-citation@^0.2.0, rehype-citation@^0.2.5-rc.0:
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/rehype-citation/-/rehype-citation-0.2.5.tgz#386a9e1f8f36b6363209396e10525511df5881a4"
-  integrity sha512-d4s4JPjjCqB7xqeIz7qf4oemhuTcFhYDvP57ciOwymLsaDiQhfOq6iJsnCBXmBP8a4O2EHDsQg5mwUTMIKBfRA==
+rehype-citation@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/rehype-citation/-/rehype-citation-1.0.1.tgz#7da9f902df40fff9c621c30b6fe851f1987505fa"
+  integrity sha512-l50kEikJQBNQNgfsIBNlxkyzsA7Ia6fZ03hKpNP8h67dH54ILMBNyrU0L3J77B2WcjXQDYpMrFYTcznI1YFtiQ==
   dependencies:
-    "@citation-js/core" "^0.5.4"
+    "@citation-js/core" "^0.6.5"
     "@citation-js/date" "^0.5.1"
     "@citation-js/name" "^0.4.2"
-    "@citation-js/plugin-bibjson" "^0.5.4"
-    "@citation-js/plugin-bibtex" "^0.5.5"
-    "@citation-js/plugin-csl" "^0.5.5"
+    "@citation-js/plugin-bibjson" "^0.6.5"
+    "@citation-js/plugin-bibtex" "^0.6.5"
+    "@citation-js/plugin-csl" "^0.6.5"
     citeproc "^2.4.62"
     cross-fetch "^3.1.5"
     hast-util-from-dom "^4.1.0"
     hast-util-from-parse5 "^7.1.0"
     parse5 "^6.0.1"
-    rehype-citation "^0.2.5-rc.0"
     unified "^10.1.0"
     unist-util-visit "^4.0.0"
 
@@ -5160,12 +5158,12 @@ swr@^2.1.0:
   dependencies:
     use-sync-external-store "^1.2.0"
 
-sync-fetch@^0.3.0:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/sync-fetch/-/sync-fetch-0.3.1.tgz#62aa82c4b4d43afd6906bfd7b5f92056458509f0"
-  integrity sha512-xj5qiCDap/03kpci5a+qc5wSJjc8ZSixgG2EUmH1B8Ea2sfWclQA7eH40hiHPCtkCn6MCk4Wb+dqcXdCy2PP3g==
+sync-fetch@^0.4.1:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/sync-fetch/-/sync-fetch-0.4.2.tgz#40ec3398f7193198c44fd0753b7b77a27185a117"
+  integrity sha512-vilDD6yTGwyUjm7/W5WUUOCw1GH1aV591zC21XhbV6MJNZqfZcNMs9DVPHzy1UAmQ2GAg6S03F5TQ3paegKSdg==
   dependencies:
-    buffer "^5.7.0"
+    buffer "^5.7.1"
     node-fetch "^2.6.1"
 
 synckit@^0.8.4:
@@ -5580,11 +5578,6 @@ webpack-bundle-analyzer@4.7.0:
     opener "^1.5.2"
     sirv "^1.0.7"
     ws "^7.3.1"
-
-whatwg-fetch@^3.4.1:
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.6.2.tgz#dced24f37f2624ed0281725d51d0e2e3fe677f8c"
-  integrity sha512-bJlen0FcuU/0EMLrdbJ7zOnW6ITZLrZMIarMUVmdKtsGvZna8vxKYaexICWPfZ8qwf9fzNq+UEIZrnSaApt6RA==
 
 whatwg-url@^5.0.0:
   version "5.0.0"
