@@ -68,7 +68,7 @@ This API returns the tv episodes I've recently logged on [Trakt](https://trakt.t
 
 This returns a response consistent with the [Webfinger](https://webfinger.net) specification intended to make discovery on open platforms like Mastodon easier (e.g. searching for `anything@coryd.dev` will yield my profile in search).
 
-### [Webfinger](pages/api/webmentions.ts)
+### [Webmentions](pages/api/webmentions.ts)
 
 | Request type | URI       | Params               |
 | ------------ | --------- | -------------------- |
