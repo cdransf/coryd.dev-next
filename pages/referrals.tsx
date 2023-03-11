@@ -76,6 +76,19 @@ export default function Referrals() {
                         <li className="mt-1.5 mb-2">
                             <Link
                                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                href="https://dnsimple.com/r/3a7cbb9e15df8f"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => {
+                                    Fathom.trackGoal('MFQVXQQ9', 0)
+                                }}
+                            >
+                                DNSimple
+                            </Link>
+                        </li>
+                        <li className="mt-1.5 mb-2">
+                            <Link
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 href="https://m.do.co/c/3635bf99aee2"
                                 target="_blank"
                                 rel="noopener noreferrer"
